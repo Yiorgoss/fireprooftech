@@ -1,5 +1,5 @@
-import type { PageServerLoad } from "./$types";
-import {fail} from "@sveltejs/kit"
+import type { Actions, PageServerLoad } from "./$types";
+import { fail } from "@sveltejs/kit"
 import { superValidate } from "sveltekit-superforms/server";
 import { contactSchema } from "$lib/schema";
 
