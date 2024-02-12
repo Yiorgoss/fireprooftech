@@ -23,7 +23,7 @@ export function route(path: string, lang: AvailableLanguageTag) {
 /**
  * Returns the path without the language tag
  */
-function withoutLanguageTag(path: string) {
+export function withoutLanguageTag(path: string) {
   const [_, maybeLang, ...rest] = path.split("/")
   if (availableLanguageTags.includes(maybeLang as AvailableLanguageTag)) {
     return `/${rest.join('/')}`
@@ -33,8 +33,7 @@ function withoutLanguageTag(path: string) {
 
 
 export const isRTL = (tag: string): boolean => {
-  const rtl = new Set<string>(['he'])
-  console.log('has tag', rtl.has(tag))
+  const rtl = new Set<string>(['il'])
   return rtl.has(tag)
 }
 

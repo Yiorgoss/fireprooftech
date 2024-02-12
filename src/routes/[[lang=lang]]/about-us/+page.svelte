@@ -1,0 +1,85 @@
+<script lang="ts">
+	import { Button } from '$lib/components/ui/button';
+	import * as m from '$pg/messages';
+	import { CldImage } from 'svelte-cloudinary';
+	import PlainCarousel from '$lib/components/plain-carousel.svelte';
+</script>
+
+<div class="relative w-full overflow-hidden bg-foreground">
+	<h1 class="w-full bg-background-secondary py-16 text-center font-playfair text-6xl uppercase">
+		{m.about_fpt()}
+	</h1>
+	<CldImage
+		class="mx-auto -mt-[8px] rounded-full border-8 border-border"
+		src="cld-sample-5"
+		height={300}
+		width={300}
+		alt="test"
+	/>
+	<div class="px-0 py-10 md:px-10">
+		<div class="-mt-16 bg-background-secondary py-10">{m.about_page_description_one()}</div>
+	</div>
+	<div class="overflow-hidden bg-background-secondary">
+		<div
+			class="mx-auto -mb-[15%] -mt-[15%] flex aspect-square w-fit min-w-[90%] items-center justify-center rounded-full bg-foreground text-background"
+		>
+			<div class="flex aspect-square h-[70.7%] w-[70.7%] flex-col justify-around">
+				<h2 class="text-center text-4xl md:text-5xl">{m.about_page_our_work_heading()}</h2>
+				<div class="">
+					{m.about_page_our_work_description()}
+				</div>
+				<div class="flex items-center justify-center gap-5">
+					<div class="basis-1/4">
+						<CldImage class="" src="cld-sample-5" height={300} width={200} alt="test" />
+					</div>
+					<div class="basis-1/2">
+						<CldImage class="" src="cld-sample-5" height={400} width={400} alt="test" />
+					</div>
+					<div class="basis-1/4">
+						<CldImage class="" src="cld-sample-5" height={300} width={200} alt="test" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-col items-center justify-center gap-10 border-y-4 p-10">
+		<h3 class="text-2xl text-background md:text-4xl">{m.about_page_project_in_mind()}</h3>
+		<div class="h-1 border-t-4 border-white"></div>
+		<Button>{m.get_free_estimate()}</Button>
+	</div>
+	<div class="pt-5">
+		<h2 class="bg-background-secondary py-20 text-center text-4xl md:text-5xl">
+			{m.about_page_our_process_title()}
+		</h2>
+		<div class="container flex min-h-[500px] w-full flex-col py-10 md:flex-row">
+			<div class="flex basis-1/2 items-center justify-center">
+				<CldImage src="cld-sample-5" height={300} width={300} alt="test" />
+			</div>
+			<p class="basis-1/2 text-background">{m.about_page_our_process_description()}</p>
+		</div>
+	</div>
+	<h2 class="bg-background-secondary py-20 text-center text-4xl md:text-5xl">
+		{m.about_page_fireproof_testing_heading()}
+	</h2>
+	<h3 class="py-10 text-center text-2xl text-background md:text-4xl">
+		{m.about_page_fireproof_testing_subheading()}
+	</h3>
+	<div class="mx-auto w-fit max-w-[500px] border-8 p-10">
+		<p class="py-10 text-background">{m.about_page_fireproof_testing_description()}</p>
+	</div>
+	<div class="mx-auto w-4/6 py-5">
+		<PlainCarousel />
+	</div>
+	<div class="overflow-hidden bg-background-secondary px-10 py-10">
+		<h2 class=" py-10 text-4xl md:text-5xl">{m.about_page_variations_of_resistance_heading()}</h2>
+		<div class="flex flex-col items-center justify-center gap-5 break-all md:flex-row">
+			<div
+				class="flex w-full flex-col items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
+			>
+				<CldImage class="rounded-full" src="cld-sample-5" height={200} width={200} alt="test" />
+				<h3 class="">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
+				<p class="">{m.about_page_variations_of_resistance_card_one_description()}</p>
+			</div>
+		</div>
+	</div>
+</div>

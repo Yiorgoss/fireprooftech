@@ -4,9 +4,8 @@ import { isRTL } from "$lib/i18n-routing"
 
 export const handle: Handle = async ({ event, resolve }) => {
   const lang = event.params.lang ?? sourceLanguageTag
-  const dir = isRTL ? 'rtl' : 'ltr'
+  const dir = isRTL(lang) ? 'rtl' : 'ltr'
 
-  console.log("arstar", dir)
   return await resolve(event, {
     transformPageChunk({ done, html }) {
       //Only do it at the very end of the rendering process
