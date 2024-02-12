@@ -9,7 +9,7 @@
 
 <Form.Root method="POST" class="w-full" {form} schema={contactSchema} let:config>
 	<div class={`flex flex-col`}>
-		<Form.Field {config} name="username">
+		<Form.Field {config} name="name">
 			<div class="flex flex-col h-full w-full gap-5">
 					<Form.Item class="">
 						<Form.Label class="">{m.name()}</Form.Label>
