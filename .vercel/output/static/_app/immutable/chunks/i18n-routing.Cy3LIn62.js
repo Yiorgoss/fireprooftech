@@ -1,1 +1,0 @@
-import{a as s,s as t}from"./runtime.R1NIIIua.js";function o(r,n){return r=u(r),n===t?r:`/${n}${r}`}function u(r){const[n,e,...a]=r.split("/");return s.includes(e)?`/${a.join("/")}`:r}const g=r=>new Set(["il"]).has(r);export{g as i,o as r,u as w};
