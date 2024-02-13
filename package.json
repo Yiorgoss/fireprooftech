@@ -52,7 +52,7 @@
 		"lucide-svelte": "^0.330.0",
 		"pg": "^8.11.3",
 		"svelte-cloudinary": "^1.2.1",
-		"sveltekit-superforms": "^2.0.0",
+		"sveltekit-superforms": "1",
 		"tailwind-merge": "^2.2.1",
 		"tailwind-variants": "^0.2.0",
 		"ts-node": "^10.9.2",

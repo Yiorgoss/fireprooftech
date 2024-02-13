@@ -28,7 +28,7 @@ dependencies:
     version: 7.1.0
   formsnap:
     specifier: ^0.4.3
-    version: 0.4.3(svelte@4.2.10)(sveltekit-superforms@2.0.0)(zod@3.22.4)
+    version: 0.4.3(svelte@4.2.10)(sveltekit-superforms@1.13.4)(zod@3.22.4)
   lucide-svelte:
     specifier: ^0.330.0
     version: 0.330.0(svelte@4.2.10)
@@ -39,8 +39,13 @@ dependencies:
     specifier: ^1.2.1
     version: 1.2.1(svelte@4.2.10)
   sveltekit-superforms:
+<<<<<<< HEAD
     specifier: ^2.0.0
     version: 2.0.0(@sveltejs/kit@2.5.0)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(svelte@4.2.10)
+=======
+    specifier: '1'
+    version: 1.13.4(@sveltejs/kit@2.5.0)(svelte@4.2.10)(zod@3.22.4)
+>>>>>>> 5acb5f1 (contact form fix)
   tailwind-merge:
     specifier: ^2.2.1
     version: 2.2.1
@@ -191,6 +196,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/aix-ppc64@0.20.0:
     resolution: {integrity: sha512-fGFDEctNh0CcSwsiRPxiaqX0P5rq+AqE0SRhYGZ4PX46Lg1FNR6oCxJghf8YgY0WQEgQuh3lErUFE4KxLeRmmw==}
     engines: {node: '>=12'}
@@ -200,6 +206,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/android-arm64@0.19.12:
     resolution: {integrity: sha512-P0UVNGIienjZv3f5zq0DP3Nt2IE/3plFzuaS96vihvD0Hd6H/q4WXUGpCxD/E8YrSXfNyRPbpTq+T8ZQioSuPA==}
     engines: {node: '>=12'}
@@ -208,6 +216,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/android-arm64@0.20.0:
     resolution: {integrity: sha512-aVpnM4lURNkp0D3qPoAzSG92VXStYmoVPOgXveAUoQBWRSuQzt51yvSju29J6AHPmwY1BjH49uR29oyfH1ra8Q==}
     engines: {node: '>=12'}
@@ -217,6 +226,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/android-arm@0.19.12:
     resolution: {integrity: sha512-qg/Lj1mu3CdQlDEEiWrlC4eaPZ1KztwGJ9B6J+/6G+/4ewxJg7gqj8eVYWvao1bXrqGiW2rsBZFSX3q2lcW05w==}
     engines: {node: '>=12'}
@@ -225,6 +236,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/android-arm@0.20.0:
     resolution: {integrity: sha512-3bMAfInvByLHfJwYPJRlpTeaQA75n8C/QKpEaiS4HrFWFiJlNI0vzq/zCjBrhAYcPyVPG7Eo9dMrcQXuqmNk5g==}
     engines: {node: '>=12'}
@@ -234,6 +246,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/android-x64@0.19.12:
     resolution: {integrity: sha512-3k7ZoUW6Q6YqhdhIaq/WZ7HwBpnFBlW905Fa4s4qWJyiNOgT1dOqDiVAQFwBH7gBRZr17gLrlFCRzF6jFh7Kew==}
     engines: {node: '>=12'}
@@ -242,6 +256,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/android-x64@0.20.0:
     resolution: {integrity: sha512-uK7wAnlRvjkCPzh8jJ+QejFyrP8ObKuR5cBIsQZ+qbMunwR8sbd8krmMbxTLSrDhiPZaJYKQAU5Y3iMDcZPhyQ==}
     engines: {node: '>=12'}
@@ -251,6 +266,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/darwin-arm64@0.19.12:
     resolution: {integrity: sha512-B6IeSgZgtEzGC42jsI+YYu9Z3HKRxp8ZT3cqhvliEHovq8HSX2YX8lNocDn79gCKJXOSaEot9MVYky7AKjCs8g==}
     engines: {node: '>=12'}
@@ -259,6 +276,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/darwin-arm64@0.20.0:
     resolution: {integrity: sha512-AjEcivGAlPs3UAcJedMa9qYg9eSfU6FnGHJjT8s346HSKkrcWlYezGE8VaO2xKfvvlZkgAhyvl06OJOxiMgOYQ==}
     engines: {node: '>=12'}
@@ -268,6 +286,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/darwin-x64@0.19.12:
     resolution: {integrity: sha512-hKoVkKzFiToTgn+41qGhsUJXFlIjxI/jSYeZf3ugemDYZldIXIxhvwN6erJGlX4t5h417iFuheZ7l+YVn05N3A==}
     engines: {node: '>=12'}
@@ -276,6 +296,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/darwin-x64@0.20.0:
     resolution: {integrity: sha512-bsgTPoyYDnPv8ER0HqnJggXK6RyFy4PH4rtsId0V7Efa90u2+EifxytE9pZnsDgExgkARy24WUQGv9irVbTvIw==}
     engines: {node: '>=12'}
@@ -285,6 +306,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/freebsd-arm64@0.19.12:
     resolution: {integrity: sha512-4aRvFIXmwAcDBw9AueDQ2YnGmz5L6obe5kmPT8Vd+/+x/JMVKCgdcRwH6APrbpNXsPz+K653Qg8HB/oXvXVukA==}
     engines: {node: '>=12'}
@@ -293,6 +316,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/freebsd-arm64@0.20.0:
     resolution: {integrity: sha512-kQ7jYdlKS335mpGbMW5tEe3IrQFIok9r84EM3PXB8qBFJPSc6dpWfrtsC/y1pyrz82xfUIn5ZrnSHQQsd6jebQ==}
     engines: {node: '>=12'}
@@ -302,6 +326,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/freebsd-x64@0.19.12:
     resolution: {integrity: sha512-EYoXZ4d8xtBoVN7CEwWY2IN4ho76xjYXqSXMNccFSx2lgqOG/1TBPW0yPx1bJZk94qu3tX0fycJeeQsKovA8gg==}
     engines: {node: '>=12'}
@@ -310,6 +336,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/freebsd-x64@0.20.0:
     resolution: {integrity: sha512-uG8B0WSepMRsBNVXAQcHf9+Ko/Tr+XqmK7Ptel9HVmnykupXdS4J7ovSQUIi0tQGIndhbqWLaIL/qO/cWhXKyQ==}
     engines: {node: '>=12'}
@@ -319,6 +346,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-arm64@0.19.12:
     resolution: {integrity: sha512-EoTjyYyLuVPfdPLsGVVVC8a0p1BFFvtpQDB/YLEhaXyf/5bczaGeN15QkR+O4S5LeJ92Tqotve7i1jn35qwvdA==}
     engines: {node: '>=12'}
@@ -327,6 +356,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-arm64@0.20.0:
     resolution: {integrity: sha512-uTtyYAP5veqi2z9b6Gr0NUoNv9F/rOzI8tOD5jKcCvRUn7T60Bb+42NDBCWNhMjkQzI0qqwXkQGo1SY41G52nw==}
     engines: {node: '>=12'}
@@ -336,6 +366,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-arm@0.19.12:
     resolution: {integrity: sha512-J5jPms//KhSNv+LO1S1TX1UWp1ucM6N6XuL6ITdKWElCu8wXP72l9MM0zDTzzeikVyqFE6U8YAV9/tFyj0ti+w==}
     engines: {node: '>=12'}
@@ -344,6 +376,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-arm@0.20.0:
     resolution: {integrity: sha512-2ezuhdiZw8vuHf1HKSf4TIk80naTbP9At7sOqZmdVwvvMyuoDiZB49YZKLsLOfKIr77+I40dWpHVeY5JHpIEIg==}
     engines: {node: '>=12'}
@@ -353,6 +386,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-ia32@0.19.12:
     resolution: {integrity: sha512-Thsa42rrP1+UIGaWz47uydHSBOgTUnwBwNq59khgIwktK6x60Hivfbux9iNR0eHCHzOLjLMLfUMLCypBkZXMHA==}
     engines: {node: '>=12'}
@@ -361,6 +396,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-ia32@0.20.0:
     resolution: {integrity: sha512-c88wwtfs8tTffPaoJ+SQn3y+lKtgTzyjkD8NgsyCtCmtoIC8RDL7PrJU05an/e9VuAke6eJqGkoMhJK1RY6z4w==}
     engines: {node: '>=12'}
@@ -370,6 +406,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-loong64@0.19.12:
     resolution: {integrity: sha512-LiXdXA0s3IqRRjm6rV6XaWATScKAXjI4R4LoDlvO7+yQqFdlr1Bax62sRwkVvRIrwXxvtYEHHI4dm50jAXkuAA==}
     engines: {node: '>=12'}
@@ -378,6 +416,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-loong64@0.20.0:
     resolution: {integrity: sha512-lR2rr/128/6svngnVta6JN4gxSXle/yZEZL3o4XZ6esOqhyR4wsKyfu6qXAL04S4S5CgGfG+GYZnjFd4YiG3Aw==}
     engines: {node: '>=12'}
@@ -387,6 +426,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-mips64el@0.19.12:
     resolution: {integrity: sha512-fEnAuj5VGTanfJ07ff0gOA6IPsvrVHLVb6Lyd1g2/ed67oU1eFzL0r9WL7ZzscD+/N6i3dWumGE1Un4f7Amf+w==}
     engines: {node: '>=12'}
@@ -395,6 +436,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-mips64el@0.20.0:
     resolution: {integrity: sha512-9Sycc+1uUsDnJCelDf6ZNqgZQoK1mJvFtqf2MUz4ujTxGhvCWw+4chYfDLPepMEvVL9PDwn6HrXad5yOrNzIsQ==}
     engines: {node: '>=12'}
@@ -404,6 +446,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-ppc64@0.19.12:
     resolution: {integrity: sha512-nYJA2/QPimDQOh1rKWedNOe3Gfc8PabU7HT3iXWtNUbRzXS9+vgB0Fjaqr//XNbd82mCxHzik2qotuI89cfixg==}
     engines: {node: '>=12'}
@@ -412,6 +456,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-ppc64@0.20.0:
     resolution: {integrity: sha512-CoWSaaAXOZd+CjbUTdXIJE/t7Oz+4g90A3VBCHLbfuc5yUQU/nFDLOzQsN0cdxgXd97lYW/psIIBdjzQIwTBGw==}
     engines: {node: '>=12'}
@@ -421,6 +466,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-riscv64@0.19.12:
     resolution: {integrity: sha512-2MueBrlPQCw5dVJJpQdUYgeqIzDQgw3QtiAHUC4RBz9FXPrskyyU3VI1hw7C0BSKB9OduwSJ79FTCqtGMWqJHg==}
     engines: {node: '>=12'}
@@ -429,6 +476,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-riscv64@0.20.0:
     resolution: {integrity: sha512-mlb1hg/eYRJUpv8h/x+4ShgoNLL8wgZ64SUr26KwglTYnwAWjkhR2GpoKftDbPOCnodA9t4Y/b68H4J9XmmPzA==}
     engines: {node: '>=12'}
@@ -438,6 +486,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-s390x@0.19.12:
     resolution: {integrity: sha512-+Pil1Nv3Umes4m3AZKqA2anfhJiVmNCYkPchwFJNEJN5QxmTs1uzyy4TvmDrCRNT2ApwSari7ZIgrPeUx4UZDg==}
     engines: {node: '>=12'}
@@ -446,6 +496,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-s390x@0.20.0:
     resolution: {integrity: sha512-fgf9ubb53xSnOBqyvWEY6ukBNRl1mVX1srPNu06B6mNsNK20JfH6xV6jECzrQ69/VMiTLvHMicQR/PgTOgqJUQ==}
     engines: {node: '>=12'}
@@ -455,6 +506,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/linux-x64@0.19.12:
     resolution: {integrity: sha512-B71g1QpxfwBvNrfyJdVDexenDIt1CiDN1TIXLbhOw0KhJzE78KIFGX6OJ9MrtC0oOqMWf+0xop4qEU8JrJTwCg==}
     engines: {node: '>=12'}
@@ -463,6 +516,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/linux-x64@0.20.0:
     resolution: {integrity: sha512-H9Eu6MGse++204XZcYsse1yFHmRXEWgadk2N58O/xd50P9EvFMLJTQLg+lB4E1cF2xhLZU5luSWtGTb0l9UeSg==}
     engines: {node: '>=12'}
@@ -472,6 +526,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/netbsd-x64@0.19.12:
     resolution: {integrity: sha512-3ltjQ7n1owJgFbuC61Oj++XhtzmymoCihNFgT84UAmJnxJfm4sYCiSLTXZtE00VWYpPMYc+ZQmB6xbSdVh0JWA==}
     engines: {node: '>=12'}
@@ -480,6 +536,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/netbsd-x64@0.20.0:
     resolution: {integrity: sha512-lCT675rTN1v8Fo+RGrE5KjSnfY0x9Og4RN7t7lVrN3vMSjy34/+3na0q7RIfWDAj0e0rCh0OL+P88lu3Rt21MQ==}
     engines: {node: '>=12'}
@@ -489,6 +546,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/openbsd-x64@0.19.12:
     resolution: {integrity: sha512-RbrfTB9SWsr0kWmb9srfF+L933uMDdu9BIzdA7os2t0TXhCRjrQyCeOt6wVxr79CKD4c+p+YhCj31HBkYcXebw==}
     engines: {node: '>=12'}
@@ -497,6 +556,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/openbsd-x64@0.20.0:
     resolution: {integrity: sha512-HKoUGXz/TOVXKQ+67NhxyHv+aDSZf44QpWLa3I1lLvAwGq8x1k0T+e2HHSRvxWhfJrFxaaqre1+YyzQ99KixoA==}
     engines: {node: '>=12'}
@@ -506,6 +566,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/sunos-x64@0.19.12:
     resolution: {integrity: sha512-HKjJwRrW8uWtCQnQOz9qcU3mUZhTUQvi56Q8DPTLLB+DawoiQdjsYq+j+D3s9I8VFtDr+F9CjgXKKC4ss89IeA==}
     engines: {node: '>=12'}
@@ -514,6 +576,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/sunos-x64@0.20.0:
     resolution: {integrity: sha512-GDwAqgHQm1mVoPppGsoq4WJwT3vhnz/2N62CzhvApFD1eJyTroob30FPpOZabN+FgCjhG+AgcZyOPIkR8dfD7g==}
     engines: {node: '>=12'}
@@ -523,6 +586,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/win32-arm64@0.19.12:
     resolution: {integrity: sha512-URgtR1dJnmGvX864pn1B2YUYNzjmXkuJOIqG2HdU62MVS4EHpU2946OZoTMnRUHklGtJdJZ33QfzdjGACXhn1A==}
     engines: {node: '>=12'}
@@ -531,6 +596,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/win32-arm64@0.20.0:
     resolution: {integrity: sha512-0vYsP8aC4TvMlOQYozoksiaxjlvUcQrac+muDqj1Fxy6jh9l9CZJzj7zmh8JGfiV49cYLTorFLxg7593pGldwQ==}
     engines: {node: '>=12'}
@@ -540,6 +606,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/win32-ia32@0.19.12:
     resolution: {integrity: sha512-+ZOE6pUkMOJfmxmBZElNOx72NKpIa/HFOMGzu8fqzQJ5kgf6aTGrcJaFsNiVMH4JKpMipyK+7k0n2UXN7a8YKQ==}
     engines: {node: '>=12'}
@@ -548,6 +616,7 @@ packages:
     requiresBuild: true
     optional: true
 
+<<<<<<< HEAD
   /@esbuild/win32-ia32@0.20.0:
     resolution: {integrity: sha512-p98u4rIgfh4gdpV00IqknBD5pC84LCub+4a3MO+zjqvU5MVXOc3hqR2UgT2jI2nh3h8s9EQxmOsVI3tyzv1iFg==}
     engines: {node: '>=12'}
@@ -557,6 +626,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@esbuild/win32-x64@0.19.12:
     resolution: {integrity: sha512-T1QyPSDCyMXaO3pzBkF96E8xMkiRYbUEZADd29SyPGabqxMViNoii+NcK7eWJAEoU6RZyEm5lVSIjTmcdoB9HA==}
     engines: {node: '>=12'}
@@ -1315,6 +1386,7 @@ packages:
     resolution: {integrity: sha512-/s55Jujywdw/Jpan+vsy6JZs1z2ZTGxTmbZTPiuSL2wz9mfzA2gN1zzaqmvfi4pq+uOt7Du85fkiwv5ymW84aQ==}
     dev: true
 
+<<<<<<< HEAD
   /@sinclair/typebox@0.32.14:
     resolution: {integrity: sha512-EC77Mw8huT2z9YlYbWfpIQgN6shZE1tH4NP4/Trig8UBel9FZNMZRJ42ubJI8PLor2uIU+waLml1dce5ReCOPg==}
     requiresBuild: true
@@ -1327,6 +1399,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /@sveltejs/adapter-auto@3.1.1(@sveltejs/kit@2.5.0):
     resolution: {integrity: sha512-6LeZft2Fo/4HfmLBi5CucMYmgRxgcETweQl/yQoZo/895K3S9YWYN4Sfm/IhwlIpbJp3QNvhKmwCHbsqQNYQpw==}
     peerDependencies:
@@ -2196,6 +2270,7 @@ packages:
     resolution: {integrity: sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg==}
     dev: true
 
+<<<<<<< HEAD
   /esbuild-runner@2.2.2(esbuild@0.20.0):
     resolution: {integrity: sha512-fRFVXcmYVmSmtYm2mL8RlUASt2TDkGh3uRcvHFOKNr/T58VrfVeKD9uT9nlgxk96u0LS0ehS/GY7Da/bXWKkhw==}
     hasBin: true
@@ -2208,6 +2283,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /esbuild@0.19.12:
     resolution: {integrity: sha512-aARqgq8roFBj054KvQr5f1sFu0D65G+miZRCuJyJ0G13Zwx7vRar5Zhn2tkQNzIXcBrNVsv/8stehpj+GAjgbg==}
     engines: {node: '>=12'}
@@ -2238,6 +2315,7 @@ packages:
       '@esbuild/win32-ia32': 0.19.12
       '@esbuild/win32-x64': 0.19.12
 
+<<<<<<< HEAD
   /esbuild@0.20.0:
     resolution: {integrity: sha512-6iwE3Y2RVYCME1jLpBqq7LQWK3MW6vjV2bZy6gt/WrqkY+WE74Spyc0ThAOYpMtITvnjX09CrC6ym7A/m9mebA==}
     engines: {node: '>=12'}
@@ -2270,6 +2348,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /escalade@3.1.2:
     resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}
     engines: {node: '>=6'}
@@ -2533,7 +2613,11 @@ packages:
       mime-types: 2.1.35
     dev: true
 
+<<<<<<< HEAD
   /formsnap@0.4.3(svelte@4.2.10)(sveltekit-superforms@2.0.0)(zod@3.22.4):
+=======
+  /formsnap@0.4.3(svelte@4.2.10)(sveltekit-superforms@1.13.4)(zod@3.22.4):
+>>>>>>> 5acb5f1 (contact form fix)
     resolution: {integrity: sha512-PWVq78XVUHhAU1tcVGKeGamk6B4Opkk1uVNRW2YofiQpnA5Bry1c3TQjB9cVDw5u4oAwmDvIoAzVHlrAIgc+tw==}
     peerDependencies:
       svelte: ^4.0.0
@@ -2541,7 +2625,11 @@ packages:
       zod: ^3.22.2
     dependencies:
       svelte: 4.2.10
+<<<<<<< HEAD
       sveltekit-superforms: 2.0.0(@sveltejs/kit@2.5.0)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(svelte@4.2.10)
+=======
+      sveltekit-superforms: 1.13.4(@sveltejs/kit@2.5.0)(svelte@4.2.10)(zod@3.22.4)
+>>>>>>> 5acb5f1 (contact form fix)
       zod: 3.22.4
     dev: false
 
@@ -2786,6 +2874,7 @@ packages:
     resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
 
+<<<<<<< HEAD
   /joi@17.12.1:
     resolution: {integrity: sha512-vtxmq+Lsc5SlfqotnfVjlViWfOL9nt/avKNbKYizwf6gsCfq9NYY/ceYRMFD8XDdrjJ9abJyScWmhmIiy+XRtQ==}
     requiresBuild: true
@@ -2798,6 +2887,8 @@ packages:
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
@@ -4029,9 +4120,14 @@ packages:
       magic-string: 0.30.7
       periscopic: 3.1.0
 
+<<<<<<< HEAD
   /sveltekit-superforms@2.0.0(@sveltejs/kit@2.5.0)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.0)(svelte@4.2.10):
     resolution: {integrity: sha512-xCFTpvDl8rBSlD3OtMJU3aFy8aKIoRZyxDyaYyuTIE7w97X+gUM89ACcUOd8MOd0ZYxSchZxOLb9zk/l9MruAA==}
     requiresBuild: true
+=======
+  /sveltekit-superforms@1.13.4(@sveltejs/kit@2.5.0)(svelte@4.2.10)(zod@3.22.4):
+    resolution: {integrity: sha512-rM2+Ictaw7OAIorCLmvg82orci/mtO9ZouI4emtx8SyYngx9aED+eNZlHPLufgB6D7geL2a+hMSFtM3zmMQixQ==}
+>>>>>>> 5acb5f1 (contact form fix)
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
       svelte: 3.x || 4.x || >=5.0.0-next.51
@@ -4053,6 +4149,7 @@ packages:
     dependencies:
       '@sveltejs/kit': 2.5.0(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.10)(vite@5.1.1)
       devalue: 4.3.2
+<<<<<<< HEAD
       just-clone: 6.2.0
       memoize-weak: 1.0.2
       svelte: 4.2.10
@@ -4066,6 +4163,10 @@ packages:
       superstruct: 1.0.3
       valibot: 0.28.1
       yup: 1.3.3
+=======
+      klona: 2.0.6
+      svelte: 4.2.10
+>>>>>>> 5acb5f1 (contact form fix)
       zod: 3.22.4
       zod-to-json-schema: 3.22.4(zod@3.22.4)
     transitivePeerDependencies:
@@ -4317,12 +4418,15 @@ packages:
   /v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
+<<<<<<< HEAD
   /valibot@0.28.1:
     resolution: {integrity: sha512-zQnjwNJuXk6362Leu0+4eFa/SMwRom3/hEvH6s1EGf3oXIPbo2WFKDra9ymnbVh3clLRvd8hw4sKF5ruI2Lyvw==}
     requiresBuild: true
     dev: false
     optional: true
 
+=======
+>>>>>>> 5acb5f1 (contact form fix)
   /vite@5.1.1(@types/node@20.11.17):
     resolution: {integrity: sha512-wclpAgY3F1tR7t9LL5CcHC41YPkQIpKUGeIuT8MdNwNZr6OqOTLs7JX5vIHAtzqLWXts0T+GDrh9pN2arneKqg==}
     engines: {node: ^18.0.0 || >=20.0.0}
