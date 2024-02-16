@@ -5,7 +5,9 @@
 	import { page } from '$app/stores';
 	import { withoutLanguageTag } from '$lib/i18n-routing';
 
-	// export let form;
+	let isHome = true;
+
+  $:isHome = withoutLanguageTag($page.url.pathname) == '/';
 	export let pathColors: string;
 </script>
 
@@ -13,17 +15,13 @@
 	<div class="items-top flex flex-wrap items-center justify-around">
 		<div class="flex basis-full items-center justify-center md:basis-0">
 			<div class="h-[100px] w-[100px]">
-				{#if withoutLanguageTag($page.url.pathname) == '/'}
+				{#if isHome}
 					<img src="/logos/fpt_logo.svg" alt="logo" />
 				{:else}
 					<img src="/logos/fpt_logo_white.svg" alt="logo" />
 				{/if}
 			</div>
 		</div>
-		<!-- <div class=""> -->
-		<!-- 	<h4 class="text-4xl uppercase">{m.send_us_a_message()}</h4> -->
-		<!-- 	<ContactForm form={form}/> -->
-		<!-- </div> -->
 		<div class="">
 			<h4 class="py-5 text-xl text-center md:text-left">{m.find_us()}</h4>
 			<ul>

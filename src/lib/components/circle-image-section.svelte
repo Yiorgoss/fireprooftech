@@ -7,10 +7,10 @@
 	export let isInset = false;
 </script>
 
-<div class:md:ml-32={isInset} class="container">
-	<div class="flex flex-col md:flex-row items-center gap-6">
+<div class:md:ml-[300px]={isInset} class="container">
+	<div class="flex flex-col items-center gap-6 md:flex-row">
 		<CldImage
-			class="rounded-full border-8 border-border"
+			class="rounded-full w-[100px] border-8 border-border"
 			src={image}
 			height={200}
 			width={200}
@@ -20,14 +20,14 @@
 		<div class="relative h-10">
 			<!-- height must match -->
 			<div class="static md:absolute">
-				<h4 class="relative flex h-10 items-start md:items-center text-xl">
+				<h4 class="relative flex h-10 w-[500px] items-start justify-center text-xl md:items-center">
 					<!-- height must match -->
 					{title}
-					<div class="absolute -left-[150%] bottom-0 top-0 -z-10 w-[200vw] bg-blue-300">
+					<div class="absolute -left-[150%] bottom-0 top-0 -z-10 w-[300vw] bg-border">
 						<!-- could be worse   -->
 					</div>
 				</h4>
-				<p class="">{description}</p>
+				<p class="w-3/4 mx-auto pt-2">{description}</p>
 			</div>
 		</div>
 	</div>

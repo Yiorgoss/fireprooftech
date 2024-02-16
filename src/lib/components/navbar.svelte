@@ -4,6 +4,7 @@
 	import { PhoneCall, Menu } from 'lucide-svelte';
 	import { mainNav } from '$lib/siteConfig';
 	import * as m from '$pg/messages';
+  import {i18n} from "$lib/i18n"
 	import { page } from '$app/stores';
 	import { withoutLanguageTag } from '$lib/i18n-routing';
 
@@ -12,7 +13,9 @@
 	let openMenu = false;
 
 	let header: HTMLElement;
-	let isHome = withoutLanguageTag($page.url.pathname) == '/';
+	let isHome = true;
+
+  $: isHome = withoutLanguageTag($page.url.pathname) == '/';
 
 	const handleMobileIconClick = () => (openMenu = !openMenu);
 
@@ -45,16 +48,16 @@
 		>
 			<div class="py-[100px] md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
-					{#if isHome}
-						<img src="/logos/fpt_logo.svg" alt="logo" />
-					{:else}
-						<img src="/logos/fpt_logo_white.svg" alt="logo" />
-					{/if}
+						{#if isHome}
+							<img src="/logos/fpt_logo.svg" alt="logo" />
+						{:else}
+							<img src="/logos/fpt_logo_white.svg" alt="logo" />
+						{/if}
 				</div>
 			</div>
 			{#each mainNav as { slug, title }}
 				<li class="px-3 py-4 text-lg">
-					<a on:click={() => (openMenu = false)} href={slug}> {title}</a>
+					<a on:click={() => (openMenu = false)} href={i18n.route(slug)}> {title}</a>
 				</li>
 			{/each}
 			<li class="md:order-first">

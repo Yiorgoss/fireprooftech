@@ -17,7 +17,18 @@
 		alt="test"
 	/>
 	<div class="px-0 py-10 md:px-10">
-		<div class="-mt-16 bg-background-secondary py-10">{m.about_page_description_one()}</div>
+		<div class="-mt-16 bg-background-secondary py-10">
+			<div class="mx-auto w-full md:w-1/2">{m.about_page_description_one()}</div>
+		</div>
+	</div>
+	<div class="container flex justify-center items-center flex-col py-10 text-background">
+		<h2 class="py-10 text-6xl">{m.about_page_our_founder_heading()}</h2>
+		<div class="w-2/3 pb-10 leading-6 text-lg">
+			<p class="">{m.about_page_our_founder_description_paragraph_one()}</p>
+			<p class="pt-3">{m.about_page_our_founder_description_paragraph_two()}</p>
+			<p class="pt-3">{m.about_page_our_founder_description_paragraph_three()}</p>
+			<p class="pt-3">{m.about_page_our_founder_description_paragraph_four()}</p>
+		</div>
 	</div>
 	<div class="overflow-hidden bg-background-secondary">
 		<div

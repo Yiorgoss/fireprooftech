@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { availableLanguageTags, languageTag } from '$pg/runtime';
 	import { page } from '$app/stores';
-	import { route } from '$lib/i18n-routing';
+	import { i18n } from '$lib/i18n';
 
   import {ChevronDown} from "lucide-svelte"
   import {flags} from "$lib/assets/flags"
@@ -21,7 +21,7 @@
 		<DropdownMenu.Content class="w-fit min-w-0">
 			{#each availableLanguageTags as lang}
 				<DropdownMenu.Item class="w-fit px-5 py-3">
-					<a href={route($page.url.pathname, lang)} hreflang={lang}>
+					<a href={i18n.route($page.url.pathname)} hreflang={lang}>
             <img class="h-5 w-5" src={flags[lang]} alt={lang} />
 					</a>
 				</DropdownMenu.Item>

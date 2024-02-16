@@ -12,7 +12,7 @@
 </script>
 
 <Navbar {pathColors} />
-<main class="">
+<main class="font-gothic text-xl">
 	<slot />
 </main>
 <Footer {pathColors} />
