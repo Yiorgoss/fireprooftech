@@ -29,7 +29,7 @@
 <svelte:window on:click={handleOutsideClick} />
 <header
 	bind:this={header}
-	class={`${pathColors} relative z-30 flex h-[100px] w-full justify-between md:justify-around`}
+	class={`${pathColors} font-playfair tracking-wide  relative z-30 flex h-[100px] w-full justify-between md:justify-around`}
 >
 	<a href="/" class="h-[100px] w-[100px] p-5 md:p-2">
 		{#if isHome}
@@ -46,7 +46,7 @@
 		<ul
 			class="flex h-full flex-col items-start justify-start bg-blue-600/40 md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20"
 		>
-			<div class="py-[100px] md:hidden">
+			<div class=" md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
 						{#if isHome}
 							<img src="/logos/fpt_logo.svg" alt="logo" />
@@ -56,8 +56,8 @@
 				</div>
 			</div>
 			{#each mainNav as { slug, title }}
-				<li class="px-3 py-4 text-lg">
-					<a on:click={() => (openMenu = false)} href={i18n.route(slug)}> {title}</a>
+				<li class="px-4 py-4 text-lg">
+					<a on:click={() => (openMenu = false)} class=" text-xl" href={i18n.route(slug)}> {title}</a>
 				</li>
 			{/each}
 			<li class="md:order-first">

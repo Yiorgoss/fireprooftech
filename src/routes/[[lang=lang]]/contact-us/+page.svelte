@@ -14,7 +14,7 @@
 		{/each}
 	</div>
 	<div class="container z-20 py-10 ">
-		<h1 class="py-10 text-center text-6xl">{m.contact_page_heading()}</h1>
+		<h1 class="font-playfair py-10 text-center text-6xl">{m.contact_page_heading()}</h1>
 		<div class="flex flex-col-reverse md:flex-row w-full items-center justify-center">
 			<div class="basis-1/2">
 				<ContactForm form={data.form} />

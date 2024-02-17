@@ -23,7 +23,7 @@
 			</div>
 		</div>
 		<div class="">
-			<h4 class="py-5 text-xl text-center md:text-left">{m.find_us()}</h4>
+			<h4 class="font-playfair py-5 text-xl text-center md:text-left">{m.find_us()}</h4>
 			<ul>
 				{#each socials as { name, href }}
 					<li>
@@ -36,7 +36,7 @@
 			</ul>
 		</div>
 		<div class="">
-			<h4 class="text-center md:text-left py-5 text-xl">{m.contact_us()}</h4>
+			<h4 class="font-playfair text-center md:text-left py-5 text-xl">{m.contact_us()}</h4>
 			<ul>
 				{#each contactInfo as { info, icon, href }}
 					<li>

@@ -18,12 +18,12 @@
 	/>
 	<div class="px-0 py-10 md:px-10">
 		<div class="-mt-16 bg-background-secondary py-10">
-			<div class="mx-auto w-full md:w-1/2">{m.about_page_description_one()}</div>
+			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_one()}</div>
 		</div>
 	</div>
-	<div class="container flex justify-center items-center flex-col py-10 text-background">
-		<h2 class="py-10 text-6xl">{m.about_page_our_founder_heading()}</h2>
-		<div class="w-2/3 pb-10 leading-6 text-lg">
+	<div class="container flex flex-col items-center justify-center py-10 text-background">
+		<h2 class="font-playfair py-10 text-6xl">{m.about_page_our_founder_heading()}</h2>
+		<div class="w-full px-2 pb-10 text-lg leading-6 md:w-2/3">
 			<p class="">{m.about_page_our_founder_description_paragraph_one()}</p>
 			<p class="pt-3">{m.about_page_our_founder_description_paragraph_two()}</p>
 			<p class="pt-3">{m.about_page_our_founder_description_paragraph_three()}</p>
@@ -35,7 +35,7 @@
 			class="mx-auto -mb-[15%] -mt-[15%] flex aspect-square w-fit min-w-[90%] items-center justify-center rounded-full bg-foreground text-background"
 		>
 			<div class="flex aspect-square h-[70.7%] w-[70.7%] flex-col justify-around">
-				<h2 class="text-center text-4xl md:text-5xl">{m.about_page_our_work_heading()}</h2>
+				<h2 class="font-playfair text-center text-4xl md:text-5xl">{m.about_page_our_work_heading()}</h2>
 				<div class="">
 					{m.about_page_our_work_description()}
 				</div>
@@ -54,12 +54,12 @@
 		</div>
 	</div>
 	<div class="flex flex-col items-center justify-center gap-10 border-y-4 p-10">
-		<h3 class="text-2xl text-background md:text-4xl">{m.about_page_project_in_mind()}</h3>
+		<h3 class="font-playfair text-2xl text-background md:text-4xl">{m.about_page_project_in_mind()}</h3>
 		<div class="h-1 border-t-4 border-white"></div>
 		<Button>{m.get_free_estimate()}</Button>
 	</div>
 	<div class="pt-5">
-		<h2 class="bg-background-secondary py-20 text-center text-4xl md:text-5xl">
+		<h2 class="font-playfair bg-background-secondary py-20 text-center text-4xl md:text-5xl">
 			{m.about_page_our_process_title()}
 		</h2>
 		<div class="container flex min-h-[500px] w-full flex-col py-10 md:flex-row">
@@ -69,10 +69,10 @@
 			<p class="basis-1/2 text-background">{m.about_page_our_process_description()}</p>
 		</div>
 	</div>
-	<h2 class="bg-background-secondary py-20 text-center text-4xl md:text-5xl">
+	<h2 class="font-playfair bg-background-secondary py-20 text-center text-4xl md:text-5xl">
 		{m.about_page_fireproof_testing_heading()}
 	</h2>
-	<h3 class="py-10 text-center text-2xl text-background md:text-4xl">
+	<h3 class="font-playfair py-10 text-center text-2xl text-background md:text-4xl">
 		{m.about_page_fireproof_testing_subheading()}
 	</h3>
 	<div class="mx-auto w-fit max-w-[500px] border-8 p-10">
@@ -82,13 +82,13 @@
 		<PlainCarousel />
 	</div>
 	<div class="overflow-hidden bg-background-secondary px-10 py-10">
-		<h2 class=" py-10 text-4xl md:text-5xl">{m.about_page_variations_of_resistance_heading()}</h2>
+		<h2 class="font-playfair  py-10 text-4xl md:text-5xl">{m.about_page_variations_of_resistance_heading()}</h2>
 		<div class="flex flex-col items-center justify-center gap-5 break-all md:flex-row">
 			<div
 				class="flex w-full flex-col items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
 			>
 				<CldImage class="rounded-full" src="cld-sample-5" height={200} width={200} alt="test" />
-				<h3 class="">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
+				<h3 class="font-playfair ">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
 				<p class="">{m.about_page_variations_of_resistance_card_one_description()}</p>
 			</div>
 		</div>

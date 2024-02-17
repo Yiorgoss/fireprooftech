@@ -41,7 +41,7 @@
 			<Carousel.Item  class="flex justify-center items-center  md:flex-row flex-col">
 				<img class="w-1/3" {src} alt="why pick us" />
 				<div class="flex w-2/3 text-center flex-col items-center justify-center p-1">
-					<h4 class="text-2xl">{title}</h4>
+					<h4 class="font-playfair text-2xl">{title}</h4>
 					<p class="text-lg">{description}</p>
 				</div>
 			</Carousel.Item>
