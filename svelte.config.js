@@ -1,6 +1,7 @@
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { importAssets } from 'svelte-preprocess-import-assets';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,7 +16,7 @@ const config = {
     adapter: adapter(),
 
     alias: {
-      $pg: "./src/paraglide",
+      $pg: './src/paraglide',
     }
   }
 };

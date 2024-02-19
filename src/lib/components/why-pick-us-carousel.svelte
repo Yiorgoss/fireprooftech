@@ -2,6 +2,10 @@
 	import * as Carousel from '$lib/components/ui/carousel';
 	import type { CarouselAPI } from '$lib/components/ui/carousel/context.js';
 	import * as m from '$pg/messages';
+  import clock from '$lib/assets/icons/clock.svg'
+  import checkmark from '$lib/assets/icons/checkmark.svg'
+  import leaves from '$lib/assets/icons/leaves.svg'
+
 
 	let api: CarouselAPI;
 	let current = 0;
@@ -18,17 +22,17 @@
 
 	const reasons = [
 		{
-			src: 'icons/clock.svg',
+			src: clock,
 			title: m.home_page_why_pick_us_one_subheading(),
 			description: m.home_page_why_pick_us_one_description()
 		},
 		{
-			src: 'icons/checkmark.svg',
+			src: checkmark,
 			title: m.home_page_why_pick_us_two_subheading(),
 			description: m.home_page_why_pick_us_two_description()
 		},
 		{
-			src: 'icons/leaves.svg',
+			src: leaves,
 			title: m.home_page_why_pick_us_three_subheading(),
 			description: m.home_page_why_pick_us_three_description()
 		}

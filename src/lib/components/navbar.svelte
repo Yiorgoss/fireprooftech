@@ -7,6 +7,8 @@
   import {i18n} from "$lib/i18n"
 	import { page } from '$app/stores';
 	import { withoutLanguageTag } from '$lib/i18n-routing';
+  import logo_black from '$lib/assets/logos/fpt_logo.svg'
+  import logo_white from '$lib/assets/logos/fpt_logo_white.svg'
 
 	export let pathColors: string;
 
@@ -33,9 +35,9 @@
 >
 	<a href="/" class="h-[100px] w-[100px] p-5 md:p-2">
 		{#if isHome}
-			<img src="/logos/fpt_logo.svg" alt="logo" />
+			<img src={logo_black} alt="logo" />
 		{:else}
-			<img src="/logos/fpt_logo_white.svg" alt="logo" />
+			<img src={logo_white} alt="logo" />
 		{/if}
 	</a>
 	<nav
@@ -49,9 +51,9 @@
 			<div class=" md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
 						{#if isHome}
-							<img src="/logos/fpt_logo.svg" alt="logo" />
+							<img src={logo_black} alt="logo" />
 						{:else}
-							<img src="/logos/fpt_logo_white.svg" alt="logo" />
+							<img src={logo_white} alt="logo" />
 						{/if}
 				</div>
 			</div>

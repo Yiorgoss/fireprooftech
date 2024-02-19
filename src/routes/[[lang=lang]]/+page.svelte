@@ -5,22 +5,20 @@
 	import CircleImageSection from '$lib/components/circle-image-section.svelte';
 	import WhyPickUsCarousel from '$lib/components/why-pick-us-carousel.svelte';
 	import { Button } from '$lib/components/ui/button';
+	import ImageWrapper from '$lib/components/image-wrapper.svelte';
+  import landing from "$lib/assets/images/landing.jpg?w=500;1000;1500;2000;2500;3000&format=avif;webp;jpg&as=picture";
+
 	// export let data;
 
-	const images = ['cld-sample-5', 'cld-sample-5', 'cld-sample-5', 'cld-sample-5'];
+	// const images = ['carousel-1', 'carousel-2', 'carousel-3', 'carousel-4'];
+	const images = ['cld-sample-5'];
 </script>
 
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
-	<div class="relative h-dvh">
-		<CldImage
-			class="mx-auto h-full w-full bg-blue-300 object-cover"
-			src="cld-sample-5"
-			alt="test"
-      width="auto"
-      height="auto"
-			sizes="100vw"
-		/>
+	<div class="relative h-dvh overflow-hidden">
+		<!-- <ImageWrapper class="" src="$assets/images/landing.jpeg" alt="test" /> -->
+		<ImageWrapper meta={landing} alt="landing hero image" />
 
 		<div
 			class="container absolute inset-0 flex w-full flex-wrap items-center px-2 py-20 md:items-end md:px-20"

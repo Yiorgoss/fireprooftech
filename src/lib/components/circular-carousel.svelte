@@ -17,18 +17,19 @@
 	}
 
 	export let images: string[] = [];
+  console.log(images[current])
 </script>
 
-<div class="">
+<div class="min-h-[500px]">
 	<Carousel.Root bind:api orientation="vertical" class="flex min-h-[300px] w-full min-w-[300px] ">
 		<Carousel.Content class="mt-0 basis-1/6 gap-5 md:gap-5">
 			{#each images as image, i}
 				<Carousel.Item
-					class="px-3 grayscale transition-transform duration-200 hover:scale-125 hover:grayscale-0 "
+					class={`${current == i ? 'scale-125 grayscale-0' : 'grayscale'} px-3 transition-transform duration-200 hover:scale-125 hover:grayscale-0`}
 				>
 					<button
 						class:text-foreground-muted={current != i}
-						class="flex aspect-square items-center justify-center "
+						class="flex aspect-square items-center justify-center"
 						on:click={() => (current = i)}
 					>
 						<span class="overflow-hidden rounded-full text-4xl font-semibold">
@@ -44,10 +45,13 @@
 		<!-- </div> -->
 		<div class="flex w-full items-center justify-center">
 			<CldImage
-				class="rounded-full object-cover border-8 border-foreground-blue"
+				class="border-foreground-blue rounded-full border-8 object-cover"
 				src={images[current]}
 				height={400}
 				width={400}
+				sizes="(max-width: 768px) 80vw,
+          (max-width: 1200px) 40vw,
+          20vw"
 				alt="test"
 			/>
 		</div>

@@ -4,6 +4,8 @@
 	import { icons } from '$lib/components/icons';
 	import { page } from '$app/stores';
 	import { withoutLanguageTag } from '$lib/i18n-routing';
+  import logo_black from "$lib/assets/logos/fpt_logo.svg"
+  import logo_white from "$lib/assets/logos/fpt_logo_white.svg"
 
 	let isHome = true;
 
@@ -16,9 +18,9 @@
 		<div class="flex basis-full items-center justify-center md:basis-0">
 			<div class="h-[100px] w-[100px]">
 				{#if isHome}
-					<img src="/logos/fpt_logo.svg" alt="logo" />
+					<img src={logo_black} alt="logo" />
 				{:else}
-					<img src="/logos/fpt_logo_white.svg" alt="logo" />
+					<img src={logo_white} alt="logo" />
 				{/if}
 			</div>
 		</div>
