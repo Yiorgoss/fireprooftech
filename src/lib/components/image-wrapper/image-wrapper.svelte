@@ -1,11 +1,6 @@
 <script lang="ts">
-	type imgMetaType = [
-		{
-			sources: { avif: string; jpeg: string; webp: string };
-			img: { src: string; w: number; h: number };
-		}
-	];
-	export let meta: imgMetaType;
+	import { type ImgMetaType } from '$lib/components/image-wrapper';
+	export let meta: ImgMetaType[] = [];
 	// if there is only one, vite-imagetools won't wrap the object in an array
 	if (!(meta instanceof Array)) meta = [meta];
 

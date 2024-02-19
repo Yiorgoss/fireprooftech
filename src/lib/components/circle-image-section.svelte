@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { CldImage } from 'svelte-cloudinary';
+	import { type ImgMetaType, ImageWrapper } from './image-wrapper';
 
-	export let image = '';
+	export let image:ImgMetaType;
+  export let alt ='';
 	export let title = '';
 	export let description = '';
 	export let isInset = false;
@@ -9,14 +11,8 @@
 
 <div class:md:ml-[35%]={isInset} class="py-10 container mx-auto flex justify-start">
 	<div class="flex flex-col items-start md:items-center gap-6 md:flex-row">
-		<div class=" min-h-[100px] md:h-[200px] md:w-[200px] min-w-[100px]">
-			<CldImage
-				class="rounded-full border-8 border-border"
-				src={image}
-				height={200}
-				width={200}
-				alt="test"
-			/>
+		<div class=" min-h-[100px] md:h-[200px] md:w-[200px] border-8 rounded-full aspect-square min-w-[100px]">
+      <ImageWrapper imageClass="rounded-full aspect-square" meta={[image]} {alt} />
 		</div>
 		<div class="hidden h-2 w-2 rounded-full bg-border md:static"></div>
 		<div class="relative h-10">

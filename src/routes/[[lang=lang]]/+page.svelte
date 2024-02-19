@@ -5,13 +5,25 @@
 	import CircleImageSection from '$lib/components/circle-image-section.svelte';
 	import WhyPickUsCarousel from '$lib/components/why-pick-us-carousel.svelte';
 	import { Button } from '$lib/components/ui/button';
-	import ImageWrapper from '$lib/components/image-wrapper.svelte';
-  import landing from "$lib/assets/images/landing.jpg?w=500;1000;1500;2000;2500;3000&format=avif;webp;jpg&as=picture";
+	import { ImageWrapper } from '$lib/components/image-wrapper/';
+	import landing from '$lib/assets/images/landing.jpg?w=500;1000;1500;2000;2500;3000&format=avif;webp;jpg&as=picture';
+
+	import carousel1 from '$lib/assets/images/carousel-1.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
+	import carousel2 from '$lib/assets/images/carousel-2.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
+	import carousel3 from '$lib/assets/images/carousel-3.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
+
+	import step1 from '$lib/assets/images/step-1.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
+	import step2 from '$lib/assets/images/step-2.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
+	import step3 from '$lib/assets/images/step-3.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
+	import step4 from '$lib/assets/images/step-4.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
+	import step5 from '$lib/assets/images/step-5.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
+
 
 	// export let data;
 
 	// const images = ['carousel-1', 'carousel-2', 'carousel-3', 'carousel-4'];
-	const images = ['cld-sample-5'];
+	// console.log(carousel3)
+	const images = [carousel1, carousel2, carousel3];
 </script>
 
 <div class="">
@@ -52,14 +64,14 @@
 		<div class="flex flex-col gap-10">
 			<div class="pt-10">
 				<CircleImageSection
-					image="cld-sample-5"
+					image={step1}
 					title={m.home_page_process_one_title()}
 					description={m.home_page_process_one_description()}
 				/>
 			</div>
 			<div class="pt-10">
 				<CircleImageSection
-					image="cld-sample-5"
+					image={step2}
 					title={m.home_page_process_two_title()}
 					description={m.home_page_process_two_description()}
 					isInset={true}
@@ -67,14 +79,14 @@
 			</div>
 			<div class="pt-10">
 				<CircleImageSection
-					image="cld-sample-5"
+					image={step3}
 					title={m.home_page_process_three_title()}
 					description={m.home_page_process_three_description()}
 				/>
 			</div>
 			<div class="pt-10">
 				<CircleImageSection
-					image="cld-sample-5"
+					image={step4}
 					title={m.home_page_process_four_title()}
 					description={m.home_page_process_four_description()}
 					isInset={true}
@@ -82,7 +94,7 @@
 			</div>
 			<div class="pt-10">
 				<CircleImageSection
-					image="cld-sample-5"
+					image={step5}
 					title={m.home_page_process_five_title()}
 					description={m.home_page_process_five_description()}
 				/>

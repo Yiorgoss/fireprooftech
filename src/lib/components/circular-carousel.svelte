@@ -1,40 +1,44 @@
 <script lang="ts">
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import type { CarouselAPI } from '$lib/components/ui/carousel/context.js';
-	import { CldImage } from 'svelte-cloudinary';
+	import { ImageWrapper, type ImgMetaType } from '$lib/components/image-wrapper';
 
 	let api: CarouselAPI;
 	let current = 0;
 	let count = 0;
+	$: console.log(current);
 
 	$: if (api) {
 		count = api.scrollSnapList().length;
 		current = api.selectedScrollSnap() + 1;
 		api.on('select', () => {
-			// console.log('current');
 			current = api.selectedScrollSnap() + 1;
 		});
 	}
 
-	export let images: string[] = [];
-  console.log(images[current])
+	export let images: ImgMetaType[] = [];
 </script>
 
 <div class="min-h-[500px]">
-	<Carousel.Root bind:api orientation="vertical" class="flex min-h-[300px] w-full min-w-[300px] ">
-		<Carousel.Content class="mt-0 basis-1/6 gap-5 md:gap-5">
+	<Carousel.Root bind:api orientation="vertical" class="flex  w-full min-w-[300px] ">
+		<Carousel.Content class="mt-0  gap-5 md:gap-5">
 			{#each images as image, i}
 				<Carousel.Item
-					class={`${current == i ? 'scale-125 grayscale-0' : 'grayscale'} px-3 transition-transform duration-200 hover:scale-125 hover:grayscale-0`}
+					class={`${current == i ? 'scale-110 grayscale-0' : 'grayscale'} px-5 transition-transform duration-200 hover:scale-125 hover:grayscale-0`}
 				>
 					<button
 						class:text-foreground-muted={current != i}
-						class="flex aspect-square items-center justify-center"
+						class="flex items-center justify-center"
 						on:click={() => (current = i)}
 					>
-						<span class="overflow-hidden rounded-full text-4xl font-semibold">
-							<CldImage class="" src={image} height={150} width={150} alt="test" />
-						</span>
+						<div class="aspect-square h-full p-5 text-4xl font-semibold">
+							<ImageWrapper
+								imageClass="rounded-full w-full h-full object-stretch aspect-square"
+								sizes="10vw"
+								meta={[image]}
+								alt="landing hero image"
+							/>
+						</div>
 					</button>
 				</Carousel.Item>
 			{/each}
@@ -43,17 +47,15 @@
 		<!-- 	<Carousel.Previous /> -->
 		<!-- 	<Carousel.Next /> -->
 		<!-- </div> -->
-		<div class="flex w-full items-center justify-center">
-			<CldImage
-				class="border-foreground-blue rounded-full border-8 object-cover"
-				src={images[current]}
-				height={400}
-				width={400}
-				sizes="(max-width: 768px) 80vw,
-          (max-width: 1200px) 40vw,
-          20vw"
-				alt="test"
-			/>
-		</div>
+		<Carousel.Content class="flex items-center justify-center">
+			<div class="aspect-square h-full w-full p-5">
+					<ImageWrapper
+						imageClass="rounded-full w-full h-full object-stretch aspect-square"
+						sizes="33vw"
+						meta={[images[current]]}
+						alt="landing hero image"
+					/>
+			</div>
+		</Carousel.Content>
 	</Carousel.Root>
 </div>
