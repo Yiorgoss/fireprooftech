@@ -5,14 +5,14 @@
 	import Footer from '$lib/components/footer.svelte';
 
 	// $: console.log(withoutLanguageTag($page.url.pathname));
-	$: pathColors =
+	$: textColor =
 		withoutLanguageTag($page.url.pathname) == '/'
-			? 'bg-background text-foreground'
-			: 'bg-foreground text-background';
+			? 'text-foreground'
+			: 'text-background';
 </script>
 
-<Navbar {pathColors} />
+<Navbar textColor={textColor} />
 <main class="font-gothic text-xl">
 	<slot />
 </main>
-<Footer {pathColors} />
+<Footer textColor={textColor} />

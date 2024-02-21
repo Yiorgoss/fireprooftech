@@ -12,12 +12,11 @@
 	import carousel2 from '$lib/assets/images/carousel-2.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
 	import carousel3 from '$lib/assets/images/carousel-3.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
 
-	import step1 from '$lib/assets/images/step-1.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
-	import step2 from '$lib/assets/images/step-2.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
-	import step3 from '$lib/assets/images/step-3.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
-	import step4 from '$lib/assets/images/step-4.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
-	import step5 from '$lib/assets/images/step-5.jpeg?w=300;500;800&format=avif;webp;jpg&as=picture';
-
+	import step1 from '$lib/assets/images/step-1.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
+	import step2 from '$lib/assets/images/step-2.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
+	import step3 from '$lib/assets/images/step-3.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
+	import step4 from '$lib/assets/images/step-4.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
+	import step5 from '$lib/assets/images/step-5.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
 
 	// export let data;
 
@@ -28,16 +27,17 @@
 
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
-	<div class="relative h-dvh overflow-hidden">
+	<div class="relative h-dvh top-[-100px] overflow-hidden">
 		<!-- <ImageWrapper class="" src="$assets/images/landing.jpeg" alt="test" /> -->
-		<ImageWrapper meta={landing} alt="landing hero image" />
+		<ImageWrapper imageClass="h-dvh w-full object-cover" meta={landing} alt="landing hero image" />
+		<div class="absolute inset-0 bg-[#9fb0b9] opacity-50"></div>
 
 		<div
 			class="container absolute inset-0 flex w-full flex-wrap items-center px-2 py-20 md:items-end md:px-20"
 		>
-			<div class="">
-				<h1 class="py-10 font-playfair text-6xl">{m.home_page_landing_heading()}</h1>
-				<p class="xl:w-1/2">{m.home_page_landing_subheading()}</p>
+			<div class="absolute bottom-20 rtl:right-20 rtl:left-1/2 right-1/2 left-20">
+				<h1 class="py-10 font-playfair text-4xl md:text-9xl">{m.home_page_landing_heading()}</h1>
+				<p class="text-lg md:text-2xl ">{m.home_page_landing_subheading()}</p>
 			</div>
 		</div>
 	</div>
@@ -56,7 +56,7 @@
 	</div>
 	<section class="overflow-hidden">
 		<div class="mx-auto w-1/2 py-20">
-			<h2 class="py-10 font-playfair text-2xl md:text-6xl">{m.home_page_process_heading()}</h2>
+			<h2 class="py-10 font-playfair text-4xl md:text-6xl">{m.home_page_process_heading()}</h2>
 			<h3 class="float-right py-5 text-2xl underline underline-offset-8">
 				{m.home_page_process_subheading()}
 			</h3>
@@ -101,7 +101,7 @@
 			</div>
 		</div>
 		<div class="flex items-center justify-center pb-10 pt-20">
-			<Button variant="destructive">{m.read_about_us()}</Button>
+			<Button size='xl' variant="destructive">{m.read_about_us()}</Button>
 		</div>
 	</section>
 	<div class="flex flex-col justify-center border-t py-10">

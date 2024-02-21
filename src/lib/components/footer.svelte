@@ -4,16 +4,18 @@
 	import { icons } from '$lib/components/icons';
 	import { page } from '$app/stores';
 	import { withoutLanguageTag } from '$lib/i18n-routing';
-  import logo_black from "$lib/assets/logos/fpt_logo.svg"
-  import logo_white from "$lib/assets/logos/fpt_logo_white.svg"
+	import logo_black from '$lib/assets/logos/fpt_logo.svg';
+	import logo_white from '$lib/assets/logos/fpt_logo_white.svg';
 
 	let isHome = true;
 
-  $:isHome = withoutLanguageTag($page.url.pathname) == '/';
-	export let pathColors: string;
+	$: isHome = withoutLanguageTag($page.url.pathname) == '/';
+	export let textColor: string;
 </script>
 
-<div class={` w-full border-t-2 border-black ${pathColors} py-10`}>
+<div
+	class={`${isHome ? 'bg-background' : 'bg-foreground'} w-full border-t-2 border-black ${textColor} py-10`}
+>
 	<div class="items-top flex flex-wrap items-center justify-around">
 		<div class="flex basis-full items-center justify-center md:basis-0">
 			<div class="h-[100px] w-[100px]">
@@ -25,7 +27,7 @@
 			</div>
 		</div>
 		<div class="">
-			<h4 class="font-playfair py-5 text-xl text-center md:text-left">{m.find_us()}</h4>
+			<h4 class="py-5 text-center font-playfair text-xl md:text-left">{m.find_us()}</h4>
 			<ul>
 				{#each socials as { name, href }}
 					<li>
@@ -38,7 +40,7 @@
 			</ul>
 		</div>
 		<div class="">
-			<h4 class="font-playfair text-center md:text-left py-5 text-xl">{m.contact_us()}</h4>
+			<h4 class="py-5 text-center font-playfair text-xl md:text-left">{m.contact_us()}</h4>
 			<ul>
 				{#each contactInfo as { info, icon, href }}
 					<li>

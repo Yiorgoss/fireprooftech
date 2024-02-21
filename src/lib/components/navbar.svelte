@@ -4,20 +4,20 @@
 	import { PhoneCall, Menu } from 'lucide-svelte';
 	import { mainNav } from '$lib/siteConfig';
 	import * as m from '$pg/messages';
-  import {i18n} from "$lib/i18n"
+	import { i18n } from '$lib/i18n';
 	import { page } from '$app/stores';
 	import { withoutLanguageTag } from '$lib/i18n-routing';
-  import logo_black from '$lib/assets/logos/fpt_logo.svg'
-  import logo_white from '$lib/assets/logos/fpt_logo_white.svg'
+	import logo_black from '$lib/assets/logos/fpt_logo.svg';
+	import logo_white from '$lib/assets/logos/fpt_logo_white.svg';
 
-	export let pathColors: string;
+	export let textColor: string;
 
 	let openMenu = false;
 
 	let header: HTMLElement;
 	let isHome = true;
 
-  $: isHome = withoutLanguageTag($page.url.pathname) == '/';
+	$: isHome = withoutLanguageTag($page.url.pathname) == '/';
 
 	const handleMobileIconClick = () => (openMenu = !openMenu);
 
@@ -31,7 +31,7 @@
 <svelte:window on:click={handleOutsideClick} />
 <header
 	bind:this={header}
-	class={`${pathColors} font-playfair tracking-wide  relative z-30 flex h-[100px] w-full justify-between md:justify-around`}
+	class={`${textColor} relative z-30 flex h-[100px] w-full justify-between bg-transparent font-playfair tracking-wide md:justify-around`}
 >
 	<a href="/" class="h-[100px] w-[100px] p-5 md:p-2">
 		{#if isHome}
@@ -46,20 +46,22 @@
 		class="fixed bottom-0 left-0 right-1/4 top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:h-full md:bg-transparent rtl:left-1/4 rtl:right-0"
 	>
 		<ul
-			class="flex h-full flex-col items-start justify-start bg-blue-600/40 md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20"
+			class={`${isHome ? 'bg-background' : 'bg-foreground' } flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20`}
 		>
 			<div class=" md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
-						{#if isHome}
-							<img src={logo_black} alt="logo" />
-						{:else}
-							<img src={logo_white} alt="logo" />
-						{/if}
+					{#if isHome}
+						<img src={logo_black} alt="logo" />
+					{:else}
+						<img src={logo_white} alt="logo" />
+					{/if}
 				</div>
 			</div>
 			{#each mainNav as { slug, title }}
 				<li class="px-4 py-4 text-lg">
-					<a on:click={() => (openMenu = false)} class=" text-xl" href={i18n.route(slug)}> {title}</a>
+					<a on:click={() => (openMenu = false)} class=" text-xl" href={i18n.route(slug)}>
+						{title}</a
+					>
 				</li>
 			{/each}
 			<li class="md:order-first">
@@ -68,7 +70,7 @@
 		</ul>
 	</nav>
 	<div class="float-right flex items-center justify-center md:float-none md:h-full">
-		<Button class="hidden items-center gap-3 md:flex">
+		<Button class="hidden items-center gap-3 px-5 py-3 font-gothic text-lg md:flex">
 			<PhoneCall />{m.contact_us()}
 		</Button>
 		<Button
@@ -76,7 +78,7 @@
 			class="inline bg-transparent hover:bg-transparent md:hidden"
 			on:click={handleMobileIconClick}
 		>
-			<Menu class={pathColors} />
+			<Menu class={textColor} />
 		</Button>
 	</div>
 </header>

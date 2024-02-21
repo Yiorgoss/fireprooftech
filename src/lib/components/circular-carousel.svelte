@@ -6,7 +6,9 @@
 	let api: CarouselAPI;
 	let current = 0;
 	let count = 0;
-	$: console.log(current);
+
+	$: mainImg = images[current];
+	// $: console.log(mainImg);
 
 	$: if (api) {
 		count = api.scrollSnapList().length;
@@ -19,21 +21,21 @@
 	export let images: ImgMetaType[] = [];
 </script>
 
-<div class="min-h-[500px]">
-	<Carousel.Root bind:api orientation="vertical" class="flex  w-full min-w-[300px] ">
-		<Carousel.Content class="mt-0  gap-5 md:gap-5">
+<div class="">
+	<Carousel.Root bind:api orientation="vertical" class="flex  w-full  ">
+		<Carousel.Content class="mt-0 basis-1/3 gap-5 md:gap-5">
 			{#each images as image, i}
 				<Carousel.Item
-					class={`${current == i ? 'scale-110 grayscale-0' : 'grayscale'} px-5 transition-transform duration-200 hover:scale-125 hover:grayscale-0`}
+					class={`${current == i ? 'scale-110 grayscale-0' : 'grayscale'} px-5 transition-transform duration-200  hover:scale-125 hover:grayscale-0`}
 				>
 					<button
 						class:text-foreground-muted={current != i}
-						class="flex items-center justify-center"
+						class="flex h-full w-full items-center justify-center"
 						on:click={() => (current = i)}
 					>
-						<div class="aspect-square h-full p-5 text-4xl font-semibold">
+						<div class="aspect-square h-full w-full text-4xl font-semibold">
 							<ImageWrapper
-								imageClass="rounded-full w-full h-full object-stretch aspect-square"
+								imageClass="rounded-full max-w-[100px] w-full h-full object-stretch aspect-square"
 								sizes="10vw"
 								meta={[image]}
 								alt="landing hero image"
@@ -47,15 +49,17 @@
 		<!-- 	<Carousel.Previous /> -->
 		<!-- 	<Carousel.Next /> -->
 		<!-- </div> -->
-		<Carousel.Content class="flex items-center justify-center">
-			<div class="aspect-square h-full w-full p-5">
-					<ImageWrapper
-						imageClass="rounded-full w-full h-full object-stretch aspect-square"
-						sizes="33vw"
-						meta={[images[current]]}
-						alt="landing hero image"
-					/>
-			</div>
-		</Carousel.Content>
+		<div
+			class="flex aspect-square h-full w-full px-10 basis-2/3 items-center justify-center rounded-full "
+		>
+      {#key current}
+			<ImageWrapper
+				imageClass="rounded-full w-full object-cover  h-full aspect-square"
+				sizes="100vw"
+				meta={[mainImg]}
+				alt="landing hero image"
+			/>
+      {/key}
+		</div>
 	</Carousel.Root>
 </div>
