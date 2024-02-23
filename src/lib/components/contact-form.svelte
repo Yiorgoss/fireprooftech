@@ -9,7 +9,7 @@
 
 <Form.Root method="POST" class="w-full" {form} schema={contactSchema} let:config>
 	<div class={`flex flex-col`}>
-		<div class="flex h-full w-full flex-col gap-5">
+		<div class="flex h-full w-full flex-col min-w-[300px] gap-5">
 			<Form.Field {config} name="name">
 				<Form.Item class="">
 					<Form.Label class="">{m.name()}</Form.Label>
@@ -25,10 +25,10 @@
 				</Form.Item>
 			</Form.Field>
 			<Form.Field {config} name="message">
-				<Form.Item class=" basis-1/2 ">
+				<Form.Item class=" basis-1/2  ">
 					<Form.Label>{m.message()}</Form.Label>
 					<Form.Validation class="inline bg-red-400" />
-					<Form.Textarea class="min-h-[200px] bg-foreground" />
+					<Form.Textarea class="w-full min-h-[200px] bg-foreground" />
 				</Form.Item>
 			</Form.Field>
 		</div>

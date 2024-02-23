@@ -23,7 +23,7 @@
 
 <div class="">
 	<Carousel.Root bind:api orientation="vertical" class="flex  w-full  ">
-		<Carousel.Content class="mt-0 basis-1/3 gap-5 md:gap-5">
+		<Carousel.Content class="mt-0 basis-1/3 gap-5 py-10 md:gap-5">
 			{#each images as image, i}
 				<Carousel.Item
 					class={`${current == i ? 'scale-110 grayscale-0' : 'grayscale'} px-5 transition-transform duration-200  hover:scale-125 hover:grayscale-0`}
@@ -33,10 +33,10 @@
 						class="flex h-full w-full items-center justify-center"
 						on:click={() => (current = i)}
 					>
-						<div class="aspect-square h-full w-full text-4xl font-semibold">
+						<div class="aspect-square rounded-full text-4xl font-semibold">
 							<ImageWrapper
-								imageClass="rounded-full max-w-[100px] w-full h-full object-stretch aspect-square"
-								sizes="10vw"
+								imageClass="rounded-full w-[60px] md:w-[100px] border-4 h-[60px] md:h-[100px] h-full object-stretch aspect-square"
+								sizes="10"
 								meta={[image]}
 								alt="landing hero image"
 							/>
@@ -45,21 +45,17 @@
 				</Carousel.Item>
 			{/each}
 		</Carousel.Content>
-		<!-- <div class="absolute bottom-1/4 right-1/4 bg-blue-300"> -->
-		<!-- 	<Carousel.Previous /> -->
-		<!-- 	<Carousel.Next /> -->
-		<!-- </div> -->
-		<div
-			class="flex aspect-square h-full w-full px-10 basis-2/3 items-center justify-center rounded-full "
-		>
-      {#key current}
-			<ImageWrapper
-				imageClass="rounded-full w-full object-cover  h-full aspect-square"
-				sizes="100vw"
-				meta={[mainImg]}
-				alt="landing hero image"
-			/>
-      {/key}
-		</div>
+		{#key current}
+			<div
+				class="container flex aspect-square h-full w-full basis-2/3 flex-col items-center justify-center rounded-full ltr:pl-10 rtl:md:pr-10"
+			>
+				<ImageWrapper
+					imageClass="rounded-full border-8 object-cover w-full h-full aspect-square"
+					sizes="(min-width: 1000) 80vw, 50vw"
+					meta={[mainImg]}
+					alt="landing hero image"
+				/>
+			</div>
+		{/key}
 	</Carousel.Root>
 </div>

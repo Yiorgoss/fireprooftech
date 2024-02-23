@@ -16,8 +16,8 @@
 <div
 	class={`${isHome ? 'bg-background' : 'bg-foreground'} w-full border-t-2 border-black ${textColor} py-10`}
 >
-	<div class="items-top flex flex-wrap items-center justify-around">
-		<div class="flex basis-full items-center justify-center md:basis-0">
+	<div class="items-top flex flex-col md:flex-row flex-wrap items-start md:items-center pl-10 md:pl-0 justify-around">
+		<div class="flex basis-full items-center justify-center md:basis-0 w-full pr-10">
 			<div class="h-[100px] w-[100px]">
 				{#if isHome}
 					<img src={logo_black} alt="logo" />

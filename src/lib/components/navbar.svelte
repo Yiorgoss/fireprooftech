@@ -33,7 +33,7 @@
 	bind:this={header}
 	class={`${textColor} relative z-30 flex h-[100px] w-full justify-between bg-transparent font-playfair tracking-wide md:justify-around`}
 >
-	<a href="/" class="h-[100px] w-[100px] p-5 md:p-2">
+	<a href="/" class=" h-[100px] w-[100px] p-5 md:p-2">
 		{#if isHome}
 			<img src={logo_black} alt="logo" />
 		{:else}
@@ -41,12 +41,13 @@
 		{/if}
 	</a>
 	<nav
-		class:ltr:right-[200vw]={!openMenu}
-		class:rtl:left-[200vw]={!openMenu}
-		class="fixed bottom-0 left-0 right-1/4 top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:h-full md:bg-transparent rtl:left-1/4 rtl:right-0"
+		class:ltr:right-[25%]={openMenu}
+		class:rtl:left-[25%]={openMenu}
+		class="fixed bottom-0 left-0 right-[200vw] top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:h-full md:bg-transparent rtl:left-[200vw] rtl:right-0"
 	>
 		<ul
-			class={`${isHome ? 'bg-background' : 'bg-foreground' } flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20`}
+      class:border-none={!openMenu}
+			class={`${isHome ? 'bg-background rtl:border-l ltr:border-r border-foreground' : 'bg-foreground rtl:border-l ltr:border-r border-background '} flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20`}
 		>
 			<div class=" md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
@@ -78,7 +79,7 @@
 			class="inline bg-transparent hover:bg-transparent md:hidden"
 			on:click={handleMobileIconClick}
 		>
-			<Menu class={textColor} />
+			<Menu class={`${textColor} fixed ltr:right-8 rtl:left-8`} />
 		</Button>
 	</div>
 </header>

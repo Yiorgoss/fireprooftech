@@ -27,22 +27,22 @@
 
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
-	<div class="relative h-dvh top-[-100px] overflow-hidden">
+	<div class="relative h-dvh -mt-[100px] overflow-hidden">
 		<!-- <ImageWrapper class="" src="$assets/images/landing.jpeg" alt="test" /> -->
 		<ImageWrapper imageClass="h-dvh w-full object-cover" meta={landing} alt="landing hero image" />
 		<div class="absolute inset-0 bg-[#9fb0b9] opacity-50"></div>
 
 		<div
-			class="container absolute inset-0 flex w-full flex-wrap items-center px-2 py-20 md:items-end md:px-20"
+			class="container absolute inset-0 flex w-full  items-center px-2 py-20 md:items-end md:px-20"
 		>
-			<div class="absolute bottom-20 rtl:right-20 rtl:left-1/2 right-1/2 left-20">
-				<h1 class="py-10 font-playfair text-4xl md:text-9xl">{m.home_page_landing_heading()}</h1>
-				<p class="text-lg md:text-2xl ">{m.home_page_landing_subheading()}</p>
+			<div class="absolute bottom-20 rtl:md:right-20 rtl:md:left-1/2 md:right-1/2 md:left-20">
+				<h1 class="py-10 font-playfair text-6xl md:text-6xl lg:text-9xl">{m.home_page_landing_heading()}</h1>
+				<p class="text-xl md:text-2xl px-5 w-2/3 ">{m.home_page_landing_subheading()}</p>
 			</div>
 		</div>
 	</div>
-	<div class="bg-blue-200">
-		<div class="container flex flex-col-reverse bg-blue-200 px-2 py-10 pl-0 md:flex-row md:pl-12">
+	<div class="bg-off-blue">
+		<div class="container flex flex-col-reverse px-2 py-10 pl-0 md:flex-row md:pl-12">
 			<div class="basis-1/2">
 				<CircularCarousel {images} />
 			</div>
@@ -54,8 +54,8 @@
 			</div>
 		</div>
 	</div>
-	<section class="overflow-hidden">
-		<div class="mx-auto w-1/2 py-20">
+	<section class="overflow-hidden mx-auto flex flex-col">
+		<div class="mx-auto basis-full md:w-1/2 py-20 ">
 			<h2 class="py-10 font-playfair text-4xl md:text-6xl">{m.home_page_process_heading()}</h2>
 			<h3 class="float-right py-5 text-2xl underline underline-offset-8">
 				{m.home_page_process_subheading()}

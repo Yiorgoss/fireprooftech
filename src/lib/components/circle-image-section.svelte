@@ -11,7 +11,7 @@
 <div
 	class:md:rtl:mr-[35%]={isInset}
 	class:md:ml-[35%]={isInset}
-	class="container mx-auto flex justify-start py-5"
+	class="container mx-auto flex justify-start py-10 md:py-5 z-10 "
 >
 	<div class="flex flex-col items-start gap-6 md:flex-row md:items-center">
 		<div
@@ -30,7 +30,7 @@
 						<!-- could be worse   -->
 					</div>
 				</h4>
-				<div class="max-w-xs pt-4">{description}</div>
+				<div class="ltr:max-w-xs pt-4">{description}</div>
 			</div>
 		</div>
 	</div>
