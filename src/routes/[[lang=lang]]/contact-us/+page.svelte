@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="relative flex -mt-[100px] pt-[100px] min-h-dvh w-full items-center justify-center overflow-hidden bg-foreground text-background">
+	class="relative flex -mt-[100px] pt-[100px] min-h-lvh w-full items-center justify-center overflow-hidden bg-foreground text-background">
 	<div class="absolute inset-0 z-10 grid md:grid-cols-5">
 		{#each [1, 2, 3, 4, 5] as _}
 			<div class=" border-l-[0.5px]"></div>

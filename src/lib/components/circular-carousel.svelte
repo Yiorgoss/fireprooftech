@@ -47,11 +47,11 @@
 		</Carousel.Content>
 		{#key current}
 			<div
-				class="container flex aspect-square h-full w-full basis-2/3 flex-col items-center justify-center rounded-full ltr:pl-10 rtl:md:pr-10"
+				class="my-auto flex aspect-square h-full w-full basis-2/3 flex-col items-center justify-center rounded-full ltr:pl-10 rtl:md:pr-10"
 			>
 				<ImageWrapper
 					imageClass="rounded-full border-8 object-cover w-full h-full aspect-square"
-					sizes="(min-width: 1000) 80vw, 50vw"
+					sizes="(min-width: 1000) 70vw, 40vw"
 					meta={[mainImg]}
 					alt="landing hero image"
 				/>

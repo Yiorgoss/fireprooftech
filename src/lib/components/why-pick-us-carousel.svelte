@@ -55,7 +55,7 @@
 			</Carousel.Item>
 		{/each}
 	</Carousel.Content>
-	<div class="absolute inset-x-0 bottom-0 z-30 mx-auto flex w-1/2 justify-center py-2">
+	<div class="absolute inset-x-0 bottom-0 mx-auto flex w-1/2 justify-center py-2">
 		{#each Array(count) as _, i}
 			<div class="flex items-center justify-center">
 				<button
