@@ -6,6 +6,11 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>{m.contact_page_head_title()}</title>
+	<meta name="description" content={m.contact_page_head_description()}/>
+</svelte:head>
+
 <div
 	class="relative flex -mt-[100px] pt-[100px] min-h-lvh w-full items-center justify-center overflow-hidden bg-foreground text-background">
 	<div class="absolute inset-0 z-10 grid md:grid-cols-5">

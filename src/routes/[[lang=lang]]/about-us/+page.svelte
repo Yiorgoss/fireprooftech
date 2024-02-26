@@ -11,6 +11,11 @@
 	import pastWork3 from '$lib/assets/images/past-work-3.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 </script>
 
+<svelte:head>
+	<title>{m.about_page_head_title()}</title>
+	<meta name="description" content={m.about_page_head_description()}/>
+</svelte:head>
+
 <div class="relative w-full overflow-hidden bg-foreground -mt-[100px] pt[100px]">
 	<h1 class="w-full bg-off-blue py-16 text-center mt-[100px] font-playfair text-6xl uppercase">
 		{m.about_fpt()}

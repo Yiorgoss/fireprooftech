@@ -27,6 +27,7 @@
 	import WhyPickUsCarousel from '$lib/components/why-pick-us-carousel.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { ImageWrapper } from '$lib/components/image-wrapper/';
+	// import CarouselPrevious from '$lib/components/ui/carousel/carousel-previous.svelte';
 
 	const images = [carousel1, carousel2, carousel3];
 	let scroll = 0;
@@ -34,24 +35,45 @@
 	let imageSection: HTMLElement;
 	let observer: IntersectionObserver;
 
-	$: if (imageSection) {
+	// const imgScrollFn = () => {
+	// 	let previousScroll = 0;
+	// 	console.log(previousScroll)
+	// 	return function (scroll: number) {
+	// 		if (scroll < previousScroll) {
+	// 			previousScroll = scroll;
+	// 			return entered ? (scroll * 0.05) % 100 : 0;
+	// 		}
+	// 		previousScroll = scroll;
+	// 		return entered ? (-scroll * 0.05) % 100 : 0;
+	// 	};
+	// };
+	//  const imgScroll = imgScrollFn
+
+	$: if (imageSection && observer) {
 		Array.from(imageSection.children).forEach((child) => observer.observe(child));
+		// observer.observe(imageSection);
 	}
 	onMount(() => {
 		mounted = true;
 		observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
-						entry.target.classList.toggle('bg-black', entry.isIntersecting);
+					entry.target.classList.toggle('observer', entry.isIntersecting);
 				});
 			},
-			{ threshold: 0, rootMargin: '-200px' }
+			{ threshold: 0, rootMargin: '0px' }
 		);
 		return () => observer.disconnect();
 	});
 </script>
 
+<svelte:head>
+	<title>{m.home_page_head_title()}</title>
+	<meta name="description" content={m.home_page_head_description()}/>
+</svelte:head>
+
 <svelte:window bind:scrollY={scroll} />
+
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
 	<div class="relative -mt-[100px] h-lvh overflow-hidden">
@@ -99,14 +121,14 @@
 			</h3>
 		</div>
 		<div class="flex flex-col" bind:this={imageSection}>
-			<div class="pt-10 transition ease-out duration-500" class:-translate-x-20={mounted}  class:opacity-0={mounted}>
+			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
 				<CircleImageSection
 					image={step1}
 					title={m.home_page_process_one_title()}
 					description={m.home_page_process_one_description()}
 				/>
 			</div>
-			<div class="pt-10" class:opacity-={mounted}>
+			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
 				<CircleImageSection
 					image={step2}
 					title={m.home_page_process_two_title()}
@@ -114,14 +136,14 @@
 					isInset={true}
 				/>
 			</div>
-			<div class="pt-10" class:opacity-={mounted}>
+			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
 				<CircleImageSection
 					image={step3}
 					title={m.home_page_process_three_title()}
 					description={m.home_page_process_three_description()}
 				/>
 			</div>
-			<div class="pt-10" class:opacity-={mounted}>
+			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
 				<CircleImageSection
 					image={step4}
 					title={m.home_page_process_four_title()}
@@ -129,7 +151,7 @@
 					isInset={true}
 				/>
 			</div>
-			<div class="pt-10" class:opacity-={mounted}>
+			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
 				<CircleImageSection
 					image={step5}
 					title={m.home_page_process_five_title()}
@@ -149,14 +171,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="hiden observer">
-		<!-- otherwise svelte removes unused styles ??  -->
-	</div>
+</div>
+<div class="observer hidden">
+	<!-- otherwise svelte removes unused styles ??  -->
 </div>
 
 <style>
 	.observer {
-    opacity:100;
-    transform:translateX(0)
+		margin: 0px;
+		opacity: 100%;
+		transition:
+			opacity 1s ease-out,
+			margin 1s ease-out;
 	}
 </style>
