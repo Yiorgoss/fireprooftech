@@ -77,25 +77,25 @@
 
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
-	<div class="relative -mt-[100px] h-lvh overflow-hidden">
-		<ImageWrapper imageClass="h-lvh w-full object-cover" meta={landing} alt="landing hero image" />
+	<div class="relative -mt-[100px] h-svh overflow-hidden">
+		<ImageWrapper imageClass="h-svh w-full object-cover" meta={landing} alt="landing hero image" />
 		<div class="absolute inset-0 bg-[#9fb0b9] opacity-50"></div>
 
 		<div
 			class="container absolute inset-0 flex w-full items-center px-2 py-20 md:items-end md:px-20"
 		>
 			<div
-				class="absolute bottom-0 sm:pb-20 pb-10 md:left-20 md:right-1/2 rtl:md:left-1/2 rtl:md:right-20"
+				class="absolute bottom-0 pb-20 sm:pb-20 md:left-20 ltr:md:right-1/3 rtl:md:left-1/2 rtl:md:right-20"
 			>
 				<h1
 					class:opacity-0={!mounted}
-					class="py-10 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in md:text-6xl lg:text-9xl"
+					class="xl py-10 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in md:text-6xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
 				<p
 					class:opacity-0={!mounted}
-					class="w-3/4 px-5 text-xl transition-opacity delay-300 duration-1000 ease-in md:text-2xl"
+					class="leading-7 w-full px-5 transition-opacity delay-300 duration-1000 ease-in sm:text-xl md:text-2xl"
 				>
 					{m.home_page_landing_subheading()}
 				</p>
