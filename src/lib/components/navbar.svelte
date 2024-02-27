@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import LangSwitcher from './lang-switcher.svelte';
 	import { PhoneCall, Menu } from 'lucide-svelte';
-	import { mainNav } from '$lib/siteConfig';
+	import { contactInfo, mainNav } from '$lib/siteConfig';
 	import * as m from '$pg/messages';
 	import { i18n } from '$lib/i18n';
 	import { page } from '$app/stores';
@@ -33,7 +33,7 @@
 	bind:this={header}
 	class={`${textColor} relative z-30 flex h-[100px] w-full justify-between bg-transparent font-playfair tracking-wide md:justify-around`}
 >
-	<a href="/" class=" h-[100px] w-[100px] p-5 md:p-2">
+	<a href="/" class=" h-[130px] w-[130px] md:p-2">
 		{#if isHome}
 			<img src={logo_black} alt="logo" />
 		{:else}
@@ -46,8 +46,8 @@
 		class="fixed bottom-0 left-0 right-[200vw] top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:h-full md:bg-transparent rtl:left-[200vw] rtl:right-0"
 	>
 		<ul
-      class:border-none={!openMenu}
-			class={`${isHome ? 'bg-background rtl:border-l ltr:border-r border-foreground' : 'bg-foreground rtl:border-l ltr:border-r border-background '} flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20`}
+			class:border-none={!openMenu}
+			class={`${isHome ? 'border-foreground bg-background ltr:border-r rtl:border-l' : 'border-background bg-foreground ltr:border-r rtl:border-l '} flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20`}
 		>
 			<div class=" md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
@@ -71,9 +71,11 @@
 		</ul>
 	</nav>
 	<div class="float-right flex items-center justify-center md:float-none md:h-full">
+			<a href={contactInfo[0].href}>
 		<Button class="hidden items-center gap-3 px-5 py-3 font-gothic text-lg md:flex">
-			<PhoneCall />{m.contact_us()}
+				<PhoneCall />{contactInfo[0].info}
 		</Button>
+			</a>
 		<Button
 			variant="ghost"
 			class="inline bg-transparent hover:bg-transparent md:hidden"

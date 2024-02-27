@@ -11,6 +11,8 @@
 	"read_about_us": "Read More About Us",
 	"get_free_estimate": "Get a Free Estimate",
 	"submit": "Submit",
+	"get_in_touch": "Get In Touch Today",
+	"sitemap": "Sitemap",
 	"home_page_landing_heading": "Fire Proof Tech",
 	"home_page_landing_subheading": "With an innovative technological process and expertise in the fireproof glass manufacturing industry, we stand apart from the competition and can guarantee satisfaction at every step of the way.",
 	"home_page_carousel_heading": "home_page_carousel_heading",
@@ -58,11 +60,10 @@
 	"contact_page_heading": "contact_page_heading",
 	"contact_page_description": "contact_page_description",
 
-  "home_page_head_title":"Advanced Fire-Proof Glass Solutions for Safe and Secure Buildings",
-  "home_page_head_description":"Fire-resistant glass is a critical component of buildings requiring advanced safety measures. Discover the latest technological advancements in fire-proof glass solutions and their applications.",
-  "about_page_head_title":"Top Quality & Innovative Fire-Resistant Glass Materials | FireProofTech",
-  "about_page_head_description":"Our company specializes in the manufacturing of fire-resistant glass using innovative materials. Learn more about our expertise and commitment to safety and quality.",
-  "contact_page_head_title":"Contact us for any questions about fire resistant glass | FireProofTech",
-  "contact_page_head_description":""
+	"home_page_head_title": "Advanced Fire-Proof Glass Solutions for Safe and Secure Buildings",
+	"home_page_head_description": "Fire-resistant glass is a critical component of buildings requiring advanced safety measures. Discover the latest technological advancements in fire-proof glass solutions and their applications.",
+	"about_page_head_title": "Top Quality & Innovative Fire-Resistant Glass Materials | FireProofTech",
+	"about_page_head_description": "Our company specializes in the manufacturing of fire-resistant glass using innovative materials. Learn more about our expertise and commitment to safety and quality.",
+	"contact_page_head_title": "Contact us for any questions about fire resistant glass | FireProofTech",
+	"contact_page_head_description": ""
 }
-

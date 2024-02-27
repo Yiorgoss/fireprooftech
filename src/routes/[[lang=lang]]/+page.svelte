@@ -19,15 +19,14 @@
 	import step5 from '$lib/assets/images/step-5.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
 
 	import * as m from '$pg/messages';
-	import { fade } from 'svelte/transition';
-	import { onDestroy, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
 	import CircularCarousel from '$lib/components/circular-carousel.svelte';
 	import CircleImageSection from '$lib/components/circle-image-section.svelte';
 	import WhyPickUsCarousel from '$lib/components/why-pick-us-carousel.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { ImageWrapper } from '$lib/components/image-wrapper/';
-	// import CarouselPrevious from '$lib/components/ui/carousel/carousel-previous.svelte';
+	import { i18n } from '$lib/i18n';
 
 	const images = [carousel1, carousel2, carousel3];
 	let scroll = 0;
@@ -35,33 +34,35 @@
 	let imageSection: HTMLElement;
 	let observer: IntersectionObserver;
 
-	// const imgScrollFn = () => {
-	// 	let previousScroll = 0;
-	// 	console.log(previousScroll)
-	// 	return function (scroll: number) {
-	// 		if (scroll < previousScroll) {
-	// 			previousScroll = scroll;
-	// 			return entered ? (scroll * 0.05) % 100 : 0;
-	// 		}
-	// 		previousScroll = scroll;
-	// 		return entered ? (-scroll * 0.05) % 100 : 0;
-	// 	};
-	// };
-	//  const imgScroll = imgScrollFn
-
 	$: if (imageSection && observer) {
 		Array.from(imageSection.children).forEach((child) => observer.observe(child));
 		// observer.observe(imageSection);
 	}
+	const calcBounce = (function () {
+		let position = 0;
+		let direction = 1;
+		return function (scroll = 0, rangeLow = 0, rangeHigh = 100, speed = 1) {
+			//scroll used to keep variable changing
+			if (position > rangeHigh) {
+				direction = -1;
+			} else if (position < rangeLow) {
+				direction = 1;
+			}
+			let add = 1 * direction * speed;
+
+			position += add;
+			return position;
+		};
+	})();
 	onMount(() => {
 		mounted = true;
 		observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
-					entry.target.classList.toggle('observer', entry.isIntersecting);
+					entry.target.classList.toggle('observer', !entry.isIntersecting);
 				});
 			},
-			{ threshold: 0, rootMargin: '0px' }
+			{ threshold: 0.5, rootMargin: '-30px' }
 		);
 		return () => observer.disconnect();
 	});
@@ -69,7 +70,7 @@
 
 <svelte:head>
 	<title>{m.home_page_head_title()}</title>
-	<meta name="description" content={m.home_page_head_description()}/>
+	<meta name="description" content={m.home_page_head_description()} />
 </svelte:head>
 
 <svelte:window bind:scrollY={scroll} />
@@ -77,23 +78,24 @@
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
 	<div class="relative -mt-[100px] h-lvh overflow-hidden">
-		<!-- <ImageWrapper class="" src="$assets/images/landing.jpeg" alt="test" /> -->
 		<ImageWrapper imageClass="h-lvh w-full object-cover" meta={landing} alt="landing hero image" />
 		<div class="absolute inset-0 bg-[#9fb0b9] opacity-50"></div>
 
 		<div
 			class="container absolute inset-0 flex w-full items-center px-2 py-20 md:items-end md:px-20"
 		>
-			<div class="absolute bottom-20 md:left-20 md:right-1/2 rtl:md:left-1/2 rtl:md:right-20">
+			<div
+				class="absolute bottom-20 md:bottom-40 md:left-20 md:right-1/2 rtl:md:left-1/2 rtl:md:right-20"
+			>
 				<h1
 					class:opacity-0={!mounted}
-					class="py-10 font-playfair text-6xl transition-opacity delay-500 duration-1000 ease-in md:text-6xl lg:text-9xl"
+					class="py-10 font-playfair text-6xl transition-opacity delay-200 duration-1000 ease-in md:text-6xl lg:text-9xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
 				<p
 					class:opacity-0={!mounted}
-					class="w-2/3 px-5 text-xl transition-opacity delay-700 duration-1000 ease-in md:text-2xl"
+					class="w-2/3 px-5 text-xl transition-opacity delay-300 duration-1000 ease-in md:text-2xl"
 				>
 					{m.home_page_landing_subheading()}
 				</p>
@@ -101,15 +103,18 @@
 		</div>
 	</div>
 	<div class="bg-off-blue">
-		<div class="container flex flex-col-reverse px-2 py-10 pl-0 md:flex-row md:pl-12">
+		<div class="container flex flex-col px-2 py-10 pl-0 md:flex-row md:pl-12">
 			<div class="basis-1/2" style:transform={`translate(0,${scroll * 0.05}px)`}>
 				<CircularCarousel {images} />
 			</div>
-			<div class="basis-1/2 px-4 py-10">
+			<div class="flex basis-1/2 flex-col items-center justify-end px-4 py-10">
 				<h2 class="break-all py-5 text-center font-playfair text-3xl md:text-4xl">
 					{m.home_page_carousel_heading()}
 				</h2>
 				<p class="">{m.home_page_carousel_description()}</p>
+				<a class="py-10" href={i18n.route('/contact-us')}>
+					<Button variant="destructive" size="xl">{m.get_in_touch()}</Button>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -121,14 +126,14 @@
 			</h3>
 		</div>
 		<div class="flex flex-col" bind:this={imageSection}>
-			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
+			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
 				<CircleImageSection
 					image={step1}
 					title={m.home_page_process_one_title()}
 					description={m.home_page_process_one_description()}
 				/>
 			</div>
-			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
+			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
 				<CircleImageSection
 					image={step2}
 					title={m.home_page_process_two_title()}
@@ -136,14 +141,14 @@
 					isInset={true}
 				/>
 			</div>
-			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
+			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
 				<CircleImageSection
 					image={step3}
 					title={m.home_page_process_three_title()}
 					description={m.home_page_process_three_description()}
 				/>
 			</div>
-			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
+			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
 				<CircleImageSection
 					image={step4}
 					title={m.home_page_process_four_title()}
@@ -151,7 +156,7 @@
 					isInset={true}
 				/>
 			</div>
-			<div class="pt-10" class:-mx-28={mounted} class:opacity-0={mounted}>
+			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
 				<CircleImageSection
 					image={step5}
 					title={m.home_page_process_five_title()}
@@ -160,13 +165,24 @@
 			</div>
 		</div>
 		<div class="flex items-center justify-center pb-10 pt-20">
-			<Button size="xl" variant="destructive">{m.read_about_us()}</Button>
+			<a href={i18n.route('/about-us')}>
+				<Button size="xl" variant="destructive">{m.read_about_us()}</Button>
+			</a>
 		</div>
 	</section>
-	<div class="flex flex-col justify-center border-t py-10">
-		<h3 class="py-10 text-center font-playfair text-6xl">{m.home_page_why_pick_us_title()}</h3>
+	<div class="flex flex-col justify-center overflow-hidden border-t py-10">
+		<h3
+			style:transform={`translate( ${calcBounce(scroll, 0, 50, 0.05)}px)`}
+			class="py-10 text-center font-playfair text-6xl"
+		>
+			{m.home_page_why_pick_us_title()}
+		</h3>
+		l
 		<div class="container p-10">
-			<div class="">
+			<div
+				style={`(min-width:768px) transform:translate( ${-calcBounce(scroll, 0, 50, 0.05)}px)`}
+				class=""
+			>
 				<WhyPickUsCarousel />
 			</div>
 		</div>
@@ -178,10 +194,7 @@
 
 <style>
 	.observer {
-		margin: 0px;
-		opacity: 100%;
-		transition:
-			opacity 1s ease-out,
-			margin 1s ease-out;
+		margin: 0 40px;
+		opacity: 0;
 	}
 </style>
