@@ -9,6 +9,6 @@
 </script>
 
 <FormPrimitive.Validation
-	class={cn("text-sm font-medium text-destructive", className)}
+	class={cn("text-sm font-medium text-red-500", className)}
 	{...$$restProps}
 />

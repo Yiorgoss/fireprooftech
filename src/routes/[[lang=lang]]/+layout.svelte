@@ -12,7 +12,7 @@
 </script>
 
 <Navbar textColor={textColor} />
-<main class="font-gothic text-xl">
+<main class="font-gothic tracking-wider leading-10 text-xl">
 	<slot />
 </main>
 <Footer textColor={textColor} />

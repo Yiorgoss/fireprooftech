@@ -14,26 +14,26 @@
 				<Form.Item class="">
 					<Form.Label class="">{m.name()}</Form.Label>
 					<Form.Validation class="inline" />
-					<Form.Input class="bg-foreground" />
+					<Form.Input class="focus:outline-border bg-foreground" />
 				</Form.Item>
 			</Form.Field>
 			<Form.Field {config} name="email">
 				<Form.Item>
 					<Form.Label>{m.email()}</Form.Label>
-					<Form.Validation class="inline" />
+					<Form.Validation class="inline " />
 					<Form.Input class="bg-foreground" />
 				</Form.Item>
 			</Form.Field>
 			<Form.Field {config} name="message">
 				<Form.Item class=" basis-1/2  ">
 					<Form.Label>{m.message()}</Form.Label>
-					<Form.Validation class="inline bg-red-400" />
+					<Form.Validation class="inline " />
 					<Form.Textarea class="w-full min-h-[200px] bg-foreground" />
 				</Form.Item>
 			</Form.Field>
 		</div>
-		<div class="pt-10">
-			<Form.Button size="lg" class="float-right">{m.submit()}</Form.Button>
+		<div class="pt-10 mx-auto">
+			<Form.Button size="lg" variant="destructive" class="">{m.submit()}</Form.Button>
 		</div>
 	</div>
 </Form.Root>

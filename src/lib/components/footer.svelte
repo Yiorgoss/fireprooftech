@@ -14,15 +14,15 @@
 </script>
 
 <div
-	class={`${isHome ? 'bg-background' : 'bg-foreground'} w-full border-t-2 border-black ${textColor} py-10`}
+	class={`${isHome ? 'border-foreground bg-background' : 'border-background bg-foreground'} w-full border-y-8 ${textColor} pb-20 md:pb-10 pt-10`}
 >
 	<div
-		class="items-top flex flex-col flex-wrap items-start justify-around md:flex-row md:items-start ltr:pl-10 ltr:md:pl-0 rtl:pr-10"
+		class="items-top flex flex-col flex-wrap items-center justify-around md:flex-row md:items-start "
 	>
 		<div
-			class="flex w-full basis-full items-center justify-center self-center md:basis-0 ltr:pr-10 rtl:pl-10"
+			class="flex w-full basis-full items-center justify-center self-center md:basis-0 "
 		>
-			<div class="h-[150px] w-[150px]">
+			<div class="h-[200px] w-[200px]">
 				{#if isHome}
 					<img src={logo_black} alt="logo" />
 				{:else}
@@ -31,39 +31,39 @@
 			</div>
 		</div>
 		<div class="">
-			<h4 class="pt-10 font-playfair text-2xl text-start">{m.sitemap()}</h4>
-			<ul>
+			<h4 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.sitemap()}</h4>
+			<ul class="flex justify-center flex-col items-center opacity-70">
 				{#each mainNav as { title, slug }}
 					<li>
 						<a class=" flex justify-between gap-x-10 py-2" href={slug}>
-							<p class="underline underline-offset-2">{title}</p>
+							<p class="block underline-offset-2">{title}</p>
 							<!-- <svelte:component this={icons[name]} /> -->
 						</a>
 					</li>
 				{/each}
 			</ul>
 		</div>
-		<div class="">
-			<h4 class="pt-10 text-start font-playfair text-2xl">{m.find_us()}</h4>
-			<ul>
+		<div class="flex justify-center flex-col items-center">
+			<h4 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.find_us()}</h4>
+			<ul class="opacity-70">
 				{#each socials as { name, href }}
 					<li>
-						<a class=" flex justify-between gap-x-10 py-2" {href}>
-							<p class="">{name}</p>
+						<a class=" flex justify-start gap-x-10 py-2" {href}>
 							<svelte:component this={icons[name]} />
+							<!-- <p class="">{name}</p> -->
 						</a>
 					</li>
 				{/each}
 			</ul>
 		</div>
-		<div class="">
-			<h4 class="pt-10 font-playfair text-2xl text-start">{m.contact_us()}</h4>
-			<ul>
+		<div class="flex justify-center flex-col items-center">
+			<h4 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.contact_us()}</h4>
+			<ul class="opacity-70">
 				{#each contactInfo as { info, icon, href }}
-					<li>
-						<a class=" flex justify-between gap-x-10 py-2" {href}>
-							<p>{info}</p>
+					<li class="">
+						<a class=" flex justify-center md:justify-start gap-x-3 py-2" {href}>
 							<svelte:component this={icons[icon]} />
+							<p>{info}</p>
 						</a>
 					</li>
 				{/each}
