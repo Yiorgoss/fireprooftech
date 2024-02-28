@@ -18,6 +18,8 @@
 	import fireResistance2 from '$lib/assets/icons/fire-resistance-1.png?format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import fireResistance3 from '$lib/assets/icons/fire-resistance-1.png?format=avif;webp;jpg&as=picture';
+	//@ts-ignore
+  import ourProcess from '$lib/assets/images/our-process.png?quality=75&format=avif;webp;png&as=picture';
 </script>
 
 <svelte:head>
@@ -40,23 +42,23 @@
 			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_one()}</div>
 		</div>
 	</div>
-	<div class="container flex flex-col items-center justify-center py-10 text-background">
+	<div class="container flex flex-col items-center justify-center pt-0 pb-10 text-background">
 		<div class="w-full px-2 pb-10 text-lg md:w-2/3">
 			<h2 class="w-full py-10 font-playfair text-6xl uppercase">
 				{m.about_page_our_founder_heading()}
 			</h2>
-			<p class="">{m.about_page_our_founder_description_paragraph_one()}</p>
-			<p class="pt-3">{m.about_page_our_founder_description_paragraph_two()}</p>
-			<p class="pt-3">{m.about_page_our_founder_description_paragraph_three()}</p>
-			<p class="pt-3">{m.about_page_our_founder_description_paragraph_four()}</p>
+			<p class="tracking-wider">{m.about_page_our_founder_description_paragraph_one()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_two()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_three()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_four()}</p>
 		</div>
 	</div>
 	<div class="overflow-hidden bg-off-blue px-14">
 		<div
 			class="mx-auto -mb-[10%] -mt-[10%] max-w-[1000px] flex aspect-square items-center justify-center rounded-full bg-foreground text-background"
 		>
-			<div class="flex aspect-square h-[70.7%] w-[70.7%] flex-col justify-center">
-				<h2 class="text-center pb-10 font-playfair text-4xl uppercase md:text-5xl">
+			<div class="flex aspect-square h-[70.7%] w-[70.7%] flex-col justify-between py-10">
+				<h2 class="text-center pb-10 font-playfair text-4xl uppercase md:text-7xl">
 					{m.about_page_our_work_heading()}
 				</h2>
 				<div class="pb-5">
@@ -64,47 +66,47 @@
 				</div>
 				<div class="flex w-full items-center justify-center gap-5">
 					<div class="border-destructive border-4 basis-1/4">
-						<ImageWrapper meta={pastWork1} />
+						<ImageWrapper imageClass="border-4 border-background" meta={pastWork1} />
 					</div>
 					<div class="border-destructive border-4 basis-1/2">
-						<ImageWrapper meta={pastWork2} />
+						<ImageWrapper imageClass="border-4 border-background" meta={pastWork2} />
 					</div>
 					<div class="border-destructive border-4 basis-1/4">
-						<ImageWrapper meta={pastWork3} />
+						<ImageWrapper imageClass="border-4 border-background" meta={pastWork3} />
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="flex flex-col items-center justify-center gap-10 border-y-4 p-10">
-		<h3 class="font-playfair text-2xl uppercase text-background md:text-4xl">
+	<div class="flex flex-col items-center justify-center gap-6  border-off-blue border-y-4 p-10">
+		<h3 class="font-playfair max-w-[400px] md:leading-[3rem] text-center text-2xl uppercase text-background md:text-4xl">
 			{m.about_page_project_in_mind()}
 		</h3>
-		<div class="h-1 border-t-4 border-white"></div>
-		<Button>{m.get_free_estimate()}</Button>
+    <div class="border-t-4 pb-4 border-white w-20 "></div>
+		<Button size="lg" variant="destructive" class="uppercase">{m.get_free_estimate()}</Button>
 	</div>
 	<div class="pt-5">
-		<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-5xl">
+		<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-7xl">
 			{m.about_page_our_process_title()}
 		</h2>
-		<div class="container flex min-h-[500px] w-full flex-col py-10 md:flex-row">
-			<div class="flex basis-1/2 items-center justify-center px-10">
-				<div class="w-4/5 h-full ">
-					<ImageWrapper pictureClass="h-full w-full" imageClass="h-full w-full object-cover" meta={pastWork3} />
+		<div class="container flex h-[400px] w-full flex-col justify-center py-10 md:flex-row">
+			<div class="flex basis-1/2 items-center justify-center w-fit px-10">
+				<div class=" h-full border-foreground border-4 outline outline-4 outline-off-blue">
+					<ImageWrapper pictureClass="h-full w-full" imageClass="h-full w-full object-cover" meta={ourProcess} />
 				</div>
 			</div>
-			<div class="basis-1/2 px-10">
-				<p class="text-background">{m.about_page_our_process_description()}</p>
+			<div class="basis-1/2 px-10 flex justify-center items-center">
+				<p class="text-background w-3/4 ">{m.about_page_our_process_description()}</p>
 			</div>
 		</div>
 	</div>
-	<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-5xl">
+	<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-6xl">
 		{m.about_page_fireproof_testing_heading()}
 	</h2>
 	<h3 class="py-10 text-center font-playfair text-2xl text-background md:text-4xl">
 		{m.about_page_fireproof_testing_subheading()}
 	</h3>
-	<div class="mx-auto w-fit max-w-[500px] border-8 p-10">
+	<div class="mx-auto w-fit max-w-[500px] border-off-blue border-8 p-10">
 		<p class="py-10 text-background">{m.about_page_fireproof_testing_description()}</p>
 	</div>
 	<div class="mx-auto w-4/6 py-5">

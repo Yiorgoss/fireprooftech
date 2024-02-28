@@ -25,7 +25,7 @@
 		<Carousel.Content class="mt-0 basis-1/3 gap-5 py-10 md:gap-5">
 			{#each images as image, i}
 				<Carousel.Item
-					class={`${current == i ? 'scale-110 grayscale-0' : 'grayscale'} px-5 transition-transform duration-200  hover:scale-125 hover:grayscale-0`}
+					class={`${current == i ? 'scale-110 grayscale-0' : 'grayscale-[50%]'} px-5 transition-transform duration-200  hover:scale-125 hover:grayscale-0`}
 				>
 					<button
 						class:text-foreground-muted={current != i}

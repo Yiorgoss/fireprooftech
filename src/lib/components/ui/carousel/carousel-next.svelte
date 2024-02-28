@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Button, type Props, buttonVariants } from "$lib/components/ui/button/index.js";
 	import { cn } from "$lib/utils";
-	import { ChevronRight } from "lucide-svelte";
+	import { ArrowRight } from "lucide-svelte";
 	import type { VariantProps } from "tailwind-variants";
 	import { getEmblaContext } from "./context.js";
 
@@ -32,6 +32,6 @@
 	on:keydown={handleKeyDown}
 	{...$$restProps}
 >
-	<ChevronRight class={arrowClass} />
+	<ArrowRight class={arrowClass} />
 	<span class="sr-only">Next slide</span>
 </Button>

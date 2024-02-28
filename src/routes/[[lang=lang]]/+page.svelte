@@ -79,7 +79,11 @@
 	<!-- <div class="overflow-x-hidden"> -->
 	<div class="relative -mt-[100px] h-svh overflow-hidden">
 		<ImageWrapper imageClass="h-svh w-full object-cover" meta={landing} alt="landing hero image" />
-		<div class="absolute inset-0 bg-[#9fb0b9] opacity-50"></div>
+		<div class="absolute inset-0 grid bg-[#9fb0b9] opacity-50 md:grid-cols-6">
+			{#each [1, 2, 3, 4, 5, 6] as _}
+				<div class=" h-full border-l border-background/50"></div>
+			{/each}
+		</div>
 
 		<div
 			class="container absolute inset-0 flex w-full items-center px-2 py-20 md:items-end md:px-20"
@@ -89,26 +93,26 @@
 			>
 				<h1
 					class:opacity-0={!mounted}
-					class="xl py-10 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in md:text-6xl"
+					class="w-3/4 py-14 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in sm:text-6xl md:text-9xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
 				<p
 					class:opacity-0={!mounted}
-					class="leading-7 w-3/4 px-5 transition-opacity delay-300 duration-1000 ease-in sm:text-xl md:text-2xl"
+					class="w-3/4 px-5 leading-7 transition-opacity delay-300 duration-1000 ease-in sm:text-xl md:text-2xl"
 				>
 					{m.home_page_landing_subheading()}
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="bg-off-blue">
+	<div class="bg-gradient-to-b from-slate-300 to-slate-50/50">
 		<div class="container flex flex-col px-2 py-10 pl-0 md:flex-row md:pl-12">
-			<div class="basis-1/2" style:transform={`translate(0,${scroll * 0.05}px)`}>
+			<div class="basis-1/2">
 				<CircularCarousel {images} />
 			</div>
-			<div class="flex basis-1/2 flex-col items-center justify-end px-4 py-10">
-				<h2 class="break-all py-5 text-center font-playfair text-3xl md:text-4xl">
+			<div class="flex basis-1/2 flex-col items-start justify-end px-4 py-10">
+				<h2 class="break-all py-5 text-left font-playfair text-3xl uppercase md:text-4xl">
 					{m.home_page_carousel_heading()}
 				</h2>
 				<p class="">{m.home_page_carousel_description()}</p>
@@ -119,9 +123,11 @@
 		</div>
 	</div>
 	<section class="mx-auto flex flex-col overflow-hidden">
-		<div class="mx-auto basis-full px-4 pt-20 md:w-1/2">
-			<h2 class="py-10 font-playfair text-3xl md:text-6xl">{m.home_page_process_heading()}</h2>
-			<h3 class="float-right py-5 text-2xl underline underline-offset-8">
+		<div class="mx-auto basis-full px-4 pt-20 md:w-2/3">
+			<h2 class="w-5/6 py-10 font-playfair text-3xl uppercase md:text-7xl">
+				{m.home_page_process_heading()}
+			</h2>
+			<h3 class="float-right py-5 text-3xl underline underline-offset-8">
 				{m.home_page_process_subheading()}
 			</h3>
 		</div>
@@ -172,17 +178,14 @@
 	</section>
 	<div class="flex flex-col justify-center overflow-hidden border-t py-10">
 		<h3
-			style:transform={`translate( ${calcBounce(scroll, 0, 50, 0.1)}px)`}
-			class="py-10 text-center font-playfair text-6xl"
+			style:transform={`translate( ${calcBounce(scroll, 0, 50, 0.15)}px)`}
+			class="z-20 -mb-16 pt-10 text-center font-playfair text-6xl uppercase"
 		>
 			{m.home_page_why_pick_us_title()}
 		</h3>
 		l
-		<div class="container p-10">
-			<div
-				style={`(min-width:768px) transform:translate( ${-calcBounce(scroll, 0, 50, 0.1)}px)`}
-				class=""
-			>
+		<div class="container pb-10">
+			<div class="">
 				<WhyPickUsCarousel />
 			</div>
 		</div>
