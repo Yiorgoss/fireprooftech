@@ -31,12 +31,12 @@
 			description: m.home_page_why_pick_us_one_description()
 		},
 		{
-			src: checkmark,
+			src: leaves,
 			title: m.home_page_why_pick_us_two_subheading(),
 			description: m.home_page_why_pick_us_two_description()
 		},
 		{
-			src: leaves,
+			src: checkmark,
 			title: m.home_page_why_pick_us_three_subheading(),
 			description: m.home_page_why_pick_us_three_description()
 		}
@@ -49,7 +49,7 @@
 			<Carousel.Item class="flex flex-col items-center  justify-center md:flex-row">
 				<img class="w-1/3" {src} alt="decorative" />
 				<div class="flex w-2/3 flex-col items-center justify-center p-1 text-center">
-					<h4 class="font-playfair text-2xl">{title}</h4>
+					<h4 class="pb-5 font-playfair text-2xl">{title}</h4>
 					<p class="text-lg">{description}</p>
 				</div>
 			</Carousel.Item>

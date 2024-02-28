@@ -25,7 +25,7 @@
 	<meta name="description" content={m.about_page_head_description()} />
 </svelte:head>
 
-<div class="pt[100px] relative -mt-[100px] w-full overflow-hidden bg-foreground">
+<div class="pt-[100px] relative -mt-[100px] w-full overflow-hidden bg-foreground">
 	<h1 class="mt-[100px] w-full bg-off-blue py-16 text-center font-playfair text-6xl uppercase">
 		{m.about_fpt()}
 	</h1>
@@ -89,7 +89,7 @@
 		</h2>
 		<div class="container flex min-h-[500px] w-full flex-col py-10 md:flex-row">
 			<div class="flex basis-1/2 items-center justify-center px-10">
-				<div class="w-4/5 h-full bg-green-500 ">
+				<div class="w-4/5 h-full ">
 					<ImageWrapper pictureClass="h-full w-full" imageClass="h-full w-full object-cover" meta={pastWork3} />
 				</div>
 			</div>

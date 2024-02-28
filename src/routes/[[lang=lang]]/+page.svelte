@@ -172,7 +172,7 @@
 	</section>
 	<div class="flex flex-col justify-center overflow-hidden border-t py-10">
 		<h3
-			style:transform={`translate( ${calcBounce(scroll, 0, 50, 0.05)}px)`}
+			style:transform={`translate( ${calcBounce(scroll, 0, 50, 0.1)}px)`}
 			class="py-10 text-center font-playfair text-6xl"
 		>
 			{m.home_page_why_pick_us_title()}
@@ -180,7 +180,7 @@
 		l
 		<div class="container p-10">
 			<div
-				style={`(min-width:768px) transform:translate( ${-calcBounce(scroll, 0, 50, 0.05)}px)`}
+				style={`(min-width:768px) transform:translate( ${-calcBounce(scroll, 0, 50, 0.1)}px)`}
 				class=""
 			>
 				<WhyPickUsCarousel />
