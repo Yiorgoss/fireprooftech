@@ -17,7 +17,7 @@
 	// console.log({sources:sources, meta: meta})
 </script>
 
-<div style={`max-width: ${fallback.w}px`}>
+<div class="h-full" style={`max-width: ${fallback.w}px`}>
 	<picture class={pictureClass}>
 		{#each Object.entries(sources) as [type, srcMeta]}
 			<source type="image/{type}" {sizes} srcset={srcMeta} />

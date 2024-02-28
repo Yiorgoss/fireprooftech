@@ -95,7 +95,7 @@
 				</h1>
 				<p
 					class:opacity-0={!mounted}
-					class="leading-7 w-full px-5 transition-opacity delay-300 duration-1000 ease-in sm:text-xl md:text-2xl"
+					class="leading-7 w-3/4 px-5 transition-opacity delay-300 duration-1000 ease-in sm:text-xl md:text-2xl"
 				>
 					{m.home_page_landing_subheading()}
 				</p>
