@@ -107,23 +107,23 @@
 		</div>
 	</div>
 	<div class="bg-gradient-to-b from-slate-300 to-slate-50/50">
-		<div class="container flex flex-col px-2 py-10 pl-0 md:flex-row md:pl-12">
+		<div class="container flex flex-col px-2 pt-10 pl-0 md:flex-row md:pl-12">
 			<div class="basis-1/2">
 				<CircularCarousel {images} />
 			</div>
 			<div class="flex basis-1/2 flex-col items-start justify-end px-4 py-10">
-				<h2 class="break-all py-5 text-left font-playfair text-3xl uppercase md:text-4xl">
+				<h2 class="py-5 text-start font-playfair text-3xl uppercase md:text-4xl">
 					{m.home_page_carousel_heading()}
 				</h2>
 				<p class="">{m.home_page_carousel_description()}</p>
-				<a class="py-10" href={i18n.route('/contact-us')}>
+				<a class="pt-10" href={i18n.route('/contact-us')}>
 					<Button variant="destructive" size="xl">{m.get_in_touch()}</Button>
 				</a>
 			</div>
 		</div>
 	</div>
 	<section class="mx-auto flex flex-col overflow-hidden">
-		<div class="mx-auto basis-full px-4 pt-20 md:w-2/3">
+		<div class="mx-auto basis-full px-4 pt-0 md:pt-20 md:w-2/3">
 			<h2 class="w-5/6 py-10 font-playfair text-3xl uppercase md:text-7xl">
 				{m.home_page_process_heading()}
 			</h2>

@@ -65,13 +65,13 @@
 					{m.about_page_our_work_description()}
 				</div>
 				<div class="flex flex-col md:flex-row w-full items-center justify-center gap-5">
-					<div class="border-destructive border-4 basis-1/4 m-5 md:m-0">
+					<div class="border-destructive border-4 basis-1/4 mx-auto md:mx-0 w-1/2 ">
 						<ImageWrapper imageClass="border-4 border-background" meta={pastWork1} />
 					</div>
-					<div class="border-destructive border-4 basis-1/2 m-5 md:m-0">
+					<div class="border-destructive border-4 basis-1/2  mx-auto md:mx-0 w-1/2 ">
 						<ImageWrapper imageClass="border-4 border-background" meta={pastWork2} />
 					</div>
-					<div class="border-destructive border-4 basis-1/4 m-5 md:m-0">
+					<div class="border-destructive border-4 basis-1/4 w-1/2 mx-auto md:mx-0">
 						<ImageWrapper imageClass="border-4 border-background" meta={pastWork3} />
 					</div>
 				</div>
