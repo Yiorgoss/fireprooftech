@@ -53,25 +53,25 @@
 			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_four()}</p>
 		</div>
 	</div>
-	<div class="overflow-hidden bg-off-blue px-14">
+	<div class="overflow-hidden bg-off-blue px-0 py-10 md:px-14">
 		<div
-			class="mx-auto -mb-[10%] -mt-[10%] max-w-[1000px] flex aspect-square items-center justify-center rounded-full bg-foreground text-background"
+			class="mx-auto md:-my-[10%] my-10 py-0 max-w-[1000px] flex aspect-normal md:aspect-square items-center justify-center rounded-none md:rounded-full bg-foreground text-background"
 		>
-			<div class="flex aspect-square h-[70.7%] w-[70.7%] flex-col justify-between py-10">
+			<div class="flex md:aspect-square h-full md:h-[70.7%] w-full md:w-[70.7%] flex-col justify-between py-10 md:py-10">
 				<h2 class="text-center pb-10 font-playfair text-4xl uppercase md:text-7xl">
 					{m.about_page_our_work_heading()}
 				</h2>
-				<div class="pb-5">
+				<div class="pb-5 px-10 md:px-0">
 					{m.about_page_our_work_description()}
 				</div>
-				<div class="flex w-full items-center justify-center gap-5">
-					<div class="border-destructive border-4 basis-1/4">
+				<div class="flex flex-col md:flex-row w-full items-center justify-center gap-5">
+					<div class="border-destructive border-4 basis-1/4 m-5 md:m-0">
 						<ImageWrapper imageClass="border-4 border-background" meta={pastWork1} />
 					</div>
-					<div class="border-destructive border-4 basis-1/2">
+					<div class="border-destructive border-4 basis-1/2 m-5 md:m-0">
 						<ImageWrapper imageClass="border-4 border-background" meta={pastWork2} />
 					</div>
-					<div class="border-destructive border-4 basis-1/4">
+					<div class="border-destructive border-4 basis-1/4 m-5 md:m-0">
 						<ImageWrapper imageClass="border-4 border-background" meta={pastWork3} />
 					</div>
 				</div>
@@ -89,14 +89,14 @@
 		<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-7xl">
 			{m.about_page_our_process_title()}
 		</h2>
-		<div class="container flex h-[400px] w-full flex-col justify-center py-10 md:flex-row">
+		<div class="container flex min-h-[400px] items-center w-full flex-col justify-center py-10 md:flex-row">
 			<div class="flex basis-1/2 items-center justify-center w-fit px-10">
-				<div class=" h-full border-foreground border-4 outline outline-4 outline-off-blue">
+				<div class="h-full border-foreground border-4 outline outline-4 outline-off-blue">
 					<ImageWrapper pictureClass="h-full w-full" imageClass="h-full w-full object-cover" meta={ourProcess} />
 				</div>
 			</div>
-			<div class="basis-1/2 px-10 flex justify-center items-center">
-				<p class="text-background w-3/4 ">{m.about_page_our_process_description()}</p>
+			<div class="basis-full md:basis-1/2 px-10 flex pt-10 md:pt-0 justify-center items-center">
+				<p class="text-background w-full md:w-3/4 ">{m.about_page_our_process_description()}</p>
 			</div>
 		</div>
 	</div>
