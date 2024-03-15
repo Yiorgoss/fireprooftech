@@ -24,7 +24,7 @@
 		<h1 class="py-10 text-start font-playfair text-6xl uppercase">{m.contact_page_heading()}</h1>
 		<div class="flex w-full flex-col-reverse items-start justify-center md:flex-row">
 			<div class="basis-1/2 self-center">
-				<ContactForm form={data.form} />
+				<ContactForm data={data.form} />
 			</div>
 			<div class="basis-1/2 p-10 leading-7">
 				<p class="">{m.contact_page_description()}</p>

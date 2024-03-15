@@ -67,5 +67,8 @@
 	"about_page_head_title": "Top Quality & Innovative Fire-Resistant Glass Materials | FireProofTech",
 	"about_page_head_description": "Our company specializes in the manufacturing of fire-resistant glass using innovative materials. Learn more about our expertise and commitment to safety and quality.",
 	"contact_page_head_title": "Contact us for any questions about fire resistant glass | FireProofTech",
-	"contact_page_head_description": "Contact us any time to find out more. We specialize in all things fire resistance. Find out more about the materials used, or about the rigorous testing. We are here to help with any inquiries."
+	"contact_page_head_description": "Contact us any time to find out more. We specialize in all things fire resistance. Find out more about the materials used, or about the rigorous testing. We are here to help with any inquiries.",
+	"FORM_SUCCESS": "Message received, thank you for contacting us we will be in touch shortly. Please check your email for our automated reply.",
+	"FORM_ERROR_NOT_VALID": "Problem submitting from, Please contact us by try again or contact us by phone.",
+  "FORM_ERROR_EMAIL": "There was a problem sending the emails, please contact us by phone"
 }

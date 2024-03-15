@@ -1,39 +1,82 @@
 <script lang="ts">
 	import * as Form from '$lib/components/ui/form';
 	import * as m from '$pg/messages';
+	import { Input } from '$lib/components/ui/input';
+	import { Textarea } from '$lib/components/ui/textarea';
 	import { contactSchema, type ContactSchema } from '$lib/schema';
-	import type { SuperValidated } from 'sveltekit-superforms';
+	import SuperDebug, { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
+	import { zodClient } from 'sveltekit-superforms/adapters';
+	import { Loader } from 'lucide-svelte';
+	import { toast } from 'svelte-sonner';
 
-	export let form: SuperValidated<ContactSchema>;
+	export let data: SuperValidated<Infer<ContactSchema>>;
+
+	const form = superForm(data, {
+		validators: zodClient(contactSchema),
+		delayMs: 0,
+		timeoutMs: 0,
+    resetForm: false
+	});
+
+	const { form: formData, message, delayed, enhance } = form;
+	$: if ($message && $message.text) {
+
+		if ($message.status == 'success') {
+			toast.success($message.text);
+		}
+		if ($message.status == 'error') {
+			// toast.success('tarsitenarsotearnto',$message.text);
+			toast.error($message.text);
+		}
+	}
 </script>
 
-<Form.Root method="POST" class="w-full" {form} schema={contactSchema} let:config>
+<!-- <SuperDebug data={$formData} /> -->
+<form method="POST" class="relative w-full" use:enhance>
+	<!-- <Form.Root method="POST" class="w-full" {form} schema={contactSchema} let:config> -->
+	{#await $delayed}
+		<div class="absolute inset-0 flex items-center justify-center bg-foreground/50">
+			<Loader />
+		</div>
+	{/await }
 	<div class={`flex flex-col`}>
-		<div class="flex h-full w-full flex-col min-w-[300px] gap-5">
-			<Form.Field {config} name="name">
-				<Form.Item class="">
+		<div class="flex h-full w-full min-w-[300px] flex-col gap-5">
+			<Form.Field {form} name="name">
+				<Form.Control let:attrs>
 					<Form.Label class="">{m.name()}</Form.Label>
-					<Form.Validation class="inline" />
-					<Form.Input class="focus:outline-border bg-foreground" />
-				</Form.Item>
+					<Input
+						{...attrs}
+						class="rounded-none bg-foreground focus:outline-border"
+						bind:value={$formData.name}
+					/>
+				</Form.Control>
+				<Form.FieldErrors />
 			</Form.Field>
-			<Form.Field {config} name="email">
-				<Form.Item>
-					<Form.Label>{m.email()}</Form.Label>
-					<Form.Validation class="inline " />
-					<Form.Input class="bg-foreground" />
-				</Form.Item>
+			<Form.Field {form} name="email">
+				<Form.Control let:attrs>
+					<Form.Label class="">{m.email()}</Form.Label>
+					<Input
+						{...attrs}
+						class="rounded-none bg-foreground focus:outline-border"
+						bind:value={$formData.email}
+					/>
+				</Form.Control>
+				<Form.FieldErrors />
 			</Form.Field>
-			<Form.Field {config} name="message">
-				<Form.Item class=" basis-1/2  ">
-					<Form.Label>{m.message()}</Form.Label>
-					<Form.Validation class="inline " />
-					<Form.Textarea class="w-full min-h-[200px] bg-foreground" />
-				</Form.Item>
+			<Form.Field {form} name="message">
+				<Form.Control let:attrs>
+					<Form.Label class="">{m.message()}</Form.Label>
+					<Textarea
+						{...attrs}
+						bind:value={$formData.message}
+						class="min-h-[200px] w-full rounded-none bg-foreground"
+					/>
+				</Form.Control>
+				<Form.FieldErrors />
 			</Form.Field>
 		</div>
-		<div class="pt-10 mx-auto">
+		<div class="mx-auto pt-10">
 			<Form.Button size="lg" variant="destructive" class="">{m.submit()}</Form.Button>
 		</div>
 	</div>
-</Form.Root>
+</form>
