@@ -70,5 +70,11 @@
 	"contact_page_head_description": "Contact us any time to find out more. We specialize in all things fire resistance. Find out more about the materials used, or about the rigorous testing. We are here to help with any inquiries.",
 	"FORM_SUCCESS": "Message received, thank you for contacting us we will be in touch shortly. Please check your email for our automated reply.",
 	"FORM_ERROR_NOT_VALID": "Problem submitting from, Please contact us by try again or contact us by phone.",
-  "FORM_ERROR_EMAIL": "There was a problem sending the emails, please contact us by phone"
+	"FORM_ERROR_EMAIL": "There was a problem sending the emails, please contact us by phone",
+	"email_verification_subject": "We received your email",
+	"email_verification_preview": "High quality, industrial fireproof glass and materials.",
+	"email_verification_heading": "Fire Proof Tech",
+	"email_verification_text_1": "Thank you for email us at FireproofTech.",
+	"email_verification_text_2": "We will be in touch with you shortly.",
+	"email_verification_text_3": "If you would like to get in touch sooner please dont hesitate to contact us by phone at"
 }

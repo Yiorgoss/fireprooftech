@@ -2,6 +2,10 @@ import type { Handle } from '@sveltejs/kit';
 import { sourceLanguageTag } from "$pg/runtime"
 import { isRTL } from "$lib/i18n-routing"
 
+// import { i18n } from '$lib/i18n.js'
+// export const handle = i18n.handle()
+
+
 export const handle: Handle = async ({ event, resolve }) => {
   const lang = event.params.lang ?? sourceLanguageTag
   const dir = isRTL(lang) ? 'rtl' : 'ltr'

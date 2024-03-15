@@ -10,6 +10,8 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"generate": "",
+		"email:dev": "email dev --dir src/lib/emails",
+		"email:build": "email build --dir src/lib/emails",
 		"compile": "paraglide-js compile --project ./project.inlang ",
 		"build": "paraglide-js compile --project ./project.inlang && vite build",
 		"postinstall": "paraglide-js compile --project ./project.inlang"
@@ -21,6 +23,7 @@
 		"@sveltejs/adapter-auto": "^3.1.1",
 		"@sveltejs/kit": "^2.5.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"@types/react": "^18.2.66",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",
 		"@typescript-eslint/parser": "^6.21.0",
 		"autoprefixer": "^10.4.17",
@@ -44,6 +47,7 @@
 	"type": "module",
 	"dependencies": {
 		"@prisma/client": "^5.9.1",
+		"@react-email/components": "^0.0.15",
 		"@react-email/render": "^0.0.12",
 		"@sveltejs/adapter-vercel": "^5.1.0",
 		"@types/nodemailer": "^6.4.14",
@@ -57,6 +61,8 @@
 		"mode-watcher": "^0.2.2",
 		"nodemailer": "^6.9.12",
 		"pg": "^8.11.3",
+		"react": "^18.2.0",
+		"react-email": "2.1.0",
 		"svelte-cloudinary": "^1.2.1",
 		"svelte-sonner": "^0.3.19",
 		"sveltekit-superforms": "^2.9.0",

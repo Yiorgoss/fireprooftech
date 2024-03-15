@@ -14,8 +14,7 @@
 	const form = superForm(data, {
 		validators: zodClient(contactSchema),
 		delayMs: 0,
-		timeoutMs: 0,
-    resetForm: false
+		timeoutMs: 5000,
 	});
 
 	const { form: formData, message, delayed, enhance } = form;
@@ -34,11 +33,11 @@
 <!-- <SuperDebug data={$formData} /> -->
 <form method="POST" class="relative w-full" use:enhance>
 	<!-- <Form.Root method="POST" class="w-full" {form} schema={contactSchema} let:config> -->
-	{#await $delayed}
+	{#if $delayed}
 		<div class="absolute inset-0 flex items-center justify-center bg-foreground/50">
 			<Loader />
 		</div>
-	{/await }
+	{/if}
 	<div class={`flex flex-col`}>
 		<div class="flex h-full w-full min-w-[300px] flex-col gap-5">
 			<Form.Field {form} name="name">
