@@ -21,7 +21,7 @@ export default function InquiryEmail({ lang = 'en', dir = 'ltr' }: { lang: strin
       <Preview>{m.email_verification_preview()}</Preview>
       <Tailwind>
         <Body style={main}>
-          <Container className="py-10 w-full bg-white">
+          <Container className="py-10 w-full bg-white" key={1}>
             <Row>
               <Column>
                 <Img
@@ -39,7 +39,7 @@ export default function InquiryEmail({ lang = 'en', dir = 'ltr' }: { lang: strin
               </Column>
             </Row>
           </Container>
-          <Container className="px-10 text-lg">
+          <Container className="px-10 text-lg" key={2}>
             <Text className="text-base">{m.email_verification_text_1()}</Text>
             <Text className="text-base">{m.email_verification_text_2()}</Text>
             <Hr />

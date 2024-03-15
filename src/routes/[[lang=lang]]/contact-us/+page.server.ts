@@ -76,6 +76,7 @@ export const actions: Actions = {
       return message(form, { status: 'error', text: m.FORM_ERROR_NOT_VALID() });
     }
     let lang = event.url.pathname.split('/')[1]
+    if (lang.length > 2) { lang = 'en' }
     let dir = isRTL(lang) ? 'rtl' : 'ltr'
 
     console.log(lang, dir)
