@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://fireprooftech.co.il/</loc>
+    <xhtml:link
+    rel="alternate"
+    hreflang="il"
+      href="https://fireprooftech.co.il/il" />
+</url>
+<url>
+  <loc>https://fireprooftech.co.il/about-us</loc>
+    <xhtml:link
+    rel="alternate"
+    hreflang="il"
+      href="https://fireprooftech.co.il/il/about-us" />
+</url>
+<url>
+  <loc>https://fireprooftech.co.il/contact-us</loc>
+    <xhtml:link
+    rel="alternate"
+    hreflang="il"
+      href="https://fireprooftech.co.il/il/contact-us" />
+</url>
+</urlset>
