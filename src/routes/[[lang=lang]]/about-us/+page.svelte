@@ -42,17 +42,6 @@
 			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_one()}</div>
 		</div>
 	</div>
-	<div class="container flex flex-col items-center justify-center pt-0 pb-10 text-background">
-		<div class="w-full px-2 pb-10 text-lg md:w-2/3">
-			<h2 class="w-full py-10 font-playfair text-6xl uppercase">
-				{m.about_page_our_founder_heading()}
-			</h2>
-			<p class="tracking-wider">{m.about_page_our_founder_description_paragraph_one()}</p>
-			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_two()}</p>
-			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_three()}</p>
-			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_four()}</p>
-		</div>
-	</div>
 	<div class="overflow-hidden bg-off-blue px-0 py-10 md:px-14">
 		<div
 			class="mx-auto md:-my-[10%] my-10 py-0 max-w-[1000px] flex aspect-normal md:aspect-square items-center justify-center rounded-none md:rounded-full bg-foreground text-background"
@@ -78,7 +67,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex flex-col items-center justify-center gap-6  border-off-blue border-y-4 p-10">
+	<div class="flex flex-col items-center justify-center gap-6  border-off-blue border-y-4 mt-6 p-10">
 		<h3 class="font-playfair max-w-[400px] md:leading-[3rem] text-center text-2xl uppercase text-background md:text-4xl">
 			{m.about_page_project_in_mind()}
 		</h3>
@@ -100,6 +89,17 @@
 			</div>
 		</div>
 	</div>
+	<div class="my-6 border-y-4 border-off-blue  flex flex-col items-center justify-center pt-0 pb-10 text-background">
+		<div class="w-full px-2 pb-10 text-lg md:w-2/3">
+			<h2 class="w-full py-10 font-playfair text-6xl uppercase">
+				{m.about_page_our_founder_heading()}
+			</h2>
+			<p class="tracking-wider">{m.about_page_our_founder_description_paragraph_one()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_two()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_three()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_four()}</p>
+		</div>
+	</div>
 	<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-6xl">
 		{m.about_page_fireproof_testing_heading()}
 	</h2>
@@ -118,21 +118,21 @@
 		</h2>
 		<div class="flex flex-col flex-wrap items-center justify-center gap-5 break-all md:flex-row">
 			<div
-				class="min-w-[300px] flex w-full flex-col items-center flex-wrap justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
+				class="min-w-[300px] flex w-full sm:w-1/2 flex-col items-center flex-wrap justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
 			>
 				<ImageWrapper imageClass="min-h-[200px]" meta={fireResistance1} />
 				<h3 class="font-playfair">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
 				<p class="">{m.about_page_variations_of_resistance_card_one_description()}</p>
 			</div>
 			<div
-				class="min-w-[300px] flex w-full flex-col items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
+				class="min-w-[300px] flex w-full sm:w-1/2 flex-col items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
 			>
 				<ImageWrapper imageClass="min-h-[200px]" meta={fireResistance2} />
 				<h3 class="font-playfair">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
 				<p class="">{m.about_page_variations_of_resistance_card_one_description()}</p>
 			</div>
 			<div
-				class="min-w-[300px] flex w-full flex-col items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
+				class="min-w-[300px] flex w-full flex-col sm:w-1/2 items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
 			>
 				<ImageWrapper imageClass="min-h-[200px]" meta={fireResistance3} />
 				<h3 class="font-playfair">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
