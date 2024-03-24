@@ -55,7 +55,7 @@ async function sendInternalEmail({ name, message, email }: { name: string, messa
   });
   const options = {
     from: `automated@fireprooftech.co.il`,
-    to: 'admin@fireprooftech.co.il',
+    to: 'info@fireprooftech.co.il',
     subject: 'New Email',
     html: `You have a new email from ${name}. <br/> messaage:<br/>${message} <br/> email: <br/>${email}`
   };
