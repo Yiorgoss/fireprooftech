@@ -11,6 +11,8 @@
 			: 'text-background';
 </script>
 
+
+
 <Navbar textColor={textColor} />
 <main class="font-gothic tracking-wider leading-10 text-xl">
 	<slot />
