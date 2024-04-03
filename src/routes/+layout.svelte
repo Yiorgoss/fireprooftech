@@ -28,3 +28,6 @@
 <ParaglideJS {i18n}>
 	<slot />
 </ParaglideJS>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c7ded2865f234444a6f8ddc0392ed297"}'></script>
+<!-- End Cloudflare Web Analytics -->
