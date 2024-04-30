@@ -1,6 +1,6 @@
 <!-- <script lang='ts'> -->
 <!---->
-<!--   import { page } from "$app/stores"; -->
+<!-- import { page } from "$app/stores"; -->
 <!--   import { setLanguageTag, sourceLanguageTag, type AvailableLanguageTag } from "$pg/runtime"; -->
 <!--   import {browser} from "$app/environment"; -->
 <!-- 	import I18nHeader from '$lib/components/i18n-header.svelte'; -->
@@ -20,11 +20,16 @@
 <!-- {/key} -->
 
 <script>
-  import '../app.pcss';
+	import '../app.pcss';
+	import { page } from '$app/stores';
+	import { onSetLanguageTag, sourceLanguageTag } from '$pg/runtime';
 	import { ParaglideJS } from '@inlang/paraglide-js-adapter-sveltekit';
 	import { i18n } from '$lib/i18n';
+
+  let lang = sourceLanguageTag
+  onSetLanguageTag((ll)=> lang = ll)
 </script>
 
 <ParaglideJS {i18n}>
-	<slot />
+		<slot />
 </ParaglideJS>

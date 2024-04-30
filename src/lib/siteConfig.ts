@@ -1,16 +1,11 @@
 import * as m from '$pg/messages';
 
-const siteMap = {
+export const siteMap = {
   home: '/',
   aboutUs: '/about-us',
   contactUs: '/contact-us'
 };
 
-export const mainNav = [
-  { slug: '/', title: m.home() },
-  { slug: siteMap.aboutUs, title: m.about_us() },
-  { slug: siteMap.contactUs, title: m.contact_us() },
-];
 
 export const socials = [
   { name: 'Instagram', href: '#' },

@@ -30,8 +30,6 @@
 	import { ImageWrapper } from '$lib/components/image-wrapper/';
 	import { i18n } from '$lib/i18n';
 
-	import { qualitiesList, specList } from '$lib/assets/data';
-
 	const images = [carousel1, carousel2, carousel3];
 	let scroll = 0;
 	let mounted = false;
@@ -54,6 +52,22 @@
 		);
 		return () => observer.disconnect();
 	});
+  export const qualitiesList = [
+  { text: m.quality_list_1() },
+  { text: m.quality_list_2() },
+  { text: m.quality_list_3() },
+  { text: m.quality_list_4() },
+  { text: m.quality_list_5() },
+  { text: m.quality_list_6() },
+]
+
+export const specList = [
+  { text: m.spec_list_1() },
+  { text: m.spec_list_2() },
+  { text: m.spec_list_3() },
+  { text: m.spec_list_4() },
+]
+
 </script>
 
 <svelte:head>

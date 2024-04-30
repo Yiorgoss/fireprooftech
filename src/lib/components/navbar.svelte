@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import LangSwitcher from './lang-switcher.svelte';
 	import { PhoneCall, Menu } from 'lucide-svelte';
-	import { contactInfo, mainNav } from '$lib/siteConfig';
+	import { contactInfo } from '$lib/siteConfig';
 	import * as m from '$pg/messages';
 	import { i18n } from '$lib/i18n';
 	import { page } from '$app/stores';
@@ -16,6 +16,7 @@
 
 	let header: HTMLElement;
 	let isHome = true;
+  export let mainNav:{slug:string,title:string}[];
 
 	$: isHome = withoutLanguageTag($page.url.pathname) == '/';
 
