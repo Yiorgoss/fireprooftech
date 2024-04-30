@@ -81,7 +81,7 @@
 			>
 				<h1
 					class:opacity-0={!mounted}
-					class="w-3/4 py-14 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:text-8xl"
+					class="w-3/4 py-14 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:text-7xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
