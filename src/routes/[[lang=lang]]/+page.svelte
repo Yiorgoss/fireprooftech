@@ -7,6 +7,8 @@
 	import carousel2 from '$lib/assets/images/carousel-2.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import carousel3 from '$lib/assets/images/carousel-3.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
+  //@ts-ignore
+	import spec from '$lib/assets/images/spec.png?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import step1 from '$lib/assets/images/step-1.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
@@ -28,6 +30,8 @@
 	import { ImageWrapper } from '$lib/components/image-wrapper/';
 	import { i18n } from '$lib/i18n';
 
+	import { qualitiesList, specList } from '$lib/assets/data';
+
 	const images = [carousel1, carousel2, carousel3];
 	let scroll = 0;
 	let mounted = false;
@@ -38,22 +42,6 @@
 		Array.from(imageSection.children).forEach((child) => observer.observe(child));
 		// observer.observe(imageSection);
 	}
-	const calcBounce = (function () {
-		let position = 0;
-		let direction = 1;
-		return function (scroll = 0, rangeLow = 0, rangeHigh = 100, speed = 1) {
-			//scroll used to keep variable changing
-			if (position > rangeHigh) {
-				direction = -1;
-			} else if (position < rangeLow) {
-				direction = 1;
-			}
-			let add = 1 * direction * speed;
-
-			position += add;
-			return position;
-		};
-	})();
 	onMount(() => {
 		mounted = true;
 		observer = new IntersectionObserver(
@@ -93,7 +81,7 @@
 			>
 				<h1
 					class:opacity-0={!mounted}
-					class="w-3/4 py-14 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in sm:text-6xl md:text-9xl"
+					class="w-3/4 py-14 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:text-8xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
@@ -107,7 +95,7 @@
 		</div>
 	</div>
 	<div class="bg-gradient-to-b from-slate-300 to-slate-50/50">
-		<div class="container flex flex-col px-2 pt-10 pl-0 md:flex-row md:pl-12">
+		<div class="container flex flex-col px-2 pl-0 pt-10 md:flex-row md:pl-12">
 			<div class="basis-1/2">
 				<CircularCarousel {images} />
 			</div>
@@ -122,8 +110,34 @@
 			</div>
 		</div>
 	</div>
+	<section class="container pt-20 pb-10 border-b">
+		<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+			<div class="px-10 flex flex-col">
+        <div class="py-10">
+				<ImageWrapper
+					imageClass="flex-grow min-h-[300px] w-full object-cover"
+					meta={spec}
+					alt="quality infographic"
+				/>
+          </div>
+				<ul class="grid grid-cols-2 gap-x-10 pt-10">
+					{#each specList as spec}
+						<li class="leading-5 list-disc max-w-[200px] text-base">{spec.text}</li>
+					{/each}
+				</ul>
+			</div>
+			<div class="flex flex-col items-center justify-start px-10">
+				<h2 class="py-10 font-playfair text-4xl uppercase">{m.home_page_qualities_heading()}</h2>
+				<ul class="">
+					{#each qualitiesList as quality}
+						<li class="list-disc">{quality.text}</li>
+					{/each}
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="mx-auto flex flex-col overflow-hidden">
-		<div class="mx-auto basis-full px-4 pt-0 md:pt-20 md:w-2/3">
+		<div class="mx-auto basis-full px-4 pt-0 md:w-2/3 md:pt-20">
 			<h2 class="w-5/6 py-10 font-playfair text-3xl uppercase md:text-7xl">
 				{m.home_page_process_heading()}
 			</h2>
@@ -177,17 +191,11 @@
 		</div>
 	</section>
 	<div class="flex flex-col justify-center overflow-hidden border-t py-10">
-		<h3
-			style:transform={`translate( ${calcBounce(scroll, 0, 50, 0.15)}px)`}
-			class="z-20 -mb-16 pt-10 text-center font-playfair text-6xl uppercase"
-		>
+		<h3 class="z-20 py-10 text-center font-playfair text-6xl uppercase">
 			{m.home_page_why_pick_us_title()}
 		</h3>
-		l
-		<div class="container pb-10">
-			<div class="">
+		<div class="container flex justify-center  pb-10">
 				<WhyPickUsCarousel />
-			</div>
 		</div>
 	</div>
 </div>

@@ -33,7 +33,7 @@
 	bind:this={header}
 	class={`${textColor} relative z-30 flex h-[100px] w-full justify-between bg-transparent font-playfair tracking-wide md:justify-around`}
 >
-	<a href="/" class=" h-[130px] w-[130px] md:p-2">
+	<a href="/" class=" h-[110px] w-[110px] md:p-2">
 		{#if isHome}
 			<img src={logo_black} alt="logo" />
 		{:else}
@@ -61,8 +61,8 @@
 			{#each mainNav as { slug, title }}
 				<li class="px-4 py-4 text-lg">
 					<a on:click={() => (openMenu = false)} class=" text-xl" href={i18n.route(slug)}>
-						{title}</a
-					>
+						{title}
+          </a>
 				</li>
 			{/each}
 			<li class="md:order-first">

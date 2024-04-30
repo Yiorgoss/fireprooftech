@@ -42,6 +42,17 @@
 			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_one()}</div>
 		</div>
 	</div>
+	<div class="my-6 border-y-4 border-off-blue  flex flex-col items-center justify-center pt-0 pb-10 text-background">
+		<div class="w-full px-2 pb-10 text-lg md:w-2/3">
+			<h2 class="w-full py-10 font-playfair text-6xl uppercase">
+				{m.about_page_our_founder_heading()}
+			</h2>
+			<p class="tracking-wider">{m.about_page_our_founder_description_paragraph_one()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_two()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_three()}</p>
+			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_four()}</p>
+		</div>
+	</div>
 	<div class="overflow-hidden bg-off-blue px-0 py-10 md:px-14">
 		<div
 			class="mx-auto md:-my-[10%] my-10 py-0 max-w-[1000px] flex aspect-normal md:aspect-square items-center justify-center rounded-none md:rounded-full bg-foreground text-background"
@@ -50,9 +61,6 @@
 				<h2 class="text-center pb-10 font-playfair text-4xl uppercase md:text-7xl">
 					{m.about_page_our_work_heading()}
 				</h2>
-				<div class="pb-5 px-10 md:px-0">
-					{m.about_page_our_work_description()}
-				</div>
 				<div class="flex flex-col md:flex-row w-full items-center justify-center gap-5">
 					<div class="border-destructive border-4 basis-1/4 mx-auto md:mx-0 w-1/2 ">
 						<ImageWrapper imageClass="border-4 border-background" meta={pastWork1} />
@@ -74,70 +82,10 @@
     <div class="border-t-4 pb-4 border-white w-20 "></div>
 		<Button size="lg" variant="destructive" class="uppercase">{m.get_free_estimate()}</Button>
 	</div>
-	<div class="pt-5">
-		<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-7xl">
-			{m.about_page_our_process_title()}
-		</h2>
-		<div class="container flex min-h-[400px] items-center w-full flex-col justify-center py-10 md:flex-row">
-			<div class="flex basis-1/2 items-center justify-center w-fit px-10">
-				<div class="h-full border-foreground border-4 outline outline-4 outline-off-blue">
-					<ImageWrapper pictureClass="h-full w-full" imageClass="h-full w-full object-cover" meta={ourProcess} />
-				</div>
-			</div>
-			<div class="basis-full md:basis-1/2 px-10 flex pt-10 md:pt-0 justify-center items-center">
-				<p class="text-background w-full md:w-3/4 ">{m.about_page_our_process_description()}</p>
-			</div>
-		</div>
-	</div>
-	<div class="my-6 border-y-4 border-off-blue  flex flex-col items-center justify-center pt-0 pb-10 text-background">
-		<div class="w-full px-2 pb-10 text-lg md:w-2/3">
-			<h2 class="w-full py-10 font-playfair text-6xl uppercase">
-				{m.about_page_our_founder_heading()}
-			</h2>
-			<p class="tracking-wider">{m.about_page_our_founder_description_paragraph_one()}</p>
-			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_two()}</p>
-			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_three()}</p>
-			<p class="tracking-wider pt-5">{m.about_page_our_founder_description_paragraph_four()}</p>
-		</div>
-	</div>
 	<h2 class="bg-off-blue py-20 text-center font-playfair text-4xl uppercase md:text-6xl">
 		{m.about_page_fireproof_testing_heading()}
 	</h2>
-	<h3 class="py-10 text-center font-playfair text-2xl text-background md:text-4xl">
-		{m.about_page_fireproof_testing_subheading()}
-	</h3>
-	<div class="mx-auto w-fit max-w-[500px] border-off-blue border-8 p-10">
-		<p class="py-10 text-background">{m.about_page_fireproof_testing_description()}</p>
-	</div>
 	<div class="mx-auto w-4/6 py-5">
 		<PlainCarousel />
-	</div>
-	<div class="overflow-hidden bg-off-blue px-10 py-10">
-		<h2 class="py-10 font-playfair text-4xl uppercase md:text-5xl">
-			{m.about_page_variations_of_resistance_heading()}
-		</h2>
-		<div class="flex flex-col flex-wrap items-center justify-center gap-5 break-all md:flex-row">
-			<div
-				class="min-w-[300px] flex w-full sm:w-1/2 flex-col items-center flex-wrap justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
-			>
-				<ImageWrapper imageClass="min-h-[200px]" meta={fireResistance1} />
-				<h3 class="font-playfair">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
-				<p class="">{m.about_page_variations_of_resistance_card_one_description()}</p>
-			</div>
-			<div
-				class="min-w-[300px] flex w-full sm:w-1/2 flex-col items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
-			>
-				<ImageWrapper imageClass="min-h-[200px]" meta={fireResistance2} />
-				<h3 class="font-playfair">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
-				<p class="">{m.about_page_variations_of_resistance_card_one_description()}</p>
-			</div>
-			<div
-				class="min-w-[300px] flex w-full flex-col sm:w-1/2 items-center justify-center gap-3 border-8 border-destructive bg-foreground p-5 text-background md:w-1/4"
-			>
-				<ImageWrapper imageClass="min-h-[200px]" meta={fireResistance3} />
-				<h3 class="font-playfair">{m.about_page_variations_of_resistance_card_one_heading()}</h3>
-				<p class="">{m.about_page_variations_of_resistance_card_one_description()}</p>
-			</div>
-		</div>
 	</div>
 </div>
