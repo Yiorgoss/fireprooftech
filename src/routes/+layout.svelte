@@ -21,13 +21,9 @@
 
 <script>
 	import '../app.pcss';
-	import { page } from '$app/stores';
-	import { onSetLanguageTag, sourceLanguageTag } from '$pg/runtime';
 	import { ParaglideJS } from '@inlang/paraglide-js-adapter-sveltekit';
 	import { i18n } from '$lib/i18n';
 
-  let lang = sourceLanguageTag
-  onSetLanguageTag((ll)=> lang = ll)
 </script>
 
 <ParaglideJS {i18n}>

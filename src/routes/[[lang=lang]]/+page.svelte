@@ -134,10 +134,13 @@ export const specList = [
 					alt="quality infographic"
 				/>
           </div>
-				<ul class="grid grid-cols-2 gap-x-10 pt-10">
+				<ul class=" grid grid-cols-2 gap-1 bg-border">
 					{#each specList as spec}
-						<li class="leading-5 list-disc max-w-[200px] text-base">{spec.text}</li>
+						<li class="leading-5 bg-background p-4 text-base">{spec.text}</li>
 					{/each}
+          <li class="col-span-full text-center bg-background">
+            <a class="underline underline-offset-2 text-base hover:no-underline" href="/pdf">Experiment Results EI30</a>
+          </li>
 				</ul>
 			</div>
 			<div class="flex flex-col items-center justify-start px-10">
@@ -155,9 +158,6 @@ export const specList = [
 			<h2 class="w-5/6 py-10 font-playfair text-3xl uppercase md:text-7xl">
 				{m.home_page_process_heading()}
 			</h2>
-			<h3 class="float-right py-5 text-3xl underline underline-offset-8">
-				{m.home_page_process_subheading()}
-			</h3>
 		</div>
 		<div class="flex flex-col" bind:this={imageSection}>
 			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">

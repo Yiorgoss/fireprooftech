@@ -168,15 +168,7 @@ export const home_page_qualities_heading = () => `איכויות`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_heading = () => `כל מה שחשוב לנו להיות שקופים`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_subheading = () => `כך גם לגבי התהליך שלנו.`
+export const home_page_process_heading = () => `התהליך שלנו`
 
 
 /**

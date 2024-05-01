@@ -417,26 +417,6 @@ export const home_page_process_heading = (params = {}, options = {}) => {
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_subheading = (params = {}, options = {}) => {
-	return {
-		en: en.home_page_process_subheading,
-		il: il.home_page_process_subheading
-	}[options.languageTag ?? languageTag()]()
-}
-
-/**
- * This message has been compiled by [inlang paraglide](https://inlang.com/m/gerre34r/library-inlang-paraglideJs).
- *
- * - Don't edit the message's code. Use the [inlang ide extension](https://inlang.com/m/r7kp499g/app-inlang-ideExtension),
- *   the [web editor](https://inlang.com/m/tdozzpar/app-inlang-finkLocalizationEditor) instead, or edit the translation files manually.
- * 
- * - The params are NonNullable<unknown> because the inlang SDK does not provide information on the type of a param (yet).
- * 
- * @param {{}} params
- * @param {{ languageTag?: "en" | "il" }} options
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
 export const home_page_process_one_title = (params = {}, options = {}) => {
 	return {
 		en: en.home_page_process_one_title,

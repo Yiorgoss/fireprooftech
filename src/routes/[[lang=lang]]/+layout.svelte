@@ -15,6 +15,7 @@
 
 	$: textColor =
 		withoutLanguageTag($page.url.pathname) == '/' ? 'text-foreground' : 'text-background';
+  $: console.log(textColor)
 </script>
 
 <Navbar {textColor} {mainNav} />

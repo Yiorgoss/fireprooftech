@@ -168,15 +168,7 @@ export const home_page_qualities_heading = () => `Qualities`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_heading = () => `We're All About Being Transparent`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_subheading = () => `Same goes for our process.`
+export const home_page_process_heading = () => `Our Process`
 
 
 /**

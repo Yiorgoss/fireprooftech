@@ -12,14 +12,6 @@
 	import pastWork2 from '$lib/assets/images/past-work-2.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import pastWork3 from '$lib/assets/images/past-work-3.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
-	//@ts-ignore
-	import fireResistance1 from '$lib/assets/icons/fire-resistance-1.png?format=avif;webp;jpg&as=picture';
-	//@ts-ignore
-	import fireResistance2 from '$lib/assets/icons/fire-resistance-1.png?format=avif;webp;jpg&as=picture';
-	//@ts-ignore
-	import fireResistance3 from '$lib/assets/icons/fire-resistance-1.png?format=avif;webp;jpg&as=picture';
-	//@ts-ignore
-  import ourProcess from '$lib/assets/images/our-process.png?quality=75&format=avif;webp;png&as=picture';
 </script>
 
 <svelte:head>
