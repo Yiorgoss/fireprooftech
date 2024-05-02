@@ -656,4 +656,20 @@ export const spec_list_4 = () => `שידור אור: 84%`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
+export const no_pdf_plugin = () => `לדפדפן האינטרנט שלך אין תוסף PDF. במקום זאת אתה יכול להוריד אותו כאן:`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const download_here = () => `התחל הורדה`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
 export const about_page_founder_description_paragraph_three = () => `בעקבות הישגיו האקדמיים אנטולי יצר וניהל את החברה הראשונה שלו 'פוטו-טקס' שהתמחתה בייצור זכוכית חסינת כדורים. לאחר שצבר ניסיון בתחום, החליט למכור את החברה ולפנות לייצור אש- חומרים וטכנולוגיות עמידים`

@@ -658,4 +658,20 @@ export const spec_list_3 = () => `Operating temperature range: -40&deg;C - +60&d
 /* @__NO_SIDE_EFFECTS__ */
 export const spec_list_4 = () => `Light transmission: 84%`
 
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const no_pdf_plugin = () => `Your web browser doesn't have a PDF plugin. Instead you can download it here:`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const download_here = () => `Start Download`
+
 export { about_page_founder_description_paragraph_three } from "./il.js"
