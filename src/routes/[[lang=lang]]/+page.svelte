@@ -91,17 +91,17 @@ export const specList = [
 			class="container absolute inset-0 flex w-full items-center px-2 py-20 md:items-end md:px-20"
 		>
 			<div
-				class="absolute bottom-0 pb-20 sm:pb-20 md:left-20 ltr:md:right-1/3 rtl:md:left-1/2 rtl:md:right-20"
+				class="absolute bottom-0 pb-20 sm:pb-20 md:left-20  md:right-20"
 			>
 				<h1
 					class:opacity-0={!mounted}
-					class="w-3/4 py-14 font-playfair text-4xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:text-7xl"
+					class="w-3/4 py-10 font-playfair text-3xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:text-7xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
 				<p
 					class:opacity-0={!mounted}
-					class="w-3/4 px-5 leading-7 transition-opacity delay-300 duration-1000 ease-in sm:text-xl md:text-2xl"
+					class="w-full md:w-3/4 px-5 leading-7 transition-opacity delay-300 duration-1000 ease-in text-lg md:text-xl"
 				>
 					{m.home_page_landing_subheading()}
 				</p>
@@ -186,17 +186,9 @@ export const specList = [
 			</div>
 			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
 				<CircleImageSection
-					image={step4}
+					image={step5}
 					title={m.home_page_process_four_title()}
 					description={m.home_page_process_four_description()}
-					isInset={true}
-				/>
-			</div>
-			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
-				<CircleImageSection
-					image={step5}
-					title={m.home_page_process_five_title()}
-					description={m.home_page_process_five_description()}
 				/>
 			</div>
 		</div>

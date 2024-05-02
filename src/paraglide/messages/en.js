@@ -208,7 +208,7 @@ export const home_page_process_two_title = () => `STEP 2 : INSTALLATION`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_description = () => `For each perimeter editor, metal clips are installed.`
+export const home_page_process_two_description = () => `For each perimeter editor, metal clips are installed, is hermetically sealed.`
 
 
 /**
@@ -232,7 +232,7 @@ export const home_page_process_three_description = () => `Insert using a filling
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_title = () => `STEP 4: SEALING`
+export const home_page_process_four_title = () => `STEP 4 : EXPOSURE`
 
 
 /**
@@ -240,23 +240,7 @@ export const home_page_process_four_title = () => `STEP 4: SEALING`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_description = () => `Seal the filling material hermetically.`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_five_title = () => `STEP 5 : EXPOSURE`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_five_description = () => `Place the glass under illumination and expose it for 60 minutes.`
+export const home_page_process_four_description = () => `Place the glass under illumination and expose it for 60 minutes.`
 
 
 /**
@@ -361,62 +345,6 @@ export const about_page_project_in_mind = () => `Do You Have A Project in Mind?`
  */
 /* @__NO_SIDE_EFFECTS__ */
 export const about_page_fireproof_testing_heading = () => `Fire Resistant Testing`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_heading = () => `Variations of Fire Restistancy`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_one_heading = () => `Lorem ipsum dolor `
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_one_description = () => `Lorem ipsum dolor sit amet, no his tempor aperiam, sit te mutat verterem rationibus. Quo odio feugait ad, eam dictas eirmod qualisque cu. `
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_two_heading = () => `Lorem ipsum dolor `
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_two_description = () => `Lorem ipsum dolor sit amet, no his tempor aperiam, sit te mutat verterem rationibus. Quo odio feugait ad, eam dictas eirmod qualisque cu. `
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_three_heading = () => `Lorem ipsum dolor `
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_three_description = () => `Lorem ipsum dolor sit amet, no his tempor aperiam, sit te mutat verterem rationibus. Quo odio feugait ad, eam dictas eirmod qualisque cu. `
 
 
 /**
@@ -632,7 +560,7 @@ export const quality_list_6 = () => `Very durable and shock resistant`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const spec_list_1 = () => `ei30/30`
+export const spec_list_1 = () => `EI30/30`
 
 
 /**

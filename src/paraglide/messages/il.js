@@ -208,7 +208,7 @@ export const home_page_process_two_title = () => `שלב 2: התקנה`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_description = () => `עבור כל עורך היקפי, מותקנים אטבי מתכת.`
+export const home_page_process_two_description = () => `עבור כל עורך היקפי, מותקנים אטבי מתכת, אטום הרמטית.`
 
 
 /**
@@ -232,7 +232,7 @@ export const home_page_process_three_description = () => `הכנס באמצעו�
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_title = () => `שלב 4: איטום`
+export const home_page_process_four_title = () => `שלב 4: חשיפה`
 
 
 /**
@@ -240,23 +240,7 @@ export const home_page_process_four_title = () => `שלב 4: איטום`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_description = () => `אטום את חומר המילוי בצורה הרמטית.`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_five_title = () => `שלב 5: חשיפה`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_five_description = () => `הנח את הזכוכית תחת תאורה וחשוף אותה למשך 60 דקות.`
+export const home_page_process_four_description = () => `הנח את הזכוכית תחת תאורה וחשוף אותה למשך 60 דקות.`
 
 
 /**
@@ -360,55 +344,6 @@ export const about_page_project_in_mind = () => `יש לך פרויקט בראש
  */
 /* @__NO_SIDE_EFFECTS__ */
 export const about_page_fireproof_testing_heading = () => `בדיקות עמידות בפני אש`
-
-/**
-* Failed to resolve message about_page_variations_of_resistance_heading for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_heading = () => "about_page_variations_of_resistance_heading"
-
-/**
-* Failed to resolve message about_page_variations_of_resistance_card_one_heading for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_one_heading = () => "about_page_variations_of_resistance_card_one_heading"
-
-/**
-* Failed to resolve message about_page_variations_of_resistance_card_one_description for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_one_description = () => "about_page_variations_of_resistance_card_one_description"
-
-/**
-* Failed to resolve message about_page_variations_of_resistance_card_two_heading for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_two_heading = () => "about_page_variations_of_resistance_card_two_heading"
-
-/**
-* Failed to resolve message about_page_variations_of_resistance_card_two_description for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_two_description = () => "about_page_variations_of_resistance_card_two_description"
-
-/**
-* Failed to resolve message about_page_variations_of_resistance_card_three_heading for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_three_heading = () => "about_page_variations_of_resistance_card_three_heading"
-
-/**
-* Failed to resolve message about_page_variations_of_resistance_card_three_description for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_variations_of_resistance_card_three_description = () => "about_page_variations_of_resistance_card_three_description"
 
 
 /**
@@ -624,7 +559,7 @@ export const quality_list_6 = () => `עמיד מאוד ועמיד בפני זע�
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const spec_list_1 = () => `ei30/30`
+export const spec_list_1 = () => `EI30/30`
 
 
 /**
