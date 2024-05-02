@@ -160,6 +160,14 @@ export const home_page_carousel_description = () => `Lorem ipsum dolor sit amet,
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
+export const home_page_experiment_results = () => `תוצאות ניסוי EI30`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
 export const home_page_qualities_heading = () => `איכויות`
 
 

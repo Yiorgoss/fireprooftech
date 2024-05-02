@@ -377,6 +377,26 @@ export const home_page_carousel_description = (params = {}, options = {}) => {
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
+export const home_page_experiment_results = (params = {}, options = {}) => {
+	return {
+		en: en.home_page_experiment_results,
+		il: il.home_page_experiment_results
+	}[options.languageTag ?? languageTag()]()
+}
+
+/**
+ * This message has been compiled by [inlang paraglide](https://inlang.com/m/gerre34r/library-inlang-paraglideJs).
+ *
+ * - Don't edit the message's code. Use the [inlang ide extension](https://inlang.com/m/r7kp499g/app-inlang-ideExtension),
+ *   the [web editor](https://inlang.com/m/tdozzpar/app-inlang-finkLocalizationEditor) instead, or edit the translation files manually.
+ * 
+ * - The params are NonNullable<unknown> because the inlang SDK does not provide information on the type of a param (yet).
+ * 
+ * @param {{}} params
+ * @param {{ languageTag?: "en" | "il" }} options
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
 export const home_page_qualities_heading = (params = {}, options = {}) => {
 	return {
 		en: en.home_page_qualities_heading,

@@ -139,7 +139,9 @@ export const specList = [
 						<li class="leading-5 bg-background p-4 text-base">{spec.text}</li>
 					{/each}
           <li class="col-span-full text-center bg-background">
-            <a class="underline underline-offset-2 text-base hover:no-underline" href="/pdf">Experiment Results EI30</a>
+            <a class="underline underline-offset-2 text-base hover:no-underline" href="/pdf">
+              {m.home_page_experiment_results()}
+            </a>
           </li>
 				</ul>
 			</div>
