@@ -136,7 +136,7 @@ export const home_page_landing_heading = () => `טכנולוגיה להוכחת 
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_landing_subheading = () => `עם תהליך טכנולוגי חדשני ומומחיות בתעשיית ייצור זכוכית חסינת אש, אנו עומדים בנפרד מהמתחרים ויכולים להבטיח שביעות רצון בכל שלב`
+export const home_page_landing_subheading = () => `חברתנו מתמחה בייצור מבנים שקופים עמידי אש, חומרים מורכבים וציוד מיוחד לייצורם. אנו מציעים מוצר מהשורה הראשונה, RefraGlass, המיוצר עם חומר גלם באיכות גבוהה, המצאת הפטנט שלנו, Refra – 01 ג'ל, המספקת תכונות עמידות בפני אש, קשיחות מכנית ויציבות בלתי מוגבלת של איכויות אופטיות.`
 
 
 /**
@@ -152,7 +152,7 @@ export const home_page_carousel_heading = () => `המומחיות שלנו הי�
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_carousel_description = () => `Lorem ipsum dolor sit amet, no his tempor aperiam, sit te mutat verterem rationibus. Quo odio feugait ad, eam dictas eirmod qualisque cu. Omnium petentium his ne. Commune quaerendum delicatissimi at duo, the duo סיפור`
+export const home_page_carousel_description = () => `הזכוכית היא יחידה בעלת זיגוג כפול, מובנית בטריפלקס, בעובי משתנה, מלאה בשכבה אמצעית ג'ל פולימר סוער. הודות למקדמי הידבקות הזכוכית קשורה כימית לשכבת הפולימר ומבטיחה בטיחות.`
 
 
 /**

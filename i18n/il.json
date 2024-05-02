@@ -14,10 +14,10 @@
 	"get_in_touch": "צור קשר היום",
 	"sitemap": "מפת אתר",
 	"home_page_landing_heading": "טכנולוגיה להוכחת אש",
-	"home_page_landing_subheading": "עם תהליך טכנולוגי חדשני ומומחיות בתעשיית ייצור זכוכית חסינת אש, אנו עומדים בנפרד מהמתחרים ויכולים להבטיח שביעות רצון בכל שלב",
+	"home_page_landing_subheading": "חברתנו מתמחה בייצור מבנים שקופים עמידי אש, חומרים מורכבים וציוד מיוחד לייצורם. אנו מציעים מוצר מהשורה הראשונה, RefraGlass, המיוצר עם חומר גלם באיכות גבוהה, המצאת הפטנט שלנו, Refra – 01 ג'ל, המספקת תכונות עמידות בפני אש, קשיחות מכנית ויציבות בלתי מוגבלת של איכויות אופטיות.",
 	"home_page_carousel_heading": "המומחיות שלנו היא זכוכית",
-	"home_page_carousel_description": "Lorem ipsum dolor sit amet, no his tempor aperiam, sit te mutat verterem rationibus. Quo odio feugait ad, eam dictas eirmod qualisque cu. Omnium petentium his ne. Commune quaerendum delicatissimi at duo, the duo סיפור",
-  "home_page_experiment_results": "תוצאות ניסוי EI30",
+	"home_page_carousel_description": "הזכוכית היא יחידה בעלת זיגוג כפול, מובנית בטריפלקס, בעובי משתנה, מלאה בשכבה אמצעית ג'ל פולימר סוער. הודות למקדמי הידבקות הזכוכית קשורה כימית לשכבת הפולימר ומבטיחה בטיחות.",
+	"home_page_experiment_results": "תוצאות ניסוי EI30",
 	"home_page_qualities_heading": "איכויות",
 	"home_page_process_heading": "התהליך שלנו",
 	"home_page_process_one_title": "שלב 1: ייצור",
@@ -73,6 +73,6 @@
 	"spec_list_2": "גודל נבדק: 2200 x 1200",
 	"spec_list_3": "טווח טמפרטורת פעולה: -40&°C - +60&°C",
 	"spec_list_4": "שידור אור: 84%",
-  "no_pdf_plugin":"לדפדפן האינטרנט שלך אין תוסף PDF. במקום זאת אתה יכול להוריד אותו כאן:",
-  "download_here":"התחל הורדה"
+	"no_pdf_plugin": "לדפדפן האינטרנט שלך אין תוסף PDF. במקום זאת אתה יכול להוריד אותו כאן:",
+	"download_here": "התחל הורדה"
 }

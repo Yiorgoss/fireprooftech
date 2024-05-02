@@ -136,7 +136,7 @@ export const home_page_landing_heading = () => `Fire Proof Tech`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_landing_subheading = () => `With an innovative technological process and expertise in the fireproof glass manufacturing industry, we stand apart from the competition and can guarantee satisfaction at every step of the way.`
+export const home_page_landing_subheading = () => `Our company specializes in manufacturing transparent fire-resistant structures, complex materials and special equipment for their production. We offer a top of the line product, RefraGlass, that’s produced with high quality raw material, our patented invention, Refra–01 gel, providing fire-resistant properties, mechanical toughness and an unlimited stability of optical qualities.`
 
 
 /**
@@ -152,7 +152,7 @@ export const home_page_carousel_heading = () => `Our Speciality Is Glass`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_carousel_description = () => `Lorem ipsum dolor sit amet, no his tempor aperiam, sit te mutat verterem rationibus. Quo odio feugait ad, eam dictas eirmod qualisque cu. Omnium petentium his ne. Commune quaerendum delicatissimi at duo, ea tempor facete propriae duo, tale `
+export const home_page_carousel_description = () => `The glass is a double glazed, triplex structured unit with varied thickness, filled with an intumescent polymer gel middle layer. Thanks to adhesion promoters the glass is chemically bounded to the polymer layer and guarantees safety.`
 
 
 /**
