@@ -100,7 +100,7 @@
 		</div>
 	</div>
 	<div class="bg-gradient-to-b from-slate-300 to-slate-50/50">
-		<div class="container flex gap-10 flex-col px-2 pl-0 pt-10 md:flex-row md:pl-12">
+		<div class="container flex gap-0 md:gap-10 flex-col justify-center items-center pr-2 pl-2 pt-10 md:flex-row md:pl-12">
 			<div class="basis-1/2">
 				<CircularCarousel {images} />
 			</div>
