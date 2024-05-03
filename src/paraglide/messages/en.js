@@ -208,7 +208,7 @@ export const home_page_process_two_title = () => `STEP 2 : INSTALLATION`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_description = () => `For each perimeter editor, metal clips are installed, is hermetically sealed.`
+export const home_page_process_two_description = () => `Hermetic sealing of glass unit.`
 
 
 /**
@@ -224,7 +224,7 @@ export const home_page_process_three_title = () => `STEP 3 : INSERTION`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_three_description = () => `Insert using a filling tube fills the structure with composition '01 - Refra'.`
+export const home_page_process_three_description = () => ``
 
 
 /**

@@ -208,7 +208,7 @@ export const home_page_process_two_title = () => `שלב 2: התקנה`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_description = () => `עבור כל עורך היקפי, מותקנים אטבי מתכת, אטום הרמטית.`
+export const home_page_process_two_description = () => `איטום הרמטי של יחידת זכוכית.`
 
 
 /**
@@ -224,7 +224,7 @@ export const home_page_process_three_title = () => `שלב 3: הכנסת`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_three_description = () => `הכנס באמצעות צינור מילוי ממלא את המבנה בהרכב '01 - רפרא'.`
+export const home_page_process_three_description = () => `הרכב "רפרא - 01" הכנסת`
 
 
 /**
