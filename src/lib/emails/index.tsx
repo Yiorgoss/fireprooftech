@@ -15,7 +15,7 @@ import * as React from 'react';
 import * as m from '$pg/messages';
 import { contactInfo } from '$lib/siteConfig';
 
-export default function InquiryEmail({ lang = 'en', dir = 'ltr' }: { lang: string, dir: string }) {
+export default function InquiryEmail({ lang = 'il', dir = 'rtl' }: { lang: string, dir: string }) {
   return (
     <Html lang={lang} dir={dir}>
       <Preview>{m.email_verification_preview()}</Preview>
