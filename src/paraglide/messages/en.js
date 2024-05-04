@@ -224,7 +224,7 @@ export const home_page_process_three_title = () => `STEP 3 : INSERTION`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_three_description = () => ``
+export const home_page_process_three_description = () => `Composition "Refra - 01" insertion`
 
 
 /**
@@ -240,7 +240,7 @@ export const home_page_process_four_title = () => `STEP 4 : EXPOSURE`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_description = () => `Place the glass under illumination and expose it for 60 minutes.`
+export const home_page_process_four_description = () => `Ultraviolet illumination exposure.`
 
 
 /**

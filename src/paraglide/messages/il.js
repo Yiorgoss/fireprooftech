@@ -240,7 +240,7 @@ export const home_page_process_four_title = () => `שלב 4: חשיפה`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_description = () => `הנח את הזכוכית תחת תאורה וחשוף אותה למשך 60 דקות.`
+export const home_page_process_four_description = () => `חשיפה לתאורה אולטרה סגולה.`
 
 
 /**

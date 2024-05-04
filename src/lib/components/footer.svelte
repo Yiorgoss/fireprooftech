@@ -62,7 +62,11 @@
 					<li class="">
 						<a class=" flex justify-center gap-x-3 py-2 md:justify-start" {href}>
 							<svelte:component this={icons[icon]} />
-							<p>{info}</p>
+							{#if icon == 'Phone'}
+								<span class="" dir="ltr">{info}</span>
+							{:else}
+								<p>{info}</p>
+							{/if}
 						</a>
 					</li>
 				{/each}

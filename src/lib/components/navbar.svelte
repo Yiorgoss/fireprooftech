@@ -16,7 +16,7 @@
 
 	let header: HTMLElement;
 	let isHome = true;
-  export let mainNav:{slug:string,title:string}[];
+	export let mainNav: { slug: string; title: string }[];
 
 	$: isHome = withoutLanguageTag($page.url.pathname) == '/';
 
@@ -63,7 +63,7 @@
 				<li class="px-4 py-4 text-lg">
 					<a on:click={() => (openMenu = false)} class=" text-xl" href={i18n.route(slug)}>
 						{title}
-          </a>
+					</a>
 				</li>
 			{/each}
 			<li class="md:order-first">
@@ -72,11 +72,12 @@
 		</ul>
 	</nav>
 	<div class="float-right flex items-center justify-center md:float-none md:h-full">
-			<a href={contactInfo[0].href}>
-		<Button class="hidden items-center gap-3 px-5 py-3 font-gothic text-lg md:flex">
-				<PhoneCall />{contactInfo[0].info}
-		</Button>
-			</a>
+		<a href={contactInfo[0].href}>
+			<Button class="hidden items-center gap-3 px-5 py-3 font-gothic text-lg md:flex">
+				<PhoneCall />
+        <span class="" dir='ltr'>{contactInfo[0].info}</span>
+			</Button>
+		</a>
 		<Button
 			variant="ghost"
 			class="inline bg-transparent hover:bg-transparent md:hidden"

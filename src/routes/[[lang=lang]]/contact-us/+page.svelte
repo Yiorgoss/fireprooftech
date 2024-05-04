@@ -32,7 +32,7 @@
 				<p class="pt-6">{m.contact_page_description_3()}</p>
 				<p class="pt-6 flex gap-3">
 					{m.contact_page_description_4()}
-          <span class="text-off-blue">{contactInfo[0].info} </span>
+          <span class="text-off-blue" dir="ltr">{contactInfo[0].info} </span>
 				</p>
 				<div class="inline"></div>
 			</div>
