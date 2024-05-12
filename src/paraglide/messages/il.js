@@ -280,7 +280,23 @@ export const home_page_why_pick_us_three_subheading = () => `יעיל ואמין
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_page_description_one = () => `Fire Proof Tech Ltd מתמחה בפיתוח טכנולוגיות מתקדמות עמידות בפני אש המצויות בזכוכית כפולה חסינת אש, חומרי בידוד וציוד הייצור שלהם.`
+export const about_page_description_one = () => `חברתנו בייצור מבנים שקופים העמידים מפני אש, חוברים מורקבים וציוד לייצורם.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const about_page_description_two = () => `אנו מוצאים מוצר מוביל בעולם, RefraGlass, המיוצר מחומרי גלם האיכותיים ביותר, המצאת הפטנט שלנו, Refra – 01, , המספקת תכונות עמידות מפני אש לזכוכית, קשיחות מכנית ויציבות בלתי מוגבלת של איכויות אופטים.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const about_page_description_three = () => `הזכוכית היא יחידה בעלת זיגוג כפול, מובנית בטריפלקס, בעובי משתנה, מלאה בשכבת אמצעית גיל פולימר. הודות למקדמי הידבקות הזכוכית קשורה כימית לשכבת הפולימר ומבטיחה בטיחות.`
 
 
 /**
@@ -296,7 +312,7 @@ export const about_page_our_founder_heading = () => `המייסד שלנו`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_page_our_founder_description_paragraph_one = () => `מדען נודע, אנטולי גלשין, ראש המעבדה לטרנספורמציות מבניות של מערכות הטרוגניות באקדמיה הרוסית למדעים בין השנים 1986-1990, נמצא בחזית הטכנולוגיה להוכחת אש. `
+export const about_page_our_founder_description_paragraph_one = () => `המדען הנודה, אנטולי גלשין, ראש המעבדה לטרנספורמציות מבניות של מערכות הטרוגניות באקדמיה הרוסית למדעים בין השנים 1986 – 1990, נמצא בחזית הטכנולוגיה להוכחת אש.`
 
 
 /**
@@ -304,14 +320,7 @@ export const about_page_our_founder_description_paragraph_one = () => `מדען 
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_page_our_founder_description_paragraph_two = () => `מחבר התגלית המדעית הרשומה, 'התופעה של מעברי פאזה פוטוכימיים בחומרים מולקולריים' יחד עם 50 עבודות מדעיות נוספות בפיזיקה כימית ויותר מ-10 פטנטים ביצירת חומרים עמידים באש, הוא מציע חומרים עמידים בפני אש. חוד החנית וגישה חדשנית לתעשייה.`
-
-/**
-* Failed to resolve message about_page_our_founder_description_paragraph_three for languageTag "il". 
-* @returns {string}
-*/
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_our_founder_description_paragraph_three = () => "about_page_our_founder_description_paragraph_three"
+export const about_page_our_founder_description_paragraph_two = () => `מחבר התגלית המדעית הרשומה, "התופעות של מעברי פאזה פוטוכימיים בחומרים מולקולריים" יחד עם 50 עבודות מדעיות נוספות בפיזיקה כימית ויותר מ-10 פטנטים ביצירת חומרים וקונסטרוקציות עמידים מפני אש, הוא מציע חוד חדשני וגישה חדשנית לתעשייה. `
 
 
 /**
@@ -319,7 +328,15 @@ export const about_page_our_founder_description_paragraph_three = () => "about_p
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_page_our_founder_description_paragraph_four = () => `במטרה להביא את הטכנולוגיה החדשנית הזו לישראל באופן בלעדי ולהפוך אותה ליצרנית מובילה של מבנים עמידים בפני אש ברחבי העולם, נוצרה Fire Proof Tech.`
+export const about_page_our_founder_description_paragraph_three = () => `בעקבות הישגו האקדמיים אנטולי יצר וניהל את החברה הראשונה שלו Photo-tex)) שהתמחה בייצור זכוכית משוריינת. לאחר שצבר ניסיון בתחום, החליט למכור את החברה ולפנות לייצור חומרים וטכנולוגיות חסיני אש.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const about_page_our_founder_description_paragraph_four = () => `במטרה להביא את הטכנולוגיה החדשנית הזו לישראל באופן בלעדי ולהפוך אותה ליצרנית מובילה של מבנים עמידים מפני אש ברחבי העולם, נוצרה Fire Proof Tech.`
 
 
 /**
@@ -600,11 +617,3 @@ export const no_pdf_plugin = () => `לדפדפן האינטרנט שלך אין 
  */
 /* @__NO_SIDE_EFFECTS__ */
 export const download_here = () => `התחל הורדה`
-
-
-/**
- * 
- * @returns {string}
- */
-/* @__NO_SIDE_EFFECTS__ */
-export const about_page_founder_description_paragraph_three = () => `בעקבות הישגיו האקדמיים אנטולי יצר וניהל את החברה הראשונה שלו 'פוטו-טקס' שהתמחתה בייצור זכוכית חסינת כדורים. לאחר שצבר ניסיון בתחום, החליט למכור את החברה ולפנות לייצור אש- חומרים וטכנולוגיות עמידים`

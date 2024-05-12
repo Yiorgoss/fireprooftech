@@ -32,8 +32,10 @@
 		/>
 	</div>
 	<div class="px-0 py-10 md:px-10">
-		<div class="-mt-16 bg-off-blue py-10">
+		<div class="-mt-16 bg-off-blue flex flex-col py-10">
 			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_one()}</div>
+			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_two()}</div>
+			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_three()}</div>
 		</div>
 	</div>
 	<div

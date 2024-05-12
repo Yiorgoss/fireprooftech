@@ -280,7 +280,23 @@ export const home_page_why_pick_us_three_subheading = () => `Efficient and Relia
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_page_description_one = () => `Fire Proof Tech Ltd specializes in the development of advanced fire-resistant technologies found in double glazed fire proof glass, insulating materials and their manufacturing equipment.`
+export const about_page_description_one = () => `Our company specializes in manufacturing transparent fire-resistant structures, complex materials and special equipment for their production.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const about_page_description_two = () => `We offer a top of the line product, RefraGlass, that's produced with high quality raw material, our patented invention, Refra - 01 gel, providing fire-resistant properties, mechanical toughness and an unlimited stability of optical qualities.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const about_page_description_three = () => `The glass is a double glazed, triplex structured unit with varied thickness, filled with an intumescent polymer gel middle layer. Thanks to adhesion promoters the glass is chemically bounded to the polymer layer and guarantees safety.`
 
 
 /**
@@ -601,5 +617,3 @@ export const no_pdf_plugin = () => `Your web browser doesn't have a PDF plugin. 
  */
 /* @__NO_SIDE_EFFECTS__ */
 export const download_here = () => `Start Download`
-
-export { about_page_founder_description_paragraph_three } from "./il.js"
