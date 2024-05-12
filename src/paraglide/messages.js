@@ -1477,6 +1477,26 @@ export const spec_list_3 = (params = {}, options = {}) => {
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
+export const spec_list_3_5 = (params = {}, options = {}) => {
+	return {
+		en: en.spec_list_3_5,
+		il: il.spec_list_3_5
+	}[options.languageTag ?? languageTag()]()
+}
+
+/**
+ * This message has been compiled by [inlang paraglide](https://inlang.com/m/gerre34r/library-inlang-paraglideJs).
+ *
+ * - Don't edit the message's code. Use the [inlang ide extension](https://inlang.com/m/r7kp499g/app-inlang-ideExtension),
+ *   the [web editor](https://inlang.com/m/tdozzpar/app-inlang-finkLocalizationEditor) instead, or edit the translation files manually.
+ * 
+ * - The params are NonNullable<unknown> because the inlang SDK does not provide information on the type of a param (yet).
+ * 
+ * @param {{}} params
+ * @param {{ languageTag?: "en" | "il" }} options
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
 export const spec_list_4 = (params = {}, options = {}) => {
 	return {
 		en: en.spec_list_4,

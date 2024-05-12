@@ -71,7 +71,8 @@
 	"quality_list_6": "Very durable and shock resistant",
 	"spec_list_1": "EI30/30",
 	"spec_list_2": "Size tested: 2200 x 1200",
-	"spec_list_3": "Operating temperature range: -40&deg;C - +60&deg;C",
+	"spec_list_3": "Operating temperature range:",
+	"spec_list_3_5": "-40°C - +60°C",
 	"spec_list_4": "Light transmission: 84%",
 	"no_pdf_plugin": "Your web browser doesn't have a PDF plugin. Instead you can download it here:",
 	"download_here": "Start Download"

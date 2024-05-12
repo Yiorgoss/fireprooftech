@@ -584,7 +584,7 @@ export const spec_list_1 = () => `EI30/30`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const spec_list_2 = () => `גודל נבדק: 2200 x 1200`
+export const spec_list_2 = () => `גודל נבדק: 2200x1200`
 
 
 /**
@@ -592,7 +592,15 @@ export const spec_list_2 = () => `גודל נבדק: 2200 x 1200`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const spec_list_3 = () => `טווח טמפרטורת פעולה: -40&°C - +60&°C`
+export const spec_list_3 = () => `טווח טמפרטורת פעולה:`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const spec_list_3_5 = () => `-40°C - +60°C`
 
 
 /**

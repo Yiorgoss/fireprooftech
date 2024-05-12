@@ -58,7 +58,7 @@
 	export const specList = [
 		{ text: m.spec_list_1() },
 		{ text: m.spec_list_2() },
-		{ text: m.spec_list_3() },
+		{ text: m.spec_list_3(), number: m.spec_list_3_5() },
 		{ text: m.spec_list_4() }
 	];
 </script>
@@ -72,8 +72,8 @@
 
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
-	<div class="relative -mt-[100px] h-svh overflow-hidden">
-		<ImageWrapper imageClass="h-svh w-full object-cover" meta={landing} alt="landing hero image" />
+	<div class="relative -mt-[100px] h-[400px] overflow-hidden">
+		<ImageWrapper imageClass="w-full h-full object-cover" meta={landing} alt="landing hero image" />
 		<div class="absolute inset-0 grid bg-[#9fb0b9] opacity-80 md:grid-cols-6">
 			{#each [1, 2, 3, 4, 5, 6] as _}
 				<div class=" h-full border-l border-background/50"></div>
@@ -81,26 +81,22 @@
 		</div>
 
 		<div
-			class="container absolute inset-0 flex w-full items-center px-2 py-20 md:items-end md:px-20"
+			class="container absolute inset-0 flex w-full items-center px-2 py-0 md:items-end md:px-20 md:py-20"
 		>
 			<div class="absolute bottom-0 pb-20 sm:pb-20 md:left-20 md:right-20">
 				<h1
 					class:opacity-0={!mounted}
-					class="w-3/4 py-10 font-playfair text-3xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:text-7xl"
+					class="w-3/4 py-0 font-playfair text-3xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:py-10 md:text-7xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
-				<p
-					class:opacity-0={!mounted}
-					class="w-full px-5 text-lg leading-7 transition-opacity delay-300 duration-1000 ease-in md:w-3/4 md:text-xl"
-				>
-					{m.home_page_landing_subheading()}
-				</p>
 			</div>
 		</div>
 	</div>
 	<div class="bg-gradient-to-b from-slate-300 to-slate-50/50">
-		<div class="container flex gap-0 md:gap-10 flex-col justify-center items-center pr-2 pl-2 pt-10 md:flex-row md:pl-12">
+		<div
+			class="container flex flex-col items-center justify-center gap-0 pl-2 pr-2 pt-10 md:flex-row md:gap-10 md:pl-12"
+		>
 			<div class="flex basis-1/2 flex-col items-start justify-center px-4 py-10">
 				<h2 class="py-5 text-start font-playfair text-3xl uppercase md:text-4xl">
 					{m.home_page_carousel_heading()}
@@ -124,7 +120,14 @@
 				</div>
 				<ul class=" grid grid-cols-2 gap-1 bg-border">
 					{#each specList as spec}
-						<li class="bg-background p-4 text-base leading-5">{spec.text}</li>
+						<li class="bg-background p-4 text-base leading-5">
+							{spec.text}
+							{#if spec.number}
+								<span class="block">
+									{spec.number}
+								</span>
+							{/if}
+						</li>
 					{/each}
 					<li class="col-span-full bg-background text-center">
 						<a class="text-base underline underline-offset-2 hover:no-underline" href="/pdf">

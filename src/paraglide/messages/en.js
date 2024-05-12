@@ -592,7 +592,15 @@ export const spec_list_2 = () => `Size tested: 2200 x 1200`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const spec_list_3 = () => `Operating temperature range: -40&deg;C - +60&deg;C`
+export const spec_list_3 = () => `Operating temperature range:`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const spec_list_3_5 = () => `-40°C - +60°C`
 
 
 /**
