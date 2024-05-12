@@ -16,7 +16,7 @@
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home = () => `בית בית`
+export const home = () => `בית`
 
 
 /**
@@ -24,7 +24,7 @@ export const home = () => `בית בית`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_us = () => `אודותינו`
+export const about_us = () => `אודות`
 
 
 /**
@@ -96,7 +96,7 @@ export const read_about_us = () => `קרא עוד עלינו`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const get_free_estimate = () => `קבל הערכה בחינם`
+export const get_free_estimate = () => `הצעת מחיר`
 
 
 /**
@@ -128,7 +128,7 @@ export const sitemap = () => `מפת אתר`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_landing_heading = () => `טכנולוגיה להוכחת אש`
+export const home_page_landing_heading = () => `Fire Proof Tech`
 
 
 /**
@@ -136,7 +136,7 @@ export const home_page_landing_heading = () => `טכנולוגיה להוכחת 
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_landing_subheading = () => `חברתנו מתמחה בייצור מבנים שקופים עמידי אש, חומרים מורכבים וציוד מיוחד לייצורם. אנו מציעים מוצר מהשורה הראשונה, RefraGlass, המיוצר עם חומר גלם באיכות גבוהה, המצאת הפטנט שלנו, Refra – 01 ג'ל, המספקת תכונות עמידות בפני אש, קשיחות מכנית ויציבות בלתי מוגבלת של איכויות אופטיות.`
+export const home_page_landing_subheading = () => ``
 
 
 /**
@@ -144,7 +144,7 @@ export const home_page_landing_subheading = () => `חברתנו מתמחה בי�
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_carousel_heading = () => `המומחיות שלנו היא זכוכית`
+export const home_page_carousel_heading = () => `מומחים בזכוכית חסינת אש`
 
 
 /**
@@ -168,7 +168,7 @@ export const home_page_experiment_results = () => `תוצאות ניסוי EI30`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_qualities_heading = () => `איכויות`
+export const home_page_qualities_heading = () => `תכונות`
 
 
 /**
@@ -344,7 +344,7 @@ export const about_page_our_founder_description_paragraph_four = () => `במטר
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_page_our_work_heading = () => `העבודה שלנו`
+export const about_page_our_work_heading = () => `עבודות שלנו`
 
 
 /**
@@ -352,7 +352,7 @@ export const about_page_our_work_heading = () => `העבודה שלנו`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const about_page_project_in_mind = () => `יש לך פרויקט בראש?`
+export const about_page_project_in_mind = () => `חושבים על פרויקט`
 
 
 /**

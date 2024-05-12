@@ -101,9 +101,6 @@
 	</div>
 	<div class="bg-gradient-to-b from-slate-300 to-slate-50/50">
 		<div class="container flex gap-0 md:gap-10 flex-col justify-center items-center pr-2 pl-2 pt-10 md:flex-row md:pl-12">
-			<div class="basis-1/2">
-				<CircularCarousel {images} />
-			</div>
 			<div class="flex basis-1/2 flex-col items-start justify-center px-4 py-10">
 				<h2 class="py-5 text-start font-playfair text-3xl uppercase md:text-4xl">
 					{m.home_page_carousel_heading()}
@@ -144,49 +141,6 @@
 					{/each}
 				</ul>
 			</div>
-		</div>
-	</section>
-	<section class="mx-auto flex flex-col overflow-hidden">
-		<div class="mx-auto basis-full px-4 pt-0 md:w-2/3 md:pt-20">
-			<h2 class="w-5/6 py-10 font-playfair text-3xl uppercase md:text-7xl">
-				{m.home_page_process_heading()}
-			</h2>
-		</div>
-		<div class="flex flex-col" bind:this={imageSection}>
-			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
-				<CircleImageSection
-					image={step1}
-					title={m.home_page_process_one_title()}
-					description={m.home_page_process_one_description()}
-				/>
-			</div>
-			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
-				<CircleImageSection
-					image={step2}
-					title={m.home_page_process_two_title()}
-					description={m.home_page_process_two_description()}
-					isInset={true}
-				/>
-			</div>
-			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
-				<CircleImageSection
-					image={step3}
-					title={m.home_page_process_three_title()}
-					description={m.home_page_process_three_description()}
-				/>
-			</div>
-			<div class="observer mx-0 pt-10 opacity-100 transition-all duration-1000 ease-out">
-				<CircleImageSection
-					image={step5}
-					title={m.home_page_process_four_title()}
-					description={m.home_page_process_four_description()}
-				/>
-			</div>
-		</div>
-		<div class="flex items-center justify-center pb-10 pt-20">
-			<a href={i18n.route('/about-us')}>
-				<Button size="xl" variant="destructive">{m.read_about_us()}</Button>
-			</a>
 		</div>
 	</section>
 	<div class="flex flex-col justify-center overflow-hidden border-t py-10">

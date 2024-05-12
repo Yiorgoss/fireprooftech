@@ -136,7 +136,7 @@ export const home_page_landing_heading = () => `Fire Proof Tech`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_landing_subheading = () => `Our company specializes in manufacturing transparent fire-resistant structures, complex materials and special equipment for their production. We offer a top of the line product, RefraGlass, that’s produced with high quality raw material, our patented invention, Refra–01 gel, providing fire-resistant properties, mechanical toughness and an unlimited stability of optical qualities.`
+export const home_page_landing_subheading = () => ``
 
 
 /**
