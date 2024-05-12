@@ -11,10 +11,12 @@
 	import firetesting3 from '$lib/assets/images/testing-3.jpeg?w=500;800;1000;1200&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import firetesting4 from '$lib/assets/images/testing-4.jpeg?w=500;800;1000;1200&format=avif;webp;jpg&as=picture';
+	//@ts-ignore
+	import firetesting5 from '$lib/assets/images/testing-5.jpeg?w=500;800;1000;1200&format=avif;webp;jpg&as=picture';
 </script>
 
 <Carousel.Root
-	class="py-10"
+	class="py-10 px-2"
 	opts={{
 		align: 'start',
 		loop: true
@@ -23,6 +25,9 @@
 	<Carousel.Content class="container max-h-[300px] items-center justify-around gap-10 px-2 py-10">
 		<Carousel.Item class="basis-1/3">
 			<ImageWrapper pictureClass="" imageClass="" meta={firetesting4} />
+		</Carousel.Item>
+		<Carousel.Item class="basis-1/3">
+			<ImageWrapper pictureClass="" imageClass="" meta={firetesting5} />
 		</Carousel.Item>
 		<Carousel.Item class="basis-1/3">
 			<ImageWrapper pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting1} />
