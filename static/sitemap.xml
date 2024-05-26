@@ -5,21 +5,21 @@
     <loc>https://fireprooftech.co.il</loc>
     <xhtml:link
                rel="alternate"
-               hreflang="il"
-      href="https://fireprooftech.co.il/il"/>
+               hreflang="en"
+      href="https://fireprooftech.co.il/en"/>
   </url>
   <url>
   <loc>https://fireprooftech.co.il/about-us</loc>
     <xhtml:link
                rel="alternate"
-               hreflang="il"
-      href="https://fireprooftech.co.il/il/about-us"/>
+               hreflang="en"
+      href="https://fireprooftech.co.il/en/about-us"/>
   </url>
   <url>
    <loc>https://fireprooftech.co.il/contact-us</loc>
     <xhtml:link
                rel="alternate"
-               hreflang="il"
-      href="https://fireprooftech.co.il/il/contact-us"/>
+               hreflang="en"
+      href="https://fireprooftech.co.il/en/contact-us"/>
   </url>
 </urlset>
