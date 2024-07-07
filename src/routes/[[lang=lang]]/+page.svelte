@@ -12,7 +12,7 @@
 	//@ts-ignore
 	import step3 from '$lib/assets/images/step-3.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-	import step5 from '$lib/assets/images/step-5.jpeg?w=100;300;500;800&format=avif;webp;jpg&as=picture';
+	import eco_friendly from '$lib/assets/images/eco_friendly.png?w=100&format=avif;webp;jpg&as=picture';
 
 	import * as m from '$pg/messages';
 	import { onMount } from 'svelte';
@@ -97,11 +97,19 @@
 		<div
 			class="container flex flex-col items-center justify-center gap-0 pl-2 pr-2 pt-10 md:flex-row md:gap-10 md:pl-12"
 		>
-			<div class="flex basis-1/2 flex-col items-start justify-center px-4 py-10">
-				<h2 class="py-5 text-start font-playfair text-3xl uppercase md:text-4xl">
-					{m.home_page_carousel_heading()}
-				</h2>
-				<p class="">{m.home_page_carousel_description()}</p>
+			<div class="flex basis-1/2 flex-col items-center justify-center px-4 py-10">
+				<!-- <h2 class="py-5 text-start font-playfair text-3xl uppercase md:text-4xl"> -->
+				<!-- 	{m.home_page_carousel_heading()} -->
+				<!-- </h2> -->
+				<p class="relative">
+					{m.home_page_carousel_description()}
+					<ImageWrapper
+						imageClass="absolute h-10 w-10 -top-100 right-0"
+						meta={eco_friendly}
+						alt="eco friendly sticker"
+					/>
+				</p>
+
 				<a class="pt-10" href={i18n.route('/contact-us')}>
 					<Button variant="destructive" size="xl">{m.get_in_touch()}</Button>
 				</a>
