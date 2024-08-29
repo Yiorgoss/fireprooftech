@@ -128,6 +128,14 @@ export const sitemap = () => `מפת אתר`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
+export const products = () => `מוצרים`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
 export const home_page_landing_heading = () => `Fire Proof Tech`
 
 
@@ -144,7 +152,7 @@ export const home_page_landing_subheading = () => ``
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_carousel_heading = () => `מומחים בזכוכית חסינת אש`
+export const home_page_card_1_title = () => `התעסקותנו`
 
 
 /**
@@ -152,7 +160,7 @@ export const home_page_carousel_heading = () => `מומחים בזכוכית ח�
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_carousel_description = () => `הזכוכית היא יחידה בעלת זיגוג כפול, מובנית בטריפלקס, בעובי משתנה, מלאה בשכבה אמצעית ג'ל פולימר סוער. הודות למקדמי הידבקות הזכוכית קשורה כימית לשכבת הפולימר ומבטיחה בטיחות.`
+export const home_page_card_1_text_1 = () => `אנו מייצרים זכוכית מתקדמת העמידה באש, שעוברת בדיקות מחמירות על מנת לספק ביצועים מעולים ועמידות, וכתוצאה מכך להגן על חיים ורכוש.`
 
 
 /**
@@ -160,7 +168,7 @@ export const home_page_carousel_description = () => `הזכוכית היא יח�
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_experiment_results = () => `תוצאות ניסוי EI30`
+export const home_page_card_1_text_2 = () => `אנו משיגים את היעד על ידי יישום תהליכי ייצור מתקדמים שמלווים בפיקוח מקצועי ומנוסה, תוך תאימות לתקני הבטיחות והתקנות השונות. `
 
 
 /**
@@ -168,7 +176,7 @@ export const home_page_experiment_results = () => `תוצאות ניסוי EI30`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_qualities_heading = () => `תכונות`
+export const home_page_card_1_text_3 = () => `טכנולוגיה זו ידידותית לסביבה וחסכונית באנרגיה. `
 
 
 /**
@@ -176,7 +184,7 @@ export const home_page_qualities_heading = () => `תכונות`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_heading = () => `התהליך שלנו`
+export const home_page_card_2_title = () => `יתרונות`
 
 
 /**
@@ -184,7 +192,7 @@ export const home_page_process_heading = () => `התהליך שלנו`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_one_title = () => `שלב 1: ייצור`
+export const home_page_card_2_text_1 = () => `בטיחות אין משמעותה התפשרות על עיצוב. הזכוכית העמידה באש שלנו זמינה במגוון עיצובים וגימורים ומאפשרת שמירה על השלמות האסתטית של כל חלל.`
 
 
 /**
@@ -192,7 +200,7 @@ export const home_page_process_one_title = () => `שלב 1: ייצור`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_one_description = () => `ייצור של מבנה זיגוג כפול, מונח על שולחן נע.`
+export const home_page_card_2_text_2 = () => `מונעת התפשטות להבות, עשן וגזים.`
 
 
 /**
@@ -200,7 +208,7 @@ export const home_page_process_one_description = () => `ייצור של מבנה
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_title = () => `שלב 2: התקנה`
+export const home_page_card_2_text_3 = () => `מספקת בידוד תרמי מקסימלי.`
 
 
 /**
@@ -208,7 +216,7 @@ export const home_page_process_two_title = () => `שלב 2: התקנה`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_description = () => `איטום הרמטי של יחידת זכוכית.`
+export const home_page_card_2_text_4 = () => `בולמת הקרנת חום.`
 
 
 /**
@@ -216,7 +224,7 @@ export const home_page_process_two_description = () => `איטום הרמטי ש
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_three_title = () => `שלב 3: הכנסת`
+export const home_page_card_2_text_5 = () => `בידוד רעשים.`
 
 
 /**
@@ -224,7 +232,7 @@ export const home_page_process_three_title = () => `שלב 3: הכנסת`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_three_description = () => `הרכב "רפרא - 01" הכנסת`
+export const home_page_card_2_text_6 = () => `עמידה ביותר ועמידה לזעזועים.`
 
 
 /**
@@ -232,7 +240,7 @@ export const home_page_process_three_description = () => `הרכב "רפרא - 0
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_title = () => `שלב 4: חשיפה`
+export const home_page_card_2_text_7 = () => `מגוון מסגרות – ניתן לעשות שימוש במסגרות אלומיניום, פלדה ואפילו עץ.`
 
 
 /**
@@ -240,7 +248,279 @@ export const home_page_process_four_title = () => `שלב 4: חשיפה`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_description = () => `חשיפה לתאורה אולטרה סגולה.`
+export const home_page_card_2_text_8 = () => `צורות זכוכית לא שגרתיות לכל ההתקנות המעוצבות במיוחד.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_title = () => `מבחר`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_text_1 = () => `FPT מציעה את הווריאציות הבאות של זכוכית עמידה באש.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_text_2 = () => `:EI30/30 - דקות (60) של תקינות (E), לרבות הגנה מפני להבות, גזים חמים ועשן. בידוד של 30 דקות מפני קרינת חום, המונע את העברת החום לצד הלא חשוף.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_text_3 = () => `EI60/60 - דקות (60) של תקינות (E), לרבות הגנה מפני להבות, גזים חמים ועשן. בידוד של 60 דקות מפני קרינת חום, המונע את העברת החום לצד הלא חשוף.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_4_title = () => `ייחודיות`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_4_text_1 = () => `אנחנו מייצרים יחידות זכוכית מבודדת חסינות אש עם זגוגיות חיצוניות של זכוכית רגילה או מבודדת. ניתן לייצר את הזכוכית עם ציפויי בקרה סולארית, ציפויים צבעוניים ובקרת קול וכן ניתן להתקין אותה עם שמשות המספקות רמת אבטחה גבוהה על פי דרישה.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_4_text_2 = () => `זכוכיתRefraGlass  מבית FireProofTech מבטיחה תקינות על ידי בידוד תרמי מלא, קרינת חום מופחתת, ויצירת מחסום בלתי מתכלה מפני להבות וגזים חמים, תוך עמידה בתקן N. 931 (ISO 834-1). `
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_experiment_results = () => `תוצאות הניסוי`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_1_title = () => `עמידות באש`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_2_title = () => `ראקציה לאש`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_3_title = () => `טווח טמפרטורות (°C)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_4_title = () => `מידות מקסימליות שנבדקו(mm)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_5_title = () => `עובי`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_6_title = () => `פקטור העברת אור (%)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_7_title = () => `פקטור החזרת אור (%)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_8_title = () => `פקטור העברה סולארית ישירה (%)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_9_title = () => `פקטור החזרה סולארית ישירה (%)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_10_title = () => `פקטור העברת אנרגיה סולארית כוללת (%)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_11_title = () => `הפחתת קול (dB)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_12_title = () => `עמידות בפני פגיעת גוף מטוטלת`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_13_title = () => `תכונות תרמיות`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_1_field = () => `EL30`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_2_field = () => `B-s1, d0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_3_field = () => `-40 = +65`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_4_field = () => `3,200 – 4,200 מ"מ`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_5_field = () => `20 +- 2`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_6_field = () => `τv 87,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_7_field = () => `ρv 8,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_8_field = () => `τe 64,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_9_field = () => `ρe 7,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_10_field = () => `g 70,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_11_field = () => `Rw (C; Ctr) 41 (-2; -3)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_12_field = () => `B/1/1`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_13_field = () => `U-Valve = 4,4`
 
 
 /**
@@ -625,3 +905,163 @@ export const no_pdf_plugin = () => `לדפדפן האינטרנט שלך אין 
  */
 /* @__NO_SIDE_EFFECTS__ */
 export const download_here = () => `התחל הורדה`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_title = () => `RefraGlass`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_short = () => `פתרונות זכוכית עם בטיחות אש מבית Fire Proof Tech, העומדים במגוון רחב של דרישות.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_1 = () => `אנו מציעים לכם מוצרים באיכות גבוהה – זכוכית עמידה באש RefraGlass, אשר מיוצרת באמצעות טכנולוגיית החדרת הנוזל המודרנית ביותר. RefraGlass מיוצר תוך שימוש בחומרי גלם באיכות גבוהה, בתהליך של הרכב המתקשה באור (photocurable) 'Refra-01', המעניק את התכונות הדרושות עבור סוג זה של מוצר – עמידות באש, כוח מכני וכן יציבות ארוכת טווח ולמעשה בלתי מוגבלת בזמן של התכונות האופטיות. הזכוכית יכולה לעמוד אפילו בקרינת UV חזקה, תוך שמירה על כל התכונות האסתטיות והמכאניות שלה בטווח רחב של טמפרטורות (-40 - +65°C).`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_2 = () => `RefraGlass מתאפיין במבנה טריפלקס: יריעות זכוכית במילוי ג'ל פולימרי דמוי גומי. שמשות הזכוכית מקושרות כימית לשכבת הביניים של הפולימר בעזרת מקדמי הדבקה, מה שהופך את זכוכית RefraGlass לבטוחה. הזכוכית נשארת דבוקה לפולימר גם במקרים של פגיעות חזקות מעצמים מוצקים, רמת הגנה - CM4.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_3 = () => `הזכוכית אינה מתעוותת במהלך אחסון לא נאות ואינה מתפוצצת בעת 'הידוק יתר' של לוחיות הלחץ במבני חזית. בתהליך הייצור של RefraGlass נעשה שימוש בלוחות של זכוכית מחוסמת. בטיחות מלאה מובטחת במהלך ההובלה וההתקנה.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_4 = () => `מקדם ההתנגדות להעברת חום הוא 0.1 m2 * ° C / W.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_5 = () => `משך חיי השירות של הזכוכית הוא 10 שנים.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_title = () => `RefraFilling`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_short = () => `מילוי פרופיל עמיד באש`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_content_1 = () => `המוצר החדשני של Fire Proof Techs הוא חומר למילוי פרופילים, 'Refrafilling', אשר מתאים לפרופילים שעשויים מ - PVC, אלומיניום ופלדה.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_content_2 = () => `המוצר מגיע בצורה של חומר תערובת יבש, שאותו יש לערבב עם מים לפני השימוש. לאחר ערבוב, הוא הופך למסה נוזלית דומה לזו של יוגורט סמיך. זמן שימור התערובת הנוזלית הוא 6 שעות. 12-18 שעות לאחר יצירת התערובת, האלמנט מתמצק.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_content_3 = () => `היתרון של RefraFilling הוא, שניתן בקלות רבה למלא פרופילים נפרדים, כמו גם יחידות בנייה מוכנות. כך, ניתן להפוך יחידות הפרדה שלמות כגון דלתות, חלונות ומחיצות ליחידות עמידות באש, עם עמידות של עד 60 דקות, כולל כאלה שכבר מותקנות באתר שלכם.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_title = () => `RefraGerm`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_short = () => `חומר איטום עמיד באש, שמשפר משמעותית את תכונות העמידות באש ואת יציבות `
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_1 = () => `RefraGerm - חומר איטום עמיד באש, שמשפר משמעותית את תכונות העמידות באש ואת יציבות המבנים השקופים למחצה. חומר האיטום משמש לרוב עבור:`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_2 = () => `מילוי מרווחים בין קצות הזכוכית לפרופילים של המסגרת:`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_3 = () => `מילוי קצוות ורווחים בין הקצוות של משקוף הדלת לרכיבי מחיצה`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_4 = () => `כאשר מחממים אותו, הוא יוצר חומר פחמני קשיח ועמיד בחום וחוסם באופן אמין להבה החודרת דרך רווחים אלה. כפי שמוכיחים מבחני אש רבים, 'REFRAGERM' מפחית באופן משמעותי יותר את ההתחממות של המשטחים החיצוניים של מבנים בהשוואה לסרטי הדבקה תרמוסטטים מסורתיים. השימוש בו מומלץ במיוחד לעמידות באש של מבנים בדירוג EI 30/30 - EI 90/90.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_5 = () => `איטום עמיד באש 'REFRAGERM' מיוצר בצינורות פוליאתילן המיועדים לשימוש באקדח בנייה סטנדרטי, ויש ליישמו במבנים הנמצאים בטמפרטורות חיוביות. ניתן לשמור אותו בקירור של עד - 40 ° C ולהשתמש בו לאחר הפשרה. משך חיי המדף ב 10-23 מעלות צלזיוס הוא 3 חודשים לפחות, בטמפרטורות הקפאה אין הגבלת זמן. הצפיפות היא 1.4 גרם לסמ'ק.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_4_text_3 = () => ``

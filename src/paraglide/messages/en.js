@@ -128,6 +128,14 @@ export const sitemap = () => `Sitemap`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
+export const products = () => `Products`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
 export const home_page_landing_heading = () => `Fire Proof Tech`
 
 
@@ -144,7 +152,7 @@ export const home_page_landing_subheading = () => ``
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_carousel_heading = () => `Our Speciality Is Glass`
+export const home_page_card_1_title = () => `What We Do`
 
 
 /**
@@ -152,7 +160,151 @@ export const home_page_carousel_heading = () => `Our Speciality Is Glass`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_carousel_description = () => `The glass is a double glazed, triplex structured unit with varied thickness, filled with an intumescent polymer gel middle layer. Thanks to adhesion promoters the glass is chemically bounded to the polymer layer and guarantees safety.`
+export const home_page_card_1_text_1 = () => `We manufacture state-of-the-art fire-resistant glass, that is rigorously tested to provide superior performance and durability, and as a result protects lives and property`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_1_text_2 = () => `This is achieved through the utilization of an advanced manufacturing process with professional and experiences supervision to conform before safety standards and regulations.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_1_text_3 = () => `This technology is environmentally friendly and energy efficient.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_title = () => `Benefits`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_1 = () => `Safety doesn’t have to compromise on style. Our fire-resistant glass is available in a variety of designs and finishes allowing you to maintain the aesthetic integrity of your space`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_2 = () => `Prevents the spread of flames smoke and gas`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_3 = () => `Provides maximum thermal insulation`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_4 = () => `Blocks heat radiation`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_5 = () => `Noise insulation`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_6 = () => `Very durable and shock resistant`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_7 = () => `Versatility of frames – can be used with aluminium, steel and even wooden frames`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_2_text_8 = () => `Irregular glass shapes for all designable installations`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_title = () => `Variations`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_text_1 = () => `FPT offers the following variations of fire-resistant glass:`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_text_2 = () => `EI30/30 - 30 minutes of (E) integrity, providing protection from flames, hot gases and smoke. 30 minutes insulation from heat radiation, restricting the transfer of heat to the unexposed side.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_3_text_3 = () => `EI60/60 - 60 minutes of (E) integrity, providing protection from flames, hot gases and smoke. 60 minutes insulation from heat radiation, restricting the transfer of heat to the unexposed side.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_4_title = () => `What Makes Our Glass Special`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_4_text_1 = () => `We manufacture fire-resistant insulated glass units with outer panes of regular or insulated glass. The glass can be produced with solar control coatings, colour coatings, sound control and can be fitted with high security glass panes on request`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_card_4_text_2 = () => `FireProofTech’s RefraGlass meets integrity with full thermal insulation, reduced heat radiation and creates an imperishable barrier against flames and hot gases with appliance to Standard N. 931 (ISO 834-1)`
 
 
 /**
@@ -168,7 +320,7 @@ export const home_page_experiment_results = () => `Experiment Results EI30`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_qualities_heading = () => `Qualities`
+export const home_page_table_1_title = () => `Fire-resistance`
 
 
 /**
@@ -176,7 +328,7 @@ export const home_page_qualities_heading = () => `Qualities`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_heading = () => `Our Process`
+export const home_page_table_2_title = () => `Reaction to fire`
 
 
 /**
@@ -184,7 +336,7 @@ export const home_page_process_heading = () => `Our Process`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_one_title = () => `STEP 1 : PRODUCTION`
+export const home_page_table_3_title = () => `Temperature rage (°C)`
 
 
 /**
@@ -192,7 +344,7 @@ export const home_page_process_one_title = () => `STEP 1 : PRODUCTION`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_one_description = () => `Production of a double glazing structure, placed on a moving table.`
+export const home_page_table_4_title = () => `Max dimension tested (mm)`
 
 
 /**
@@ -200,7 +352,7 @@ export const home_page_process_one_description = () => `Production of a double g
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_title = () => `STEP 2 : INSTALLATION`
+export const home_page_table_5_title = () => `Thickness`
 
 
 /**
@@ -208,7 +360,7 @@ export const home_page_process_two_title = () => `STEP 2 : INSTALLATION`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_two_description = () => `Hermetic sealing of glass unit.`
+export const home_page_table_6_title = () => `Light transmittance factor (%)`
 
 
 /**
@@ -216,7 +368,7 @@ export const home_page_process_two_description = () => `Hermetic sealing of glas
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_three_title = () => `STEP 3 : INSERTION`
+export const home_page_table_7_title = () => `Light reflectance factor (%)`
 
 
 /**
@@ -224,7 +376,7 @@ export const home_page_process_three_title = () => `STEP 3 : INSERTION`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_three_description = () => `Composition "Refra - 01" insertion`
+export const home_page_table_8_title = () => `Solar direct transmittance factor (%)`
 
 
 /**
@@ -232,7 +384,7 @@ export const home_page_process_three_description = () => `Composition "Refra - 0
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_title = () => `STEP 4 : EXPOSURE`
+export const home_page_table_9_title = () => `Solar direct reflectance factor (%)`
 
 
 /**
@@ -240,7 +392,135 @@ export const home_page_process_four_title = () => `STEP 4 : EXPOSURE`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_process_four_description = () => `Ultraviolet illumination exposure.`
+export const home_page_table_10_title = () => `Total solar energy transmittance factor (&)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_11_title = () => `Sound reduction (dB)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_12_title = () => `Pendelum body impact resistance`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_13_title = () => `Thermal properties U-Valve (W/m2 K)`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_1_field = () => `EI30`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_2_field = () => `B-s1, d0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_3_field = () => `-40 = +65`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_4_field = () => `3200 – 4200`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_5_field = () => `20 +- 2`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_6_field = () => `τv 87,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_7_field = () => `ρv 8,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_8_field = () => `τe 64,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_9_field = () => `ρe 7,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_10_field = () => `g 70,0`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_11_field = () => `Rw (C; Ctr) 41 (-2; -3) `
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_12_field = () => ` 1/B/1`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const home_page_table_13_field = () => `4,4`
 
 
 /**
@@ -625,3 +905,157 @@ export const no_pdf_plugin = () => `Your web browser doesn't have a PDF plugin. 
  */
 /* @__NO_SIDE_EFFECTS__ */
 export const download_here = () => `Start Download`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_title = () => `RefraGlass`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_short = () => `Fire Proof Tech’s fire safety glass solutions, with comprehensive variety to requirements`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_1 = () => `We offer you high-quality products – fire-resistant glass RefraGlass, manufactured using the most modern liquid infusion technology. RefraGlass is produced using high-quality raw materials, photo-curable composition “Refra-01”, providing the properties necessary for this type of product – fire resistance, mechanical strength and long-term, practically unlimited in time, stability of optical properties. The glass can withstand even intense UV radiation, maintaining all its aesthetic and mechanical properties in a wide range of temperatures (-40 — +65°C`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_2 = () => `RefraGlass is a triplex structured: sheet glass filled with polymer rubber-like gel. With the help of adhesion promoters, the glass panes are chemically bonded to the intermediate polymer layer making RefraGlass glass safe, even with strong impacts from solid objects, the glass remains glued to the polymer. Level of protection class - CM4`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_3 = () => `The glass does not deform during improper storage and does not burst when 'overtightening' the pressure plates in facade structures. When manufacturing RefraGlass using tempered glass panes, complete safety is ensured during transportation and installation`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_4 = () => `The heat transfer resistance coefficient is 0.1 m2 * ° C / W.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_1_content_5 = () => `The service life of the glass is 10 years.`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_title = () => `RefraFilling`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_short = () => `Fire-Resistant profile filler`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_content_1 = () => `Fire Proof Techs innovative product is the profile filler material, “Refrafilling”, suitable for PVC, aluminium and steel profiles`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_content_2 = () => `The product comes in the form of a dry mixture substance, which is to be combined with water before use. Once mixed, it turns into a liquid mass similar to that of creamy yoghurt. The time of preservation of the liquid mixture is 6 hours. 12-18 hours after the creation of mixture, the element solidifies`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_2_content_3 = () => `The advantages of Refrafilling, are that you can just as easily fill separate profiles, as well as ready made construction units. This way, you can turn complete divinding units such as doors, windows and partitions into fire-resistant ones, with integrity of up to 60 minutes, including ones already mounted on your premises`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_title = () => `RefraGerm`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_short = () => `Fire-resistant sealant`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_1 = () => `Fire-resistant sealant 'REFRAGERM' significantly improves fire-resistant properties and stability of translucent structures. The sealant is most often used for`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_2 = () => `filling gaps between glass edges and frame profiles`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_3 = () => `filling edges and gaps between door frame ends and partition elements`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_4 = () => `When heated, it forms a rigid heat-resistant carbonaceous material and reliably blocks flame escaping through these gaps. As numerous fire tests have shown, 'REFRAGERM' significantly more effectively reduces heating of external surfaces of structures compared to traditional thermosetting tapes, its use is especially advisable for fire resistance of structures EI 30/30 - EI 90/90`
+
+
+/**
+ * 
+ * @returns {string}
+ */
+/* @__NO_SIDE_EFFECTS__ */
+export const product_page_3_content_5 = () => `Fire-resistant sealant 'REFRAGERM' is produced in polyethylene tubes for a standard construction gun, applied to structures at positive temperatures. It can be cooled to - 40 ° C and used after defrosting. The shelf life at 10-23°C is at least 3 months, at negative temperatures it is not limited. Density is 1.4 g/cm3`
+
+export { home_page_card_4_text_3 } from "./il.js"

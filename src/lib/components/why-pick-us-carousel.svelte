@@ -1,12 +1,13 @@
 <script lang="ts">
 	import * as m from '$pg/messages';
-	import clock from '$lib/assets/icons/clock.svg';
+	import clock from '$lib/assets/icons/clock.png';
 	import checkmark from '$lib/assets/icons/checkmark.svg';
 	import leaves from '$lib/assets/icons/leaves.svg';
 	import { Button } from './ui/button';
 	const reasons = [
 		{
 			src: clock,
+			needsBackground: true,
 			title: m.home_page_why_pick_us_one_subheading()
 		},
 		{
@@ -20,16 +21,26 @@
 	];
 </script>
 
-<div class="flex min-w-[600px] flex-col items-center justify-center rounded-sm bg-off-blue py-10">
+<div class="flex min-w-[600px] flex-col items-center justify-center rounded-sm bg-blue-900 py-10">
 	{#each reasons as reason}
-		<div class="flex items-center justify-center py-2">
+		<div class="flex items-center justify-center py-2 text-white">
 			<div class="flex w-[300px] items-center justify-start">
-				<img class="w-1/4 max-w-[70px]" src={reason.src} alt="decorative" />
-				{reason.title}
+				{#if reason.needsBackground}
+          <div class="h-1 px-1"></div>
+					<img class="w-[55px] border-black border rounded-full bg-white p-2" src={reason.src} alt="decorative" />
+					<div class="px-1 md:px-6">
+						{reason.title}
+					</div>
+				{:else}
+					<img class="w-full max-w-[70px]" src={reason.src} alt="decorative" />
+					<div class="px-1 md:px-4">
+						{reason.title}
+					</div>
+				{/if}
 			</div>
 		</div>
 	{/each}
 	<Button variant="destructive" class="mt-10" size="lg">
-    <a href="/contact-us">{m.contact_us()}</a>
-  </Button>
+		<a href="/contact-us">{m.contact_us()}</a>
+	</Button>
 </div>

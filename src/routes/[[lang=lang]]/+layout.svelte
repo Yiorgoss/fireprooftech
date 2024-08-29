@@ -10,6 +10,7 @@
 	export const mainNav = [
 		{ slug: '/', title: m.home() },
 		{ slug: siteMap.aboutUs, title: m.about_us() },
+		{ slug: siteMap.products, title: m.products() },
 		{ slug: siteMap.contactUs, title: m.contact_us() }
 	];
 

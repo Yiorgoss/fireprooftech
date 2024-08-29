@@ -3,7 +3,8 @@ import * as m from '$pg/messages';
 export const siteMap = {
   home: '/',
   aboutUs: '/about-us',
-  contactUs: '/contact-us'
+  products: '/products',
+  contactUs: '/contact-us',
 };
 
 
