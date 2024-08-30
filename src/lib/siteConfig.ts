@@ -1,4 +1,3 @@
-import * as m from '$pg/messages';
 
 export const siteMap = {
   home: '/',
@@ -14,7 +13,7 @@ export const socials = [
 ];
 
 export const contactInfo = [
-  { info: "+97 2539 661 201", href: "tel:+972539661201", icon: "Phone" },
+  { info: "+972 539 661 203", href: "tel:+972539661203", icon: "Phone" },
   { info: "info@fireprooftech.co.il", href: "mailto:info@fireprooftech.co.il", icon: "Mail" }
 ]
 

@@ -16,7 +16,7 @@
 	"products": "Products",
 
 	"home_page_landing_heading": "Fire Proof Tech",
-	"home_page_landing_subheading": "",
+  "home_page_landing_subheading": "Our company specializes in manufacturing transparent fire-resistant structures, complex materials and special equipment for their production. We offer a top of the line product, RefraGlass, that’s produced with high quality raw material, our patented invention, Refra–01 gel, providing fire-resistant properties, mechanical toughness and an unlimited stability of optical qualities.",
 
 	"home_page_card_1_title": "What We Do",
 	"home_page_card_1_text_1": "We manufacture state-of-the-art fire-resistant glass, that is rigorously tested to provide superior performance and durability, and as a result protects lives and property",
@@ -39,7 +39,7 @@
 	"home_page_card_3_text_3": "EI60/60 - 60 minutes of (E) integrity, providing protection from flames, hot gases and smoke. 60 minutes insulation from heat radiation, restricting the transfer of heat to the unexposed side.",
 
 	"home_page_card_4_title": "What Makes Our Glass Special",
-	"home_page_card_4_text_1": "We manufacture fire-resistant insulated glass units with outer panes of regular or insulated glass. The glass can be produced with solar control coatings, colour coatings, sound control and can be fitted with high security glass panes on request",
+	"home_page_card_4_text_1": "We manufacture fire-resistant insulated glass units with outer panes of regular,tempered or insulated glass. The glass can be produced with solar control coatings, colour coatings, sound control and can be fitted with high security glass panes on request",
 	"home_page_card_4_text_2": "FireProofTech’s RefraGlass meets integrity with full thermal insulation, reduced heat radiation and creates an imperishable barrier against flames and hot gases with appliance to Standard N. 931 (ISO 834-1)",
 
 	"home_page_experiment_results": "Experiment Results EI30",
@@ -61,7 +61,7 @@
 	"home_page_table_1_field": "EI30",
 	"home_page_table_2_field": "B-s1, d0",
 	"home_page_table_3_field": "-40 = +65",
-	"home_page_table_4_field": "3200 – 4200",
+	"home_page_table_4_field": "1200 – 2200",
 	"home_page_table_5_field": "20 +- 2",
 	"home_page_table_6_field": "τv 87,0",
 	"home_page_table_7_field": "ρv 8,0",

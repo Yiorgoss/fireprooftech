@@ -6,6 +6,9 @@
 
 	const sources = meta[0].sources;
 	const fallback = meta[0].img;
+	export let ignoreFallback  = false;
+
+  const fallbackW = ignoreFallback ? "none" : ""+fallback.w + "px"
 
 	export let sizes = '100vw';
 	export let alt = '';
@@ -17,7 +20,7 @@
 	// console.log({sources:sources, meta: meta})
 </script>
 
-<div class="h-full" style={`max-width: ${fallback.w}px`}>
+<div class="h-full" style={`max-width: ${fallbackW};`}>
 	<picture class={pictureClass}>
 		{#each Object.entries(sources) as [type, srcMeta]}
 			<source type="image/{type}" {sizes} srcset={srcMeta} />

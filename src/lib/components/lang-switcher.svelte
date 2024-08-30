@@ -20,7 +20,7 @@
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content class="w-fit min-w-0">
 			{#each availableLanguageTags as lang}
-				<DropdownMenu.Item class="w-fit px-5 py-3">
+				<DropdownMenu.Item class="w-fit px-2 py-1">
 					<a href={i18n.route($page.url.pathname)} hreflang={lang == "il" ? "il" : lang}>
             <img class="h-5 w-5" src={flags[lang]} alt={lang} />
 					</a>

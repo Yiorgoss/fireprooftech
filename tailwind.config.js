@@ -60,8 +60,8 @@ const config = {
         sm: "calc(var(--radius) - 4px)"
       },
       fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
-        gothic: ['Pathway Gothic One', 'sans-serif'],
+        playfair: ['Teko', 'Playfair Display', 'serif'],
+        gothic: ['Ubuntu', 'Pathway Gothic One', 'sans-serif'],
         sans: [...fontFamily.sans]
       }
     }

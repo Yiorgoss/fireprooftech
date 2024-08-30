@@ -2,17 +2,17 @@
 	//@ts-ignore
 	// import landing from '$lib/assets/images/landing.jpg?w=500;1000;1500;2000;2500;3000&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-  import landing from "$lib/assets/images/landing_orange.jpg?w=500;1000;1700;2500&format=avif;webp;jpg&as=picture";
+	import landing from '$lib/assets/images/landing_new.jpg?w=500;1000;1700;2500&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-  import fire_door from "$lib/assets/images/fire_door.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture";
+	import fire_door from '$lib/assets/images/fire_door.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-  import glass_pod from "$lib/assets/images/glass_pod.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture";
+	import glass_pod from '$lib/assets/images/glass_pod.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-  import glass_door from "$lib/assets/images/glass_door_1.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture";
+	import glass_door from '$lib/assets/images/glass_door_1.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-  import glass_sheets from "$lib/assets/images/glass_sheets.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture";
+	import glass_sheets from '$lib/assets/images/glass_sheets.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-  import glass_windows from "$lib/assets/images/landing.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture";
+	import glass_windows from '$lib/assets/images/landing.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 
 	import * as m from '$pg/messages';
 	import { onMount } from 'svelte';
@@ -152,37 +152,39 @@
 
 <div class="">
 	<!-- <div class="overflow-x-hidden"> -->
-	<div class="relative -mt-[100px] h-[400px] overflow-hidden">
+	<div class="relative -mt-[100px] h-svh overflow-hidden">
 		<ImageWrapper imageClass="w-full h-full object-cover" meta={landing} alt="landing hero image" />
-		<div class="absolute inset-0 grid bg-zinc-300/50 opacity-80 md:grid-cols-6">
+		<div class="absolute inset-0 grid bg-zinc-100/20 opacity-80 md:grid-cols-6">
 			{#each [1, 2, 3, 4, 5, 6] as _}
 				<div class=" h-full border-l border-background/50"></div>
 			{/each}
 		</div>
 
-		<div
-			class="container absolute inset-0 flex w-full items-center px-2 py-0 md:items-end md:px-20 md:py-20"
-		>
-			<div class="absolute bottom-0 pb-20 sm:pb-20 md:left-20 md:right-20">
+		<div class="absolute inset-0 flex w-full items-center px-2 py-0 md:items-end md:px-0 md:py-20">
+			<div
+				class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-blue-200/50 p-10 md:p-20"
+			>
 				<h1
-					class:opacity-0={!mounted}
-					class="w-3/4 py-0 font-playfair text-3xl transition-opacity delay-200 duration-1000 ease-in sm:text-5xl md:py-10 md:text-7xl"
+					class="w-1/2 py-0 font-playfair text-3xl transition-opacity delay-200 duration-1000 ease-in md:py-10 md:text-5xl"
 				>
 					{m.home_page_landing_heading()}
 				</h1>
+				<div class="w-4/5 text-base md:text-xl">
+					{m.home_page_landing_subheading()}
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container flex flex-col md:gap-20 gap-14 py-20">
+	<div class="container flex flex-col gap-y-14 py-20 md:gap-y-20">
 		{#each contentData as cardData, i}
 			<CardHomePage {cardData} floatLeft={i % 2 == 0} />
 		{/each}
 	</div>
 	<div class="container flex flex-wrap justify-center border-gray-200 px-2 py-10">
 		{#each tableData as item}
-			<div class="w-1/2 md:w-[7.6%] py-0 md:py-3 text-base md:text-xs">
+			<div class="w-1/2 py-0 text-base md:w-[7.6%] md:py-3 md:text-xs">
 				<div class="h-20 border border-gray-300 bg-blue-900 px-2 text-white">{item.title}</div>
-				<div class="h-10 border border-gray-300 px-2">{item.field}</div>
+				<div class="h-14 border border-gray-300 px-2">{item.field}</div>
 			</div>
 		{/each}
 	</div>

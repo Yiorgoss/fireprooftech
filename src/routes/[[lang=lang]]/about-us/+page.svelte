@@ -14,6 +14,10 @@
 	import pastWork3 from '$lib/assets/images/past-work-3.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import pastWork4 from '$lib/assets/images/past-work-4.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	//@ts-ignore
+  import landing_orange from "$lib/assets/images/landing_orange.jpg?w=500;1000;&format=avif;webp;jpg&as=picture";
+	//@ts-ignore
+  import blue_bg from "$lib/assets/images/products_text_background.jpg?w=500;1000;&format=avif;webp;jpg&as=picture";
 </script>
 
 <svelte:head>
@@ -21,14 +25,15 @@
 	<meta name="description" content={m.about_page_head_description()} />
 </svelte:head>
 
-<div class="relative -mt-[100px] w-full overflow-hidden bg-foreground pt-[100px]">
+<div class="relative -mt-[100px] w-full overflow-hidden bg-transparent pt-[100px]">
+  <div class="fixed top-0 left-0 right-0 bottom-0 -z-10"><ImageWrapper ignoreFallback={true} meta={[blue_bg]} imageClass="w-full h-full object-cover" /></div>
 	<h1 class="mt-[100px] w-full bg-off-blue py-16 text-center font-playfair text-6xl uppercase">
 		{m.about_fpt()}
 	</h1>
 	<div class="flex items-center justify-center">
 		<ImageWrapper
 			imageClass="-mt-[8px] rounded-full border-off-blue border-8 h-[300px] w-[300px]"
-			meta={[carousel1]}
+			meta={[landing_orange]}
 		/>
 	</div>
 	<div class="px-0 py-10 md:px-10">
@@ -67,9 +72,9 @@
 		<PlainCarousel />
 	</div>
 </div>
-<div class="overflow-hidden bg-off-blue px-0 py-10 md:px-14">
+<div class="overflow-hidden px-0 py-10 md:px-14">
 	<div
-		class="aspect-normal mx-auto my-10 flex max-w-[1000px] items-center justify-center rounded-none bg-foreground py-0 text-background md:-my-[10%] md:aspect-square md:rounded-full"
+		class="aspect-normal mx-auto my-10 flex max-w-[1000px] items-center justify-center rounded-none bg-transparent py-0 text-background md:-my-[10%] md:aspect-square md:rounded-full"
 	>
 		<div
 			class="flex h-full w-full flex-col justify-center py-10 md:aspect-square md:h-[70.7%] md:w-[70.7%] md:py-10"

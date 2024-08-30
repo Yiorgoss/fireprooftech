@@ -18,8 +18,8 @@
 	};
 </script>
 
-<div class="px-16 py-10">
-	<div class={`px-0 ${floatLeft ? 'pl-12' : 'pr-12'}`}>
+<div class="px-0 md:px-16 py-10">
+	<div class={`px-0 ${floatLeft ? 'pl-0 md:pl-12' : 'pr-0 md:pr-12'}`}>
 		<div class="mx-auto grid min-h-[500px] w-full grid-cols-5 gap-3 bg-zinc-200 md:gap-10">
 			<div
 				class={`${floatLeft ? 'order-first' : 'order-first md:order-last'}  col-span-full bg-blue-900 p-2 md:col-span-2`}
