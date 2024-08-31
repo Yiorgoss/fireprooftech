@@ -14,13 +14,13 @@
 		{ slug: siteMap.contactUs, title: m.contact_us() }
 	];
 
-	$: textColor =
-		(withoutLanguageTag($page.url.pathname) == '/' || withoutLanguageTag($page.url.pathname) == "/about-us") ? 'text-foreground' : 'text-background';
+	// $: textColor =
+		// (withoutLanguageTag($page.url.pathname) == '/' || withoutLanguageTag($page.url.pathname) == "/about-us") ? 'text-foreground' : 'text-background';
 	$: footerTextColor =
 		withoutLanguageTag($page.url.pathname) == '/'  ? 'text-foreground' : 'text-background';
 </script>
 
-<Navbar {textColor} {mainNav} />
+<Navbar textColor={footerTextColor} {mainNav} />
 <main class="font-gothic text-xl leading-10 tracking-wider">
 	<slot />
 </main>

@@ -6,9 +6,11 @@
 
 	const sources = meta[0].sources;
 	const fallback = meta[0].img;
-	export let ignoreFallback  = false;
 
-  const fallbackW = ignoreFallback ? "none" : ""+fallback.w + "px"
+	export let ignoreFallback = false;
+	export let clickableImage = false;
+
+	const fallbackW = ignoreFallback ? 'none' : '' + fallback.w + 'px';
 
 	export let sizes = '100vw';
 	export let alt = '';
@@ -17,15 +19,41 @@
 	export let imageClass = '';
 	export let pictureClass = '';
 
-	// console.log({sources:sources, meta: meta})
+	let overlayHidden = true;
 </script>
 
-<div class="h-full" style={`max-width: ${fallbackW};`}>
+<div class="relative h-full" style={`max-width: ${fallbackW};`}>
 	<picture class={pictureClass}>
 		{#each Object.entries(sources) as [type, srcMeta]}
 			<source type="image/{type}" {sizes} srcset={srcMeta} />
 		{/each}
 		<img src={fallback.src} {alt} {loading} class={imageClass} />
 	</picture>
+	{#if clickableImage}
+		<a
+			href="#imageOverlay"
+      id="imageOverlay"
+			class="hidden md:block absolute inset-0 "
+			on:click={() => (overlayHidden = !overlayHidden)}
+		>
+			<div
+				class:hidden={overlayHidden}
+				class="fixed inset-0 z-40 flex items-center justify-center bg-red-500 backdrop-blur-lg"
+			>
+				<div class=" flex h-4/5 w-4/5 items-center justify-center overflow-hidden">
+					<img src={fallback.src} {alt} loading="lazy" class="object-contain" />
+				</div>
+			</div>
+		</a>
+	{/if}
 </div>
-<!-- srcset={srcMeta.map((m) => `${m.src} ${m.w}w`).join(', ')} -->
+
+<!-- <style> -->
+<!-- 	.overlay { -->
+<!--     fixed -->
+<!-- 		height: 100%; -->
+<!-- 		width: 100%; -->
+<!-- 		background: black; -->
+<!-- 		opacity: 20%; -->
+<!-- 	} -->
+<!-- </style> -->

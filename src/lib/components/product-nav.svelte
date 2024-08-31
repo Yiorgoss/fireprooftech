@@ -26,8 +26,8 @@
 
 <div class="font-medium ">
 	<div class=" w-full z-10 relative">
-		<ImageWrapper pictureClass="z-10" imageClass="z-10 h-[500px] w-full object-cover" ignoreFallback={true} meta={[title.image]} />
-    <div class="absolute top-0 bottom-0 bg-slate-700/30 left-0 right-0"></div>
+		<ImageWrapper pictureClass="" imageClass="h-[500px] w-full object-cover" ignoreFallback={true} meta={[title.image]} />
+    <!-- <div class="absolute  bg-slate-700/30 inset-0"></div> -->
 	</div>
 	<div class="pt-5 relative px-0 md:px-24">
 		<div class="mt-0 bg-transparent min-h-[300px]  px-4 pb-10 text-background ">

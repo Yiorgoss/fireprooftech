@@ -32,7 +32,7 @@
 <svelte:window on:click={handleOutsideClick} />
 <header
 	bind:this={header}
-	class={`${textColor} relative z-30 flex h-[100px] w-full justify-between bg-transparent font-playfair tracking-wide md:justify-around`}
+	class={`${textColor} relative z-30 flex h-[100px] md:grid md:grid-cols-5 w-full justify-between bg-transparent font-playfair tracking-wide md:justify-around`}
 >
 	<a href="/" class=" h-[110px] w-[110px] md:p-2">
 		{#if isHome}
@@ -44,11 +44,11 @@
 	<nav
 		class:ltr:right-[25%]={openMenu}
 		class:rtl:left-[25%]={openMenu}
-		class="fixed bottom-0 left-0 right-[200vw] top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:h-full md:bg-transparent rtl:left-[200vw] rtl:right-0"
+		class="fixed bottom-0 left-0 right-[200vw] top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:h-full md:bg-transparent rtl:left-[200vw] rtl:right-0 md:col-span-3 "
 	>
 		<ul
 			class:border-none={!openMenu}
-			class={`${isHome ? 'border-foreground bg-background ltr:border-r rtl:border-l' : 'border-background bg-foreground ltr:border-r rtl:border-l '} flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent md:pl-0 md:pt-0 ltr:pl-20 rtl:pr-20`}
+			class={`${isHome ? 'border-foreground bg-background ltr:border-r rtl:border-l' : 'border-background bg-foreground ltr:border-r rtl:border-l '} flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent `}
 		>
 			<div class=" md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
@@ -72,12 +72,12 @@
 		</ul>
 	</nav>
 	<div class="float-right flex items-center justify-center md:float-none md:h-full">
-		<a href={contactInfo[0].href}>
-			<Button class="hidden items-center gap-3 px-5 py-3 font-gothic text-lg md:flex">
-				<PhoneCall />
-        <span class="" dir='ltr'>{contactInfo[0].info}</span>
-			</Button>
-		</a>
+		<!-- <a href={contactInfo[0].href}> -->
+		<!-- 	<Button class="hidden items-center gap-3 px-5 py-3 font-gothic text-lg md:flex"> -->
+		<!-- 		<PhoneCall /> -->
+  <!--       <span class="" dir='ltr'>{contactInfo[0].info}</span> -->
+		<!-- 	</Button> -->
+		<!-- </a> -->
 		<Button
 			variant="ghost"
 			class="inline bg-transparent hover:bg-transparent md:hidden"

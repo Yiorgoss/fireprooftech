@@ -106,10 +106,12 @@
 </script>
 
 <div class="-mt-[100px] min-h-svh pt-[100px] font-gothic">
-	<div class=" fixed bottom-0 top-0 -z-10 object-cover"><ImageWrapper meta={products_background} /></div>
+	<div class=" bg-blue-300 fixed inset-0 bg-transparent -z-10 object-cover">
+    <ImageWrapper imageClass="h-full w-full object-cover" meta={products_background} />
+  </div>
 
-	<div class="sticky top-0 z-30 w-full bg-foreground/50 text-background backdrop-blur-md">
-		<div class="flex h-14 items-center justify-center gap-4">
+	<div class="sticky top-0 z-20 w-full bg-foreground/50  backdrop-blur-md">
+		<div class="flex h-14 items-center text-white justify-center gap-4">
 			{#each titles as { name }}
 				<a
 					href={`#${name.replaceAll(' ', '_')}`}
@@ -122,7 +124,7 @@
 	</div>
 
 	{#each titles as title}
-		<div id={title.name.replace(' ', '_')}>
+		<div id={title.name.replace(' ', '_')} class="text-red-400 bg-transparent">
 			<ProductNav {title} />
 		</div>
 	{/each}

@@ -22,9 +22,9 @@
 	<div class={`px-0 ${floatLeft ? 'pl-0 md:pl-12' : 'pr-0 md:pr-12'}`}>
 		<div class="mx-auto grid min-h-[500px] w-full grid-cols-5 gap-3 bg-zinc-200 md:gap-10">
 			<div
-				class={`${floatLeft ? 'order-first' : 'order-first md:order-last'}  col-span-full bg-blue-900 p-2 md:col-span-2`}
+				class={`${floatLeft ? 'order-first' : 'order-first md:order-last'}  min-h-[300px] max-h-[300px] md:max-h-full col-span-full bg-blue-900 p-2 md:col-span-2`}
 			>
-				<ImageWrapper meta={[cardData.image]} imageClass="object-cover h-full" />
+				<ImageWrapper meta={[cardData.image]} imageClass="object-cover h-full w-full" />
 			</div>
 			<div class=" col-span-full flex flex-col justify-start px-6 md:col-span-3 md:px-10">
 				<h3 class="pb-5 pt-10 text-2xl">{cardData.title}</h3>

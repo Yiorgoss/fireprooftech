@@ -154,7 +154,7 @@
 	<!-- <div class="overflow-x-hidden"> -->
 	<div class="relative -mt-[100px] h-svh overflow-hidden">
 		<ImageWrapper imageClass="w-full h-full object-cover" meta={landing} alt="landing hero image" />
-		<div class="absolute inset-0 grid bg-zinc-100/20 opacity-80 md:grid-cols-6">
+		<div class="absolute inset-0 grid bg-gradient-landing  md:grid-cols-6">
 			{#each [1, 2, 3, 4, 5, 6] as _}
 				<div class=" h-full border-l border-background/50"></div>
 			{/each}

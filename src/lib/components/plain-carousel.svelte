@@ -22,18 +22,18 @@
 		loop: true
 	}}
 >
-	<Carousel.Content class="container max-h-[300px] items-center justify-around gap-10 px-2 py-10">
+	<Carousel.Content class="container  items-center justify-around gap-10 px-2 py-10">
 		<Carousel.Item class="basis-1/3">
-			<ImageWrapper pictureClass="" imageClass="" meta={firetesting4} />
+			<ImageWrapper  pictureClass="" imageClass="" meta={firetesting4} />
 		</Carousel.Item>
 		<Carousel.Item class="basis-1/3">
-			<ImageWrapper pictureClass="" imageClass="" meta={firetesting5} />
+			<ImageWrapper  pictureClass="" imageClass="" meta={firetesting5} />
 		</Carousel.Item>
 		<Carousel.Item class="basis-1/3">
-			<ImageWrapper pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting1} />
+			<ImageWrapper  pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting1} />
 		</Carousel.Item>
 		<Carousel.Item class="basis-1/3">
-			<ImageWrapper pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting2} />
+			<ImageWrapper  pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting2} />
 		</Carousel.Item>
 		<Carousel.Item class="basis-1/3">
 			<ImageWrapper pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting3} />
