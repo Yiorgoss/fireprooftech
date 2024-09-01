@@ -12,6 +12,10 @@
 
 	$: isHome = withoutLanguageTag($page.url.pathname) == '/';
 	export let textColor: string;
+
+	let isIL = true;
+	if ($page.url.pathname.split('/')[1] == 'en') isIL = false;
+  console.log($page.url.pathname.split("/"))
 </script>
 
 <div
@@ -65,7 +69,7 @@
 							{#if icon == 'Phone'}
 								<span class="" dir="ltr">{info}</span>
 							{:else}
-								<p>{info}</p>
+								{icon == 'Map' && isIL == true ?  'כתובת הסדנה 8, חולון' : info}
 							{/if}
 						</a>
 					</li>

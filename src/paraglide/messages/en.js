@@ -928,7 +928,7 @@ export const product_page_1_short = () => `Fire Proof Tech’s fire safety glass
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const product_page_1_content_1 = () => `We offer you high-quality products – fire-resistant glass RefraGlass, manufactured using the most modern liquid infusion technology. RefraGlass is produced using high-quality raw materials, photo-curable composition “Refra-01”, providing the properties necessary for this type of product – fire resistance, mechanical strength and long-term, practically unlimited in time, stability of optical properties. The glass can withstand even intense UV radiation, maintaining all its aesthetic and mechanical properties in a wide range of temperatures (-40 — +65°C`
+export const product_page_1_content_1 = () => `We offer you high-quality products – fire-resistant glass RefraGlass, manufactured using the most modern liquid infusion technology. RefraGlass is produced using high-quality raw materials, photo-curable composition “Refra-01”, providing the properties necessary for this type of product – fire resistance, mechanical strength and long-term, practically unlimited in time, stability of optical properties. The glass can withstand even intense UV radiation, maintaining all its aesthetic and mechanical properties in a wide range of temperatures (-40 — +65°C)`
 
 
 /**

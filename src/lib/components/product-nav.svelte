@@ -31,7 +31,7 @@
 	</div>
 	<div class="pt-5 relative px-0 md:px-24">
 		<div class="mt-0 bg-transparent min-h-[300px]  px-4 pb-10 text-background ">
-			<div class="flex flex-col items-end py-1 md:flex-row">
+			<div class="flex flex-col items-start md:items-end py-1 md:flex-row">
 				<h2 class="px-0 md:px-2 pt-1 font-playfair text-3xl md:after:pl-2 md:after:content-['-']">
 					{title.name}<span class=" text-lg font-thin"> &#174;</span>
 				</h2>

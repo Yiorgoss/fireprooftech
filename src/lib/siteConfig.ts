@@ -14,6 +14,7 @@ export const socials = [
 
 export const contactInfo = [
   { info: "+972 539 661 203", href: "tel:+972539661203", icon: "Phone" },
-  { info: "info@fireprooftech.co.il", href: "mailto:info@fireprooftech.co.il", icon: "Mail" }
+  { info: "info@fireprooftech.co.il", href: "mailto:info@fireprooftech.co.il", icon: "Mail" },
+  { info: "HaSadna 8, Holon", icon: "Map" }
 ]
 
