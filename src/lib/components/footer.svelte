@@ -15,7 +15,6 @@
 
 	let isIL = true;
 	if ($page.url.pathname.split('/')[1] == 'en') isIL = false;
-  console.log($page.url.pathname.split("/"))
 </script>
 
 <div
