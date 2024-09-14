@@ -1,10 +1,6 @@
 <script lang="ts">
 	//@ts-ignore
-	// import landing from '$lib/assets/images/landing.jpg?w=500;1000;1500;2000;2500;3000&format=avif;webp;jpg&as=picture';
-	//@ts-ignore
 	import landing from '$lib/assets/images/landing_new.jpg?w=500;1000;1700;2500&format=avif;webp;jpg&as=picture';
-	//@ts-ignore
-	import fire_door from '$lib/assets/images/fire_door.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import glass_pod from '$lib/assets/images/glass_pod.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
@@ -15,18 +11,12 @@
 	import glass_windows from '$lib/assets/images/landing.jpg?w=400;600;800;1500&format=avif;webp;jpg&as=picture';
 
 	import * as m from '$pg/messages';
-	import { onMount } from 'svelte';
 
-	// import CircularCarousel from '$lib/components/circular-carousel.svelte';
-	// import CircleImageSection from '$lib/components/circle-image-section.svelte';
 	import WhyPickUsCarousel from '$lib/components/why-pick-us-carousel.svelte';
-	// import { Button } from '$lib/components/ui/button';
 	import { ImageWrapper } from '$lib/components/image-wrapper/';
-	// import { i18n } from '$lib/i18n';
 	import CardHomePage from '$lib/components/card-home-page.svelte';
 
 	let scroll = 0;
-	let mounted = false;
 
 	const tableData = [
 		{ title: m.home_page_table_1_title(), field: m.home_page_table_1_field() },

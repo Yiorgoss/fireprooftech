@@ -82,7 +82,7 @@
 	</div>
 	<div class="overflow-hidden px-0 py-10 md:px-14">
 		<div
-			class="aspect-normal mx-auto my-10 flex max-w-[1000px] items-center justify-center rounded-none bg-foreground py-0 text-background md:-my-[10%] md:aspect-square md:rounded-full"
+			class="aspect-normal mx-auto my-10 flex max-w-[1000px] items-center justify-center rounded-none bg-foreground py-0 text-background  md:aspect-square md:rounded-full"
 		>
 			<div
 				class="flex h-full w-full flex-col justify-center py-10 md:aspect-square md:h-[70.7%] md:w-[70.7%] md:py-10"
