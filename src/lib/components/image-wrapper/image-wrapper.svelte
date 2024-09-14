@@ -44,6 +44,7 @@
 					<img src={fallback.src} {alt} loading="lazy" class="object-contain" />
 				</div>
 			</div>
+				<span class="sr-only">Link to same page</span>
 		</a>
 	{/if}
 </div>

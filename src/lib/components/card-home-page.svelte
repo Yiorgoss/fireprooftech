@@ -27,7 +27,7 @@
 				<ImageWrapper meta={[cardData.image]} imageClass="object-cover h-full w-full" />
 			</div>
 			<div class=" col-span-full flex flex-col justify-start px-6 md:col-span-3 md:px-10">
-				<h3 class="pb-5 pt-10 text-2xl">{cardData.title}</h3>
+				<h2 class="pb-5 pt-10 text-2xl">{cardData.title}</h2>
 				<ul class="flex-grow pb-10 text-base">
 					{#each cardData.content as item}
 						{#if item.isLinebreak}

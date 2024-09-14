@@ -32,7 +32,7 @@
 <svelte:window on:click={handleOutsideClick} />
 <header
 	bind:this={header}
-	class={`${textColor} relative z-30 flex h-[100px] md:grid md:grid-cols-5 w-full justify-between bg-transparent font-playfair tracking-wide md:justify-around`}
+	class={`${textColor} relative z-30 flex h-[100px] w-full justify-between bg-transparent font-playfair tracking-wide md:grid md:grid-cols-5 md:justify-around`}
 >
 	<a href="/" class=" h-[110px] w-[110px] md:p-2">
 		{#if isHome}
@@ -44,13 +44,13 @@
 	<nav
 		class:ltr:right-[25%]={openMenu}
 		class:rtl:left-[25%]={openMenu}
-		class="fixed bottom-0 left-0 right-[200vw] top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:h-full md:bg-transparent rtl:left-[200vw] rtl:right-0 md:col-span-3 "
+		class="fixed bottom-0 left-0 right-[200vw] top-0 h-screen overflow-hidden bg-inherit transition-all duration-500 md:static md:right-0 md:col-span-3 md:h-full md:bg-transparent rtl:left-[200vw] rtl:right-0"
 	>
 		<ul
 			class:border-none={!openMenu}
-			class={`${isHome ? 'border-foreground bg-background ltr:border-r rtl:border-l' : 'border-background bg-foreground ltr:border-r rtl:border-l '} flex h-full flex-col items-start justify-start md:flex-row md:items-center md:justify-center md:bg-transparent `}
+			class={`${isHome ? 'border-foreground bg-background ltr:border-r rtl:border-l' : 'border-background bg-foreground ltr:border-r rtl:border-l '} flex h-full flex-col items-start justify-start md:gap-2 gap-10 md:flex-row md:items-center md:justify-center md:bg-transparent `}
 		>
-			<div class=" md:hidden">
+			<li class="md:hidden">
 				<div class="h-[100px] w-[100px] p-5 md:p-2">
 					{#if isHome}
 						<img src={logo_black} alt="logo" />
@@ -58,15 +58,15 @@
 						<img src={logo_white} alt="logo" />
 					{/if}
 				</div>
-			</div>
+			</li>
 			{#each mainNav as { slug, title }}
 				<li class="px-4 py-4 text-lg">
-					<a on:click={() => (openMenu = false)} class=" text-xl" href={i18n.route(slug)}>
+					<a on:click={() => (openMenu = false)} class="p-4  text-xl" href={i18n.route(slug)}>
 						{title}
 					</a>
 				</li>
 			{/each}
-			<li class="md:order-first">
+			<li class="md:order-first p-4">
 				<LangSwitcher />
 			</li>
 		</ul>
@@ -75,7 +75,7 @@
 		<!-- <a href={contactInfo[0].href}> -->
 		<!-- 	<Button class="hidden items-center gap-3 px-5 py-3 font-gothic text-lg md:flex"> -->
 		<!-- 		<PhoneCall /> -->
-  <!--       <span class="" dir='ltr'>{contactInfo[0].info}</span> -->
+		<!--       <span class="" dir='ltr'>{contactInfo[0].info}</span> -->
 		<!-- 	</Button> -->
 		<!-- </a> -->
 		<Button
@@ -83,7 +83,10 @@
 			class="inline bg-transparent hover:bg-transparent md:hidden"
 			on:click={handleMobileIconClick}
 		>
-			<Menu class={`${textColor} fixed ltr:right-8 rtl:left-8`} />
+			<div>
+				<Menu class={`${textColor} fixed ltr:right-8 rtl:left-8`} />
+				<span class="sr-only">Menu</span>
+			</div>
 		</Button>
 	</div>
 </header>

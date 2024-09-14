@@ -26,8 +26,12 @@
 		<div class="flex items-center justify-center py-2 text-white">
 			<div class="flex w-[300px] items-center justify-start">
 				{#if reason.needsBackground}
-          <div class="h-1 px-1"></div>
-					<img class="w-[55px] border-black border rounded-full bg-white p-2" src={reason.src} alt="decorative" />
+					<div class="h-1 px-1"></div>
+					<img
+						class="w-[55px] rounded-full border border-black bg-white p-2"
+						src={reason.src}
+						alt="decorative"
+					/>
 					<div class="px-1 md:px-6">
 						{reason.title}
 					</div>
@@ -40,7 +44,9 @@
 			</div>
 		</div>
 	{/each}
-	<Button variant="destructive" class="mt-10" size="lg">
-		<a href="/contact-us">{m.contact_us()}</a>
-	</Button>
+	<div class="pt-14">
+		<Button variant="destructive" class="" size="lg">
+			<a href="/contact-us">{m.contact_us()}</a>
+		</Button>
+	</div>
 </div>

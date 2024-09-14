@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="">
-			<h4 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.sitemap()}</h4>
+			<h2 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.sitemap()}</h2>
 			<ul class="flex flex-col items-center justify-center opacity-70">
 				{#each mainNav as { title, slug }}
 					<li>
@@ -46,20 +46,20 @@
 			</ul>
 		</div>
 		<div class="flex flex-col items-center justify-center">
-			<h4 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.find_us()}</h4>
+			<h2 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.find_us()}</h2>
 			<ul class="opacity-70">
 				{#each socials as { name, href }}
 					<li>
 						<a class=" flex justify-start gap-x-10 py-2" {href}>
 							<svelte:component this={icons[name]} />
-							<!-- <p class="">{name}</p> -->
+							<span class="sr-only">{name}</span>
 						</a>
 					</li>
 				{/each}
 			</ul>
 		</div>
 		<div class="flex flex-col items-center justify-center">
-			<h4 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.contact_us()}</h4>
+			<h2 class="pb-4 pt-10 text-start font-playfair text-2xl">{m.contact_us()}</h2>
 			<ul class="opacity-70">
 				{#each contactInfo as { info, icon, href }}
 					<li class="">
@@ -68,7 +68,7 @@
 							{#if icon == 'Phone'}
 								<span class="" dir="ltr">{info}</span>
 							{:else}
-								{icon == 'Map' && isIL == true ?  'כתובת הסדנה 8, חולון' : info}
+								{icon == 'Map' && isIL == true ? 'כתובת הסדנה 8, חולון' : info}
 							{/if}
 						</a>
 					</li>
