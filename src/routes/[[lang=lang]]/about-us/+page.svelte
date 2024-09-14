@@ -6,14 +6,22 @@
 
 	//@ts-ignore
 	import carousel1 from '$lib/assets/images/past-work-1.jpeg?w=100;200;300;500;800&format=avif;webp;jpg&as=picture';
+	// //@ts-ignore
+	// import pastWork1 from '$lib/assets/images/past-work-1.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	// //@ts-ignore
+	// import pastWork2 from '$lib/assets/images/past-work-2.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	// //@ts-ignore
+	// import pastWork3 from '$lib/assets/images/past-work-3.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	// //@ts-ignore
+	// import pastWork4 from '$lib/assets/images/past-work-4.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-	import pastWork1 from '$lib/assets/images/past-work-1.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	import pastWork1 from '$lib/assets/images/work__1.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-	import pastWork2 from '$lib/assets/images/past-work-2.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	import pastWork2 from '$lib/assets/images/work__2.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-	import pastWork3 from '$lib/assets/images/past-work-3.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	import pastWork3 from '$lib/assets/images/work__3.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
-	import pastWork4 from '$lib/assets/images/past-work-4.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
+	import pastWork4 from '$lib/assets/images/work__4.jpeg?w=800;1200;1600;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import landing_orange from '$lib/assets/images/landing_orange.jpg?w=500;1000;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
@@ -30,8 +38,8 @@
 	<div class="fixed bottom-0 left-0 right-0 top-0 -z-10">
 		<ImageWrapper ignoreFallback={true} meta={[blue_bg]} imageClass="w-full h-full object-cover" />
 	</div>
-	<div class="relative  h-[500px] overflow-hidden object-cover">
-		<ImageWrapper imageClass="h-full object-cover" meta={[landing_orange]} />
+	<div class="relative h-[500px] overflow-hidden object-cover">
+		<ImageWrapper imageClass="h-full object-cover w-full" meta={[landing_orange]} />
 		<div class="bg-gradient-about-us absolute inset-0"></div>
 	</div>
 	<h1 class=" w-full bg-foreground text-background py-16 text-center font-playfair text-6xl uppercase">
@@ -69,7 +77,7 @@
 		<h2 class="bg-foreground py-20 text-center font-playfair text-4xl uppercase md:text-6xl">
 			{m.about_page_fireproof_testing_heading()}
 		</h2>
-		<div class="mx-auto bg-foreground w-4/6 px-10 py-5 my-5">
+		<div class="mx-auto bg-foreground w-full md:w-4/6 px-10 py-5 my-5">
 			<PlainCarousel />
 		</div>
 	</div>

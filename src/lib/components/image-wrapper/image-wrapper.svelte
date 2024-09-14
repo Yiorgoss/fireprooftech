@@ -38,7 +38,7 @@
 		>
 			<div
 				class:hidden={overlayHidden}
-				class="fixed inset-0 z-40 flex items-center justify-center bg-red-500 backdrop-blur-lg"
+				class="fixed inset-0 z-40 flex items-center justify-center backdrop-blur-lg"
 			>
 				<div class=" flex h-4/5 w-4/5 items-center justify-center overflow-hidden">
 					<img src={fallback.src} {alt} loading="lazy" class="object-contain" />

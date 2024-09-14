@@ -16,27 +16,41 @@
 </script>
 
 <Carousel.Root
-	class="py-10 px-2"
+	class="px-2 py-10"
 	opts={{
 		align: 'start',
 		loop: true
 	}}
 >
-	<Carousel.Content class="container  items-center justify-around gap-10 px-2 py-10">
-		<Carousel.Item class="basis-1/3">
-			<ImageWrapper  pictureClass="" imageClass="" meta={firetesting4} />
+	<Carousel.Content
+		class="container  items-center justify-around gap-2 px-2 py-2 md:gap-10 md:py-10"
+	>
+		<Carousel.Item class="basis-2/3 md:basis-1/3">
+			<ImageWrapper pictureClass="" imageClass="" meta={firetesting4} />
 		</Carousel.Item>
-		<Carousel.Item class="basis-1/3">
-			<ImageWrapper  pictureClass="" imageClass="" meta={firetesting5} />
+		<Carousel.Item class="basis-2/3 md:basis-1/3">
+			<ImageWrapper pictureClass="" imageClass="" meta={firetesting5} />
 		</Carousel.Item>
-		<Carousel.Item class="basis-1/3">
-			<ImageWrapper  pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting1} />
+		<Carousel.Item class="basis-2/3 md:basis-1/3">
+			<ImageWrapper
+				pictureClass="flex h-full w-full"
+				imageClass="object-contain h-auto"
+				meta={firetesting1}
+			/>
 		</Carousel.Item>
-		<Carousel.Item class="basis-1/3">
-			<ImageWrapper  pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting2} />
+		<Carousel.Item class="basis-2/3 md:basis-1/3">
+			<ImageWrapper
+				pictureClass="flex h-full w-full"
+				imageClass="object-contain h-auto"
+				meta={firetesting2}
+			/>
 		</Carousel.Item>
-		<Carousel.Item class="basis-1/3">
-			<ImageWrapper pictureClass="flex h-full w-full" imageClass="object-contain h-auto" meta={firetesting3} />
+		<Carousel.Item class="basis-2/3 md:basis-1/3">
+			<ImageWrapper
+				pictureClass="flex h-full w-full"
+				imageClass="object-contain h-auto"
+				meta={firetesting3}
+			/>
 		</Carousel.Item>
 	</Carousel.Content>
 	<Carousel.Previous

@@ -424,7 +424,7 @@ export const home_page_table_13_title = () => `תכונות תרמיות`
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_table_1_field = () => `EL30`
+export const home_page_table_1_field = () => `EI30`
 
 
 /**
