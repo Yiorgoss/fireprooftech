@@ -26,7 +26,6 @@
 	import landing_orange from '$lib/assets/images/landing_orange.jpg?w=500;1000;&format=avif;webp;jpg&as=picture';
 	//@ts-ignore
 	import blue_bg from '$lib/assets/images/products_text_background.jpg?w=500;1000;&format=avif;webp;jpg&as=picture';
-	import CircleImageSection from '$lib/components/circle-image-section.svelte';
 </script>
 
 <svelte:head>
