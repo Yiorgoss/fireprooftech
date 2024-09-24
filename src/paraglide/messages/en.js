@@ -272,7 +272,7 @@ export const home_page_card_3_text_1 = () => `FPT offers the following variation
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_card_3_text_2 = () => `EI30/30 - 30 minutes of (E) integrity, providing protection from flames, hot gases and smoke. 30 minutes insulation from heat radiation, restricting the transfer of heat to the unexposed side.`
+export const home_page_card_3_text_2 = () => `EI60/60 - 30 minutes of (E) integrity, providing protection from flames, hot gases and smoke. 30 minutes insulation from heat radiation, restricting the transfer of heat to the unexposed side.`
 
 
 /**
@@ -1000,7 +1000,7 @@ export const product_page_2_content_2 = () => `The product comes in the form of 
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const product_page_2_content_3 = () => `The advantages of Refrafilling, are that you can just as easily fill separate profiles, as well as ready made construction units. This way, you can turn complete divinding units such as doors, windows and partitions into fire-resistant ones, with integrity of up to 60 minutes, including ones already mounted on your premises`
+export const product_page_2_content_3 = () => `The advantages of Refrafilling, are that you can just as easily fill separate profiles, as well as ready made construction units. This way, you can turn complete dividing units such as doors, windows and partitions into fire-resistant ones, with integrity of up to 60 minutes, including ones already mounted on your premises`
 
 
 /**

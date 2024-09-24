@@ -11,9 +11,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
   const dir = isRTL(langTmp) ? 'rtl' : 'ltr'
 
-  console.log(langTmp)
   const lang = langTmp == 'il' ? 'he' : langTmp
-  console.log(lang)
 
   return await resolve(event, {
     transformPageChunk({ done, html }) {

@@ -32,8 +32,8 @@
 	{#if clickableImage}
 		<a
 			href="#imageOverlay"
-      id="imageOverlay"
-			class="hidden md:block absolute inset-0 "
+			id="imageOverlay"
+			class="absolute inset-0 hidden md:block"
 			on:click={() => (overlayHidden = !overlayHidden)}
 		>
 			<div
@@ -41,10 +41,10 @@
 				class="fixed inset-0 z-40 flex items-center justify-center backdrop-blur-lg"
 			>
 				<div class=" flex h-4/5 w-4/5 items-center justify-center overflow-hidden">
-					<img src={fallback.src} {alt} loading="lazy" class="object-contain" />
+					<img src={fallback.src} {alt} loading="lazy" class="w-full h-full object-contain" />
 				</div>
 			</div>
-				<span class="sr-only">Link to same page</span>
+			<span class="sr-only">Link to same page</span>
 		</a>
 	{/if}
 </div>
