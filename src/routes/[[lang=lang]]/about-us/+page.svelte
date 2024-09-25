@@ -90,32 +90,32 @@
 			<h2 class="pb-10 text-center font-playfair text-4xl uppercase md:text-7xl">
 				{m.about_page_fireproof_testing_heading()}
 			</h2>
-			<div class="grid grid-cols-1 gap-10 px-10  md:grid-cols-2 md:px-0">
-				<div class="border-4 border-destructive   ">
+			<div class="grid grid-cols-1 gap-10 px-10 md:grid-cols-2 md:px-0">
+				<div class="border-4 border-destructive">
 					<ImageWrapper
 						clickableImage={true}
-						imageClass="border-4 h-full w-full border-background max-h-[200px]"
+						imageClass="border-4 h-full w-full border-background max-h-[300px] md:max-h-[200px]"
 						meta={firetesting1}
 					/>
 				</div>
-				<div class="border-4 border-destructive ">
+				<div class="border-4 border-destructive">
 					<ImageWrapper
 						clickableImage={true}
-						imageClass="border-4 h-full w-full object-cover border-background max-h-[200px]"
+						imageClass="border-4 h-full w-full object-cover border-background max-h-[300px] md:max-h-[200px]"
 						meta={firetesting2}
 					/>
 				</div>
-				<div class="border-4 border-destructive ">
+				<div class="border-4 border-destructive">
 					<ImageWrapper
 						clickableImage={true}
-						imageClass="border-4 h-full w-full border-background object-cover max-h-[200px]"
+						imageClass="border-4 h-full w-full border-background object-cover max-h-[300px] md:max-h-[200px]"
 						meta={firetesting5}
 					/>
 				</div>
-				<div class="border-4  border-destructive ">
+				<div class="border-4 border-destructive">
 					<ImageWrapper
 						clickableImage={true}
-						imageClass="border-4 h-full w-full border-background object-cover max-h-[200px]"
+						imageClass="border-4 h-full w-full border-background object-cover max-h-[300px] md:max-h-[200px]"
 						meta={firetesting4}
 					/>
 				</div>
