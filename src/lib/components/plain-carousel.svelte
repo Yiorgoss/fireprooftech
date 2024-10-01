@@ -38,7 +38,7 @@
 	];
 </script>
 
-<div class="grid gap-5 grid-cols-2 md:grid-cols-3">
+<div class="grid  gap-5 grid-cols-2 md:grid-cols-3">
 	{#each pastWorkList as work}
 		<div class="">
 				<ImageWrapper clickableImage={true} imageClass="" meta={[work]} />

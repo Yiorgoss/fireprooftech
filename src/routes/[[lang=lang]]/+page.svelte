@@ -126,7 +126,7 @@
 				}
 			],
 			button: {
-				href: '/contact',
+				href: '/contact-us',
 				text: m.contact_us()
 			}
 		}

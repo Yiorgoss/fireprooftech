@@ -71,7 +71,9 @@
 			{m.about_page_project_in_mind()}
 		</h3>
 		<div class="w-20 border-t-4 border-white pb-4"></div>
-		<Button size="lg" variant="destructive" class="uppercase">{m.get_free_estimate()}</Button>
+		<a href="/contact-us">
+			<Button size="lg" variant="destructive" class="uppercase">{m.get_free_estimate()}</Button>
+		</a>
 	</div>
 	<h2 class="bg-foreground py-20 text-center font-playfair text-4xl uppercase md:text-6xl">
 		{m.about_page_our_work_heading()}
