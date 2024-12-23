@@ -49,19 +49,19 @@
 			<div class="mx-auto w-full px-2 md:w-1/2">{m.about_page_description_three()}</div>
 		</div>
 	</div>
-	<div
-		class="my-6 flex flex-col items-center justify-center bg-foreground pb-10 pt-0 text-background"
-	>
-		<div class="w-full bg-foreground px-2 pb-10 text-lg md:w-2/3">
-			<h2 class="w-full py-10 font-playfair text-6xl uppercase">
-				{m.about_page_our_founder_heading()}
-			</h2>
-			<p class="tracking-wider">{m.about_page_our_founder_description_paragraph_one()}</p>
-			<p class="pt-5 tracking-wider">{m.about_page_our_founder_description_paragraph_two()}</p>
-			<p class="pt-5 tracking-wider">{m.about_page_our_founder_description_paragraph_three()}</p>
-			<p class="pt-5 tracking-wider">{m.about_page_our_founder_description_paragraph_four()}</p>
-		</div>
-	</div>
+	<!-- <div -->
+	<!-- 	class="my-6 flex flex-col items-center justify-center bg-foreground pb-10 pt-0 text-background" -->
+	<!-- > -->
+	<!-- 	<div class="w-full bg-foreground px-2 pb-10 text-lg md:w-2/3"> -->
+	<!-- 		<h2 class="w-full py-10 font-playfair text-6xl uppercase"> -->
+	<!-- 			{m.about_page_our_founder_heading()} -->
+	<!-- 		</h2> -->
+	<!-- 		<p class="tracking-wider">{m.about_page_our_founder_description_paragraph_one()}</p> -->
+	<!-- 		<p class="pt-5 tracking-wider">{m.about_page_our_founder_description_paragraph_two()}</p> -->
+	<!-- 		<p class="pt-5 tracking-wider">{m.about_page_our_founder_description_paragraph_three()}</p> -->
+	<!-- 		<p class="pt-5 tracking-wider">{m.about_page_our_founder_description_paragraph_four()}</p> -->
+	<!-- 	</div> -->
+	<!-- </div> -->
 	<div
 		class="container my-5 mt-6 flex w-4/5 flex-col items-center justify-center gap-6 bg-foreground p-10"
 	>

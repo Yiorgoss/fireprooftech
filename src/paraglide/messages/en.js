@@ -272,7 +272,7 @@ export const home_page_card_3_text_1 = () => `FPT offers the following variation
  * @returns {string}
  */
 /* @__NO_SIDE_EFFECTS__ */
-export const home_page_card_3_text_2 = () => `EI60/60 - 30 minutes of (E) integrity, providing protection from flames, hot gases and smoke. 30 minutes insulation from heat radiation, restricting the transfer of heat to the unexposed side.`
+export const home_page_card_3_text_2 = () => `EI30/30 - 30 minutes of (E) integrity, providing protection from flames, hot gases and smoke. 30 minutes insulation from heat radiation, restricting the transfer of heat to the unexposed side.`
 
 
 /**
