@@ -8,8 +8,8 @@ export const siteMap = {
 
 
 export const socials = [
-  { name: 'Instagram', href: '#' },
-  { name: 'LinkedIn', href: '#' }
+  { name: 'Instagram', href: 'https://www.instagram.com/metalum.co/' },
+  { name: 'Instagram', href: 'https://www.instagram.com/fire_proof_tech_ltd/' },
 ];
 
 export const contactInfo = [
